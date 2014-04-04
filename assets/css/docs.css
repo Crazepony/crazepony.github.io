@@ -1418,3 +1418,7 @@ h1[id] {
   -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
        box-shadow: 0 0 8px rgba(82,168,236,.6);
 }
+
+#join-us {
+    background: #e5e9ec;
+}
