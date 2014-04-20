@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: wiki
 title: just for test
 ---
 
