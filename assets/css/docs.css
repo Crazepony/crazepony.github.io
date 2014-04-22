@@ -1422,3 +1422,26 @@ h1[id] {
 #join-us {
     background: #e5e9ec;
 }
+
+.wiki h1,h2,h3,h4{
+    color: #333;
+    text-shadow: 2px 2px 2px #E6E6E6;
+    clear: both;
+    font-family: "微软雅黑",Helvetica,"Arial Black",Impact;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    font-weight: bold;
+}
+
+.wiki h1{
+    font-size:20px;
+}
+
+.wiki h2,h3,h4{
+    font-size:18px;
+}
+
+.wiki {
+    font-size:16px;
+}
