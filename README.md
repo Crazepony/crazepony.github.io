@@ -26,11 +26,6 @@ Crazepony网站建设和部署使用了多种开源的技术和平台。
 修改最多的就是wiki目录和posts目录下的源文件，并且都为markdown格式。在文件最开始加入了一个特定格式的头，用于jekyll生成静态网页。
 
 ## 如何参与其中
-参与网站wiki，blog等的建设其实很简单。你可以将该项目源代码clone到本地，进行修改调试，然后上传github，就能够在网站上看到你修改的内容。对于不熟悉git/github，或者不能够本地修改的伙伴，你也可以直接到网页上进行修改。下面以修改wiki中的setup-environment-in-windows页面为例：
+参与网站wiki，blog等的建设其实很简单。无论你时git/github资深玩家，还是从没有接触过git/github的小白，都能够快速参与网站建设。
 
-* 找到该网页对应的markdown文件，如上节中所属，wiki源文件都存放在wiki文件夹。
-![](assets/img/readme_001.png)
-* 点击打开该文件，并且点击右侧的Edit按钮。这时候你可以编辑修改该文件，还可以点击Preview按钮预览修改效果。
-![](assets/img/readme_002.png)
-* 修改结束之后，请务必协商修改的记录，然后点击Save按钮保存该文件。这个时候到网站上刷新该页面，则你的修改应该已经生效。
-![](assets/img/readme_003.png)
+具体方法，查看wiki[如何参与站点建设](http://crazepony.github.io/wiki/wiki-help.html)。
