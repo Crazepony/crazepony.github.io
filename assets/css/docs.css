@@ -1423,6 +1423,10 @@ h1[id] {
     background: #e5e9ec;
 }
 
+.normal-assign{
+    text-align: left;
+}
+
 .wiki h1,h2,h3,h4{
     color: #333;
     text-shadow: 2px 2px 2px #E6E6E6;
