@@ -1,6 +1,6 @@
 ---
-layout：wiki
-title：MPU6050的硬件解算四元素和软件解算四元素差异
+layout: wiki
+title: MPU6050的硬件解算四元素和软件解算四元素差异
 ---
 # {{page.title}}
 
