@@ -1449,3 +1449,7 @@ h1[id] {
 .wiki {
     font-size:16px;
 }
+
+.img-responsive{
+    display:inline;
+}
