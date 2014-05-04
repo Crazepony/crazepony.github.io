@@ -72,3 +72,5 @@ $ jekyll serve
 
 ## 其他
 markdown语法说明：[快速入门](http://wowubuntu.com/markdown/basic.html)
+
+git入门笔记：[git入门笔记](http://www.bootcss.com/p/git-guide/)
