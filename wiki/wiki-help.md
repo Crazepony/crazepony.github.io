@@ -71,6 +71,11 @@ $ jekyll serve
 开启jekyll服务之后，在站点源代码下，会生成一个名为_site的目录，该目录下就为站点的html静态网页。在浏览器中输入http://localhost:4000/，就能够看到修改之后站点的效果。
 
 ## 其他
-markdown语法说明：[快速入门](http://wowubuntu.com/markdown/basic.html)
+markdown语法说明：
+* [快速入门](http://wowubuntu.com/markdown/basic.html)
+* [Markdown Basics](https://help.github.com/articles/markdown-basics)
+* [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 
-git入门笔记：[git入门笔记](http://www.bootcss.com/p/git-guide/)
+git/github入门：
+* [git使用简易指南](http://www.bootcss.com/p/git-guide/)
+* [沉浸式学 Git](http://igit.linuxtoy.org/index.html)
