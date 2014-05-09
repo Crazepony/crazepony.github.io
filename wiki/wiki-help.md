@@ -79,3 +79,8 @@ markdown语法说明：
 git/github入门：
 * [git使用简易指南](http://www.bootcss.com/p/git-guide/)
 * [沉浸式学 Git](http://igit.linuxtoy.org/index.html)
+
+windows下的git工具：
+
+* [Github for Windows](https://windows.github.com/)，windows下的github客户端，适合在windows下快速入手github。
+* [Git for Windows](http://msysgit.github.io/)，windows下的git工具，适合上面的windows下github客户端安装不成功（经常遇到）的情况。不过需要自己配置，也适合更加深入了解git的使用。
