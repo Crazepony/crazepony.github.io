@@ -43,15 +43,23 @@ Crazepony站点源代码托管在github上，点击[这里](https://github.com/C
 * 修改结束之后，请务必协商修改的记录，然后点击Save按钮保存该文件。这个时候到网站上刷新该页面，则你的修改应该已经生效。
 ![](../assets/img/readme_003.png)
 
-## clone到本地修改
-你可以将该项目源代码clone到本地，进行修改调试，然后上传github，就能够在网站上看到你修改的内容。
+## 将源码下载到本地
+可以将该网站源码clone到本地，进行修改调试。
 
 ```
+//将github上的源代码clone到本地
 $git clone git@github.com:Crazepony/crazepony.github.io.git
 
+//添加修改并且上传github
+$ git add .
+$ git commit -m 'xxxx'
+$ git pull --rebase
+$ git push
+
 ```
 
-由于使用了jekyll框架，所以在本地调试时需要安装jekyll。对于ubuntu用户，命令如下：
+## ubuntu下搭建jekyll调试环境
+由于使用了jekyll框架，所以在本地调试时需要安装jekyll。在ubuntu中使用下面的命令安装jekyll：
 
 ```
 //jekyll是用ruby写的，所以需要先安装ruby开发环境
@@ -68,15 +76,26 @@ $ jekyll serve
 
 ```
 
-开启jekyll服务之后，在站点源代码下，会生成一个名为_site的目录，该目录下就为站点的html静态网页。在浏览器中输入http://localhost:4000/，就能够看到修改之后站点的效果。
+开启jekyll服务之后，在站点源代码下，会生成一个名为_site的目录，该目录下就为站点的静态网页。在浏览器中输入`http://localhost:4000/`，就能够看到站点的效果。
 
-## 其他
+## 添加新的博客
+
+博客的源文件位于目录_posts下，并且使用markdown语法编写。添加一个新的博客只需要在该目录下添加一个新的markdown文件就可以，但是该文件的命名需要遵守下面的规则：
+
+> 文件名必须以年-月-日开始，例如`2014-03-05-xxxx.md`。
+
+jekyll需要根据这个文件名确定生成的静态页面的位置。和wiki不同的是并不需要在根目录下的blog.html文件中添加新增加的博客列表。
+
+
+## 参考资料
 markdown语法说明：
+
 * [快速入门](http://wowubuntu.com/markdown/basic.html)
 * [Markdown Basics](https://help.github.com/articles/markdown-basics)
 * [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
 
 git/github入门：
+
 * [git使用简易指南](http://www.bootcss.com/p/git-guide/)
 * [沉浸式学 Git](http://igit.linuxtoy.org/index.html)
 
