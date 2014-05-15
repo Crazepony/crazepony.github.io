@@ -1,12 +1,9 @@
 ---
-layout: wiki
-title: 我和Crazepony的那点事儿
+layout: blog
+title: 我和Crazepony的那点事儿(1)
 ---
 # {{page.title}}
 
-				 我和Crazepony的那些事儿
-    
-							  
 很荣幸，Crazepony的第一篇博客是我来写，鉴于是第一篇，按照惯例，我还是说点其他的先。
 
 1．	对现状的一些思考
