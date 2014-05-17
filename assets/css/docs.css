@@ -120,7 +120,7 @@ body {
 
 .bs-docs-nav {
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #393939;
   border-bottom: 0;
 }
 .bs-home-nav .bs-nav-b {
@@ -128,25 +128,28 @@ body {
 }
 .bs-docs-nav .navbar-brand,
 .bs-docs-nav .navbar-nav > li > a {
-  color: #563d7c;
+  color: #aaa;
   font-weight: 500;
 }
-.bs-docs-nav .navbar-nav > li > a:hover,
+.bs-docs-nav .navbar-nav > li > a:hover{
+  color: #fff;
+  background-color: #393939;
+}
 .bs-docs-nav .navbar-nav > .active > a,
 .bs-docs-nav .navbar-nav > .active > a:hover {
-  color: #463265;
-  background-color: #f9f9f9;
+  color: #fff;
+  background-color: #555;
 }
 .bs-docs-nav .navbar-toggle .icon-bar {
-  background-color: #563d7c;
+  background-color: #aaa;
 }
 .bs-docs-nav .navbar-header .navbar-toggle {
   border-color: #fff;
 }
 .bs-docs-nav .navbar-header .navbar-toggle:hover,
 .bs-docs-nav .navbar-header .navbar-toggle:focus {
-  background-color: #f9f9f9;
-  border-color: #f9f9f9;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 
