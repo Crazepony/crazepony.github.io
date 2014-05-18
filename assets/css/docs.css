@@ -1439,7 +1439,10 @@ h1[id] {
     text-align: left;
 }
 
-.wiki h1,h2,h3,h4{
+.wiki h1,
+.wiki h2,
+.wiki h3,
+.wiki h4{
     color: #333;
     text-shadow: 2px 2px 2px #E6E6E6;
     clear: both;
