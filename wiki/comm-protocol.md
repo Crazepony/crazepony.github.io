@@ -93,7 +93,7 @@ ESky相关协议内容暂时不研究。
 
 
 ## 操作命令
-数据包的头中的port字段为0x3表示操作命令，那么[操作命令的约定格式](http://wiki.bitcraze.se/projects:crazyflie:crtp:commander)是怎么样的呢。
+操作命令是指用于控制飞行器起飞，前后左右运动的命令，英文commander。操控命令是遥控器最基本，也是最常用的命令。数据包头中port字段为0x3表示操作命令。[Crazyflie操作数据](http://wiki.bitcraze.se/projects:crazyflie:crtp:commander)格式约定如下。
 
 ```
 +-------+-------+-------+-------+
@@ -101,6 +101,7 @@ ESky相关协议内容暂时不研究。
 +-------+-------+-------+-------+
 0       4       8       12      14 bytes
 ```
+操作数据一共14个字节，前12个字节分别表示Roll，Pitch，Yaw的值，每个值使用4个字节。后2个字节表示Thrust的值，使用2个字节。
 
 所以，使用串口发送的一个操作命令示例如下：
 
