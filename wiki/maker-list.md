@@ -18,3 +18,7 @@ Dale还是O'Reilly Media的联合创始人，并担任计算机相关书籍的�
 
 ## 程天纵
 前富士康CEO，国内创客运动推广者
+
+
+## 王建军
+[makeblock](http://www.makeblock.cc/)创始人
