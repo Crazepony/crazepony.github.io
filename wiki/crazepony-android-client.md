@@ -22,4 +22,20 @@ Crazepony的Android客户端开发需要搭建Android APP开发环境。最简�
 
 ## 配置说明
 
-Crazepony的Android客户端默认的Android API版本为4.0.3，支持的Android版本为4.0.0或以上。
+Crazepony的Android客户端默认编译的Android SDK API版本为15（对应Android 4.0.3），支持的Android版本为4.0.0或以上。
+
+![](/assets/img/Android-SDK-Manager.png)
+
+![](/assets/img/Properties-for-CrazyflieControll.png)
+
+## 关于通信
+
+使用蓝牙和主控上的蓝牙透传模块通信，APP为主设备（master），主控上的蓝牙透传模块为从设备（slave）。具体协议参考《通信协议》一文。
+
+APP发送操作命令的频率为20Hz，也就是说50ms发送一个操作命令包。
+
+暂时没有添加《通信协议》中提到的Packet length字段和checksum字段。原因是我觉得他们如此有点儿混乱，和其它数据包的处理不一致。
+
+下面为蓝牙透传模块接收到的数据截图：
+
+![](/assets/img/uart-rc.png)
