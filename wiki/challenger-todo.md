@@ -25,3 +25,8 @@ Crazepony四轴飞行器还只是一个原型，在我们提供的原型机上�
 ![](/assets/img/bee-dance.jpg)
 
 操作场景：各种飞行轨迹已经固化在主控中，将四轴拉升到一定高度，然后选择执行按照某个飞行轨迹飞行。另外，如果多架同时执行同一个飞行操作，编队表演。
+
+
+## 擂台4——脑电波控制飞行器
+
+使用你的意念，脑电波来控制飞行器。这是不是很酷，在kickstarter上就有这么一个项目[Puzzlebox Orbit: Brain-Controlled Helicopter](https://www.kickstarter.com/projects/puzzlebox/puzzlebox-orbit-brain-controlled-helicopter)。使用crazepony，你也可以自己diy一台意念控制的四轴飞行器。
