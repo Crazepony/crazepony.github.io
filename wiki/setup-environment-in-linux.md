@@ -69,3 +69,12 @@ arm-linux-eabi 用于编译arm linux内核代码。
 arm-none-eabi 不指名操作系统，可以是linux, 也可以是vxworks等，arm-none-eabi 不包含 __linux__ 等特定宏，所以往往编译linux 内核的时候通不过，不支持那些跟操作系统关系密切的函数，比如fork(2)，使用的是newlib这个专用于嵌入式系统的C库。
 arm-none-linux-eabi 用于Linux的，使用Glibc。
 ```
+
+## 硬件开发工具
+Crazyflie电路原理图使用的KiCad，KiCad以一个开源的EDA工具，并且跨平台，在windows和linux下都能够使用。
+
+KiCad的home page：[http://www.kicad-pcb.org/](http://www.kicad-pcb.org)。在ubuntu下的安装：
+
+```
+sudo apt-get install kicad
+```
