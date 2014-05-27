@@ -12,16 +12,6 @@ $(document).ready(function(){
         
     });
 
-    $('.btn-lg').click(function () {
-		$('html,body').animate({
-			scrollTop: $('#intro').offset().top
-		}, {
-			queue: !1,
-			duration: 800,
-			easing: "easeInOutExpo",
-		});
-        
-    });
 
     //导航滑动效果
 	$('a[href^="#"]').on('click',function (e) {
