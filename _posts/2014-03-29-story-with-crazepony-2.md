@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: 我和Crazepony的那点事儿(1)
+title: 我和Crazepony的那点事儿(2)
 ---
 # {{page.title}}
 
