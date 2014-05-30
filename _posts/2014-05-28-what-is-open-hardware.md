@@ -1,6 +1,8 @@
 ---
 layout: blog
 title: 什么是开源硬件
+author: nieyong
+postday: May 28,2014
 ---
 # {{page.title}}
 

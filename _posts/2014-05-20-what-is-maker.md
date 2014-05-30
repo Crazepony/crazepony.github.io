@@ -1,8 +1,9 @@
 ---
 layout: blog
 title: 什么是创客
+author: nieyong
+postday: May 20,2014
 ---
-# {{page.title}}
 
 ![](/assets/img/who-is-maker.png)
 

@@ -1,9 +1,9 @@
 ---
 layout: blog
 title: 我和Crazepony的那点事儿(2)
+author: CamelGo
+postday: May 29,2014
 ---
-# {{page.title}}
-
 			  
 最近笔者忙于毕业事宜,博客没跟上…
 
