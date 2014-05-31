@@ -25,7 +25,7 @@ Crazepony项目时开源的，所有代码都托管在Github的[Crazepony项目]
 
 可以直接使用git获得源代码，也可以从[这里](https://github.com/Crazepony/crazepony-firmware-none/releases)下载各个版本的裸机源代码。
 
-![](/assets/img/git-download.jpg)
+![](/assets/img/git-download.png)
 
 在源代码中，有三个文件为Keil工程文件。
 
