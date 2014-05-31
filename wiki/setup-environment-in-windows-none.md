@@ -34,4 +34,6 @@ IMU_AHRS_IMU_AHRS.dep
 ```
 使用上面安装的Keil 4打开文件`IMU_AHRS.uvopt`，就能够导入整个工程。如下图所示。
 
+![](/assets/img/keil-build.jpg)
+
 点击左上角的编译按钮，编译整个项目，在工程下生成Output目录，目录中aircraft.hex就是可以烧写到STM32的固件。参考另外一篇文章《主控固件烧写》将固件写入STM32中。
