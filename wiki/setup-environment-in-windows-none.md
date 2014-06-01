@@ -34,7 +34,7 @@ IMU_AHRS.uvopt
 IMU_AHRS.uvproj
 IMU_AHRS_IMU_AHRS.dep
 ```
-使用上面安装的Keil 4打开文件`IMU_AHRS.uvopt`，就能够导入整个工程。如下图所示。
+使用上面安装的Keil 4打开文件`IMU_AHRS.uvproj`，就能够导入整个工程。如下图所示。
 
 ![](/assets/img/keil-build.jpg)
 
