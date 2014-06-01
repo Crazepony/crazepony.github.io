@@ -29,6 +29,18 @@ $(document).ready(function(){
 		});
 	});
 
+    //响应navbar上面的active
+    var pathname = window.location.pathname;
+    $(".active").removeClass("active");
+
+    if(pathname.indexOf("todo") >= 0){
+        $("#todo").addClass("active");
+    }else if(pathname.indexOf("index") >= 0){
+        $("#index").addClass("active");
+    }else{
+        $("#home").addClass("active");
+    }
+
 });
 
 
