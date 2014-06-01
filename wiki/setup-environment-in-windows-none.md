@@ -5,8 +5,9 @@ title: Windows下开发环境搭建-裸机版本
 
 # {{ page.title }}
 
-IDE开发工具Keil 4下载地址：crazepony百度云网盘。
-裸机飞控源代码下载地址：github站点。
+IDE开发工具Keil 4下载地址：Crazepony百度云网盘[Keil-uVision4-MDK4-12.zip](http://pan.baidu.com/s/1ntNqLdv)。
+
+裸机飞控源代码下载地址：Github项目[crazepony-firmware-none](https://github.com/Crazepony/crazepony-firmware-none/releases)。
 
 ## 环境配置说明
 裸机版本是指没有使用RTOS的主控固件版本。源代码对应github上的地址为。由于没有使用RTOS，所以代码更加简单明了，适合初学者使用。
@@ -18,15 +19,16 @@ IDE开发工具Keil 4下载地址：crazepony百度云网盘。
 
 该安装文件在Windows XP，32位系统上测试通过。
 
-## 源代码下载和编译
+## 源代码下载
 主控固件裸机版本，裸机指没有使用实时操作系统RTOS。由于没有使用RTOS，所以代码更加简单明了，适合初学者使用。
 
-Crazepony项目时开源的，所有代码都托管在Github的[Crazepony项目](https://github.com/Crazepony)下。裸机源代码放置在[crazepony-firmware-none](https://github.com/Crazepony/crazepony-firmware-none)下，命名中的none标示不使用RTOS。
+Crazepony项目是开源的，所有代码都托管在Github的[Crazepony项目](https://github.com/Crazepony)下。裸机源代码放置在[crazepony-firmware-none](https://github.com/Crazepony/crazepony-firmware-none)下，命名中的none表示不使用RTOS。
 
-可以直接使用git获得源代码，也可以从[这里](https://github.com/Crazepony/crazepony-firmware-none/releases)下载各个版本的裸机源代码。
+可以直接使用git获得源代码，也可以从[crazepony-firmware-none release](https://github.com/Crazepony/crazepony-firmware-none/releases)下载各个版本的裸机源代码。
 
 ![](/assets/img/git-download.png)
 
+## 源代码导入和编译
 在源代码中，有三个文件为Keil工程文件。
 
 ```
