@@ -1464,3 +1464,20 @@ h1[id] {
 .img-responsive{
     display:inline;
 }
+
+#cc{
+    color: #999999;
+    padding-top:10px;
+    margin-top:20px;
+}
+
+#cc a{
+    color: #999999;
+    padding-top:10px;
+    margin-top:20px;
+}
+
+#cc p{
+    padding-top:10px;
+    border-top: 2px solid #CCCCCC;
+}
