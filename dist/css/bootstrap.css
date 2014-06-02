@@ -473,7 +473,7 @@ p {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.4;
-  font:黑体;
+  font-family:黑体;
 }
 @media (min-width: 768px) {
   .lead {
