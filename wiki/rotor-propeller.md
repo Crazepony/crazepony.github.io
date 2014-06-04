@@ -14,6 +14,10 @@ title: 电机和桨叶
 
 ![](/assets/img/motor-wushua.jpg)
 
+下面是关于无刷直流电机原理的讲解。
+
+<embed src="http://player.youku.com/player.php/sid/XMzI4MzkxMTg4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+
 ## 电机之空心杯
 空心杯电机（coreless motor）属于直流、永磁、伺服微特电机。空心杯电机在结构上突破了传统电机的转子结构形式，采用的是无铁芯转子。空心杯电机具有十分突出的节能、控制和拖动特性。
 
