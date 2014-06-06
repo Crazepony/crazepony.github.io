@@ -1481,3 +1481,10 @@ h1[id] {
     padding-top:10px;
     border-top: 2px solid #CCCCCC;
 }
+
+.carouselContainer {
+position: relative;
+width: 100%;
+overflow: hidden;
+margin: auto;
+}
