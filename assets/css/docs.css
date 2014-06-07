@@ -1483,8 +1483,14 @@ h1[id] {
 }
 
 .carouselContainer {
-position: relative;
-width: 100%;
-overflow: hidden;
-margin: auto;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-inner > .item > img {
+  top: 0;
+  left: 0;
+  height: 500px;
 }
