@@ -3,21 +3,58 @@ layout: crazepony-cn
 title: crazepony
 ---
 
-<!-- Page content of course! -->
-<main class="bs-docs-masthead" id="main" role="main">
-  <div class="container">
-    <div class="row ">
-        <img src="assets/img/crazepony1.png" alt="Components" class="img-responsive">
-    </div>
-    <!-- <h1>Bootstrap</h1> -->
-    <p class="lead">繁星若尘，带来娱乐性/开发性最强的开源迷你四轴飞行器。</p>
-    <p class="lead">
-      <a class="btn btn-outline-inverse btn-lg" href="#intro">了解更多</a>
-    </p>
-    <p class="version">最新版本 CrazePony-II 第三版</p>
 
-  </div>
-</main>
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+	  <div class="carouselContainer">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/img/slide01.png" alt="Components" class="img-responsive">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>繁星若尘，带来开源迷你四轴飞行器CrazePony。</h1>
+              <p><a class="btn btn-large btn-primary" href="#intro">了解更多</a></p>
+              <p class="version">最新版本 CrazePony-II 第三版</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/slide01.png" alt="Components" >
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Crazepony博客</h1>
+			  <p>一群年轻人对技术，生活，梦想的认真和执着，一种快乐的正能量。</p>
+              <p></p>
+              <p><a class="btn btn-large btn-primary" href="blog.html" target="_blank">点击进入</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/slide01.png" alt="Components" >
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Crazepony百科</h1>
+              <p>四轴飞行器是一种微型空中智能机器人，技术覆盖电子/机械/通信/计算机/自动化等多个学科领域。</p>
+              <p><a class="btn btn-large btn-primary" href="wiki.html"  target="_blank">点击进入</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	  </div>
+    </div><!-- /.carousel -->
+
+
+<!-- Page content of course! -->
 
 <div class="bs-docs-featurette" id="intro">
   <div class="container">
@@ -117,12 +154,17 @@ title: crazepony
 
 <div class="bs-docs-featurette" id="about-us">
   <div class="container">
-    <h2 class="bs-docs-featurette-title">Crazepony-II V3.0宣传短片</h2>
+    <h2 class="bs-docs-featurette-title">Crazepony精彩欣赏</h2>
 
     <hr class="half-rule">
     <div class="row featurette">
-    <embed src="http://player.youku.com/player.php/sid/XNzIwODE2OTQ0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+        <div class="col-md-6">
+            <embed src="http://player.youku.com/player.php/sid/XNzIwODE2OTQ0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            <p>Crazepony-II 第三版飞行视频</p>
         </div>
+        <div class="col-md-6">
+            <embed src="http://player.youku.com/player.php/sid/XNjc1NjgyNzQw/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            <p>Crazepony-II 第二版飞行视频</p>
         </div>
     </div>
   </div>
