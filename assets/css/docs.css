@@ -1506,3 +1506,9 @@ h1[id] {
     color: #9783b9;
     font-size: 14px;
 }
+
+blockquote {
+    padding: 0.4em;
+    border-left: 2px solid #888;
+    font-size: 16px;
+}
