@@ -1494,3 +1494,15 @@ h1[id] {
   left: 0;
   height: 500px;
 }
+
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+.carousel-caption .version {
+    margin-top: 20px;
+    color: #9783b9;
+    font-size: 14px;
+}
