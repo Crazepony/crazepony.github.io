@@ -31,7 +31,7 @@ $(document).ready(function(){
 
     //响应navbar上面的active
     var pathname = window.location.pathname;
-    $(".active").removeClass("active");
+    $(".nav .active").removeClass("active");
 
     if(pathname.indexOf("todo") >= 0){
         $("#todo").addClass("active");
