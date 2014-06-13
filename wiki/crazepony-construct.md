@@ -1,6 +1,6 @@
 ---
-layout:wiki
-title:关于Crazepony的板形及结构
+layout: wiki
+title: 关于Crazepony的板形及结构
 ---
 
 # {{ page.title }}
