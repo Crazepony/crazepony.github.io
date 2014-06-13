@@ -14,10 +14,6 @@ title: 电机和桨叶
 
 ![](/assets/img/motor-wushua.jpg)
 
-下面是关于无刷直流电机原理的讲解。
-
-<embed src="http://player.youku.com/player.php/sid/XMzI4MzkxMTg4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
-
 ## 电机之空心杯
 空心杯电机（coreless motor）属于直流、永磁、伺服微特电机。空心杯电机在结构上突破了传统电机的转子结构形式，采用的是无铁芯转子。空心杯电机具有十分突出的节能、控制和拖动特性。
 
@@ -34,4 +30,10 @@ Crazepony空心杯高速电机拆解图，可以明显看到线圈中间没有�
 桨有两个重要的参数，桨直径和桨螺距。螺距则代表桨旋转一周前进的距离。桨直径和螺距越大，桨能提供的拉（推）力越大。注意桨直径是指桨转动所形成的圆的直径，而不是桨叶的总长度。对于双叶桨（两片桨叶，这是最常用的桨）恰好是两片桨叶长度之和；而对于单叶桨，直径是桨叶的长度*2；而三叶桨，直径就不是桨叶之和了。
 
 一般来讲，如果想让飞机飞得慢用大桨；飞得快则用小桨。
+
+## 扩展阅读
+
+关于无刷直流电机原理的讲解。
+
+<embed src="http://player.youku.com/player.php/sid/XMzI4MzkxMTg4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
 
