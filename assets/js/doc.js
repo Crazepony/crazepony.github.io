@@ -35,6 +35,8 @@ $(document).ready(function(){
 
     if(pathname.indexOf("todo") >= 0){
         $("#todo").addClass("active");
+    }else if(pathname.indexOf("pov") >= 0){
+        $("#pov").addClass("active");
     }else if(pathname.indexOf("index") >= 0){
         $("#index").addClass("active");
     }else{
