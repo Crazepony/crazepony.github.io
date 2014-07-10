@@ -50,6 +50,16 @@ APC浆有一个衍生系列多轴专用的MR系列。优点是增强了浆的硬
 
 下面是一个提供了很多关于螺旋桨知识，历史，设计的网站[heliciel](http://www.heliciel.com/en/Index.htm)。
 
+## 木桨的故事
+木桨在人类航空早期扮演了非常重要的角色。一战时期的很多飞机都是使用的木桨，后来才逐渐被铁桨取代。下面是那个时候木桨的一些珍贵图片。
+
+![](/assets/img/wood-propeller-1.jpg)
+
+![](/assets/img/wood-propeller-2.jpg)
+
+![](/assets/img/wood-propeller-3.jpg)
+
+更多关于木桨的知识，参考[Wooden Propellers](http://woodenpropeller.com/)(A site dedicated to the preservation of early wooden airplane propellers)。
 
 ## 扩展阅读
 
