@@ -1,8 +1,9 @@
 ---
-layout: blog
+layout: blog-post
 title: 我和Crazepony的那点事儿(1)
 author: CamelGo
 postday: March 5,2014
+description: 很荣幸，Crazepony的第一篇博客是我来写，鉴于是第一篇，按照惯例，我还是说点其他的先。
 ---
 
 很荣幸，Crazepony的第一篇博客是我来写，鉴于是第一篇，按照惯例，我还是说点其他的先。

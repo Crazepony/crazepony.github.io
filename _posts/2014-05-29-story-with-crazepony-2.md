@@ -1,8 +1,9 @@
 ---
-layout: blog
+layout: blog-post
 title: 我和Crazepony的那点事儿(2)
 author: CamelGo
 postday: May 29,2014
+description: 曾经在犹豫用TI的430系列单片机还是意法半导的STM32。那是在我大二的时候，从来没有接触过STM32，以前都是用51单片机和TI的msp430系列单片机。好吧，我承认了，我做Crazepony其实是就是为了学习STM32的，没有买过STM32相关的开发板，就这么简单粗暴大刀阔斧的开始了我的STM32之旅…
 ---
 			  
 最近笔者忙于毕业事宜,博客没跟上…

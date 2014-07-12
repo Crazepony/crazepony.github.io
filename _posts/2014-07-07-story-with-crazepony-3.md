@@ -1,8 +1,9 @@
 ---
-layout: blog
+layout: blog-post
 title: 我和Crazepony的那点事儿(3)
 author: CamelGo
 postday: July 7,2014
+description: 毕业了,一直 沉浸在离别的情绪中难以自拔
 ---
 # {{page.title}}
 

@@ -1,8 +1,9 @@
 ---
-layout: blog
+layout: blog-post
 title: 什么是开源硬件
 author: nieyong
 postday: May 28,2014
+description: 自己一直就比较喜欢折腾开源的东西，例如Linux系统。而第一次接触开源硬件，也正好来自一次深圳Linux用户组（szlug）的聚会，来自其中一位成员关于3d打印机分享。后来在这个聚会中，还见到了makeblock的初始模型。
 ---
 # {{page.title}}
 
