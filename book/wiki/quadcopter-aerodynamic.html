@@ -1,0 +1,1119 @@
+<!DOCTYPE HTML>
+<html lang="en-US" manifest="../manifest.appcache">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>四轴飞行器的空气动力原理 | Crazepony四轴飞行器</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.5">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="Crazepony">
+    
+    
+    <link rel="next" href="../quadcopter-base.html" />
+    
+    
+    <link rel="prev" href="../wiki/pitch-yaw-roll.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-github="Crazepony/crazepony-gitbook" data-level="3.4" data-basepath=".." data-revision="1405412311906">
+    <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    
+    <a href="https://github.com/Crazepony/crazepony-gitbook" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    <span id="font-settings-wrapper">
+        <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="btn-group btn-block">
+        <button id="reduce-font-size" class="btn btn-default">A</button>
+        <button id="enlarge-font-size" class="btn btn-default">A</button>
+    </div>
+
+    <ul class="list-group font-family-list">
+        <li class="list-group-item" data-font="0">Serif</li>
+        <li class="list-group-item" data-font="1">Sans</li>
+    </ul>
+
+    <div class="btn-group btn-group-xs btn-block color-theme-list">
+        <button type="button" class="btn btn-default" id="color-theme-preview-0" data-theme="0">White</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-1" data-theme="1">Sepia</button>
+        <button type="button" class="btn btn-default" id="color-theme-preview-2" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </span>
+
+    <!-- Actions Right -->
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+
+    
+    <a href="https://github.com/Crazepony/crazepony-gitbook/stargazers" target="_blank" class="btn pull-right count-star hidden-xs"><i class="fa fa-star-o"></i> Star (<span>-</span>)</a>
+    <a href="https://github.com/Crazepony/crazepony-gitbook/watchers" target="_blank" class="btn pull-right count-watch hidden-xs"><i class="fa fa-eye"></i> Watch (<span>-</span>)</a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-spinner fa-spin"></i>
+        <a href="../" >Crazepony四轴飞行器</a>
+    </h1>
+</div>
+
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        <li>
+            <a href="https://github.com/Crazepony" target="blank" class="author-link">About the author</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/Crazepony/crazepony-gitbook/issues" target="blank"class="issues-link">Questions and Issues</a>
+        </li>
+        
+
+        
+        
+        <li>
+            <a href="https://github.com/Crazepony/crazepony-gitbook/edit/master/wiki/quadcopter-aerodynamic.md" target="blank" class="contribute-link">Edit and Contribute</a>
+        </li>
+        
+
+        
+        <li class="divider"></li>
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="about-crazepony.html">
+            
+                
+                    <a href="../about-crazepony.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         闪亮登场
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="quad-copter.html">
+            
+                
+                    <a href="../quad-copter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         四轴飞行器
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="wiki/quadcopter-history.html">
+            
+                
+                    <a href="../wiki/quadcopter-history.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         四轴飞行器历史回顾
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="wiki/opensource-quadcopter.html">
+            
+                
+                    <a href="../wiki/opensource-quadcopter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         开源四轴飞行器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="wiki/quadcopter-star.html">
+            
+                
+                    <a href="../wiki/quadcopter-star.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         四轴飞行器明星产品
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="model-aircraft.html">
+            
+                
+                    <a href="../model-aircraft.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         航模基本概念扫盲
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="wiki/copter-terminology.html">
+            
+                
+                    <a href="../wiki/copter-terminology.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         航模常用术语
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="wiki/large-small-quadcopter.html">
+            
+                
+                    <a href="../wiki/large-small-quadcopter.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         大四轴 VS 小四轴
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="wiki/pitch-yaw-roll.html">
+            
+                
+                    <a href="../wiki/pitch-yaw-roll.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         三维中pitch，yaw，roll的区别
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="wiki/quadcopter-aerodynamic.html">
+            
+                
+                    <a href="../wiki/quadcopter-aerodynamic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         四轴飞行器的空气动力原理
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="quadcopter-base.html">
+            
+                
+                    <a href="../quadcopter-base.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         四轴飞行器基本组成部分
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="wiki/rotor-propeller.html">
+            
+                
+                    <a href="../wiki/rotor-propeller.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         电机和桨叶
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="wiki/motor-control-ic.html">
+            
+                
+                    <a href="../wiki/motor-control-ic.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         电机驱动控制
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="wiki/main-controller-mcu.html">
+            
+                
+                    <a href="../wiki/main-controller-mcu.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         飞行控制器-主控MCU
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.4" data-path="wiki/main-controller-sensor.html">
+            
+                
+                    <a href="../wiki/main-controller-sensor.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                         飞行控制器——传感器
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.5" data-path="wiki/remote-controller-2-4.html">
+            
+                
+                    <a href="../wiki/remote-controller-2-4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                         遥控器——2.4G通信
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.6" data-path="wiki/remote-controller-bt.html">
+            
+                
+                    <a href="../wiki/remote-controller-bt.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                         遥控器——蓝牙通信
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="crazepony-dev.html">
+            
+                
+                    <a href="../crazepony-dev.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Crazepony二次开发
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="wiki/ic-readme.html">
+            
+                
+                    <a href="../wiki/ic-readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         Crazepony器件选型总览及说明
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="wiki/hardware-base.html">
+            
+                
+                    <a href="../wiki/hardware-base.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         Crazepony硬件原理讲解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="wiki/software-base.html">
+            
+                
+                    <a href="../wiki/software-base.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         Crazepony软件框架讲解
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="wiki/software-experience.html">
+            
+                
+                    <a href="../wiki/software-experience.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         Crazepony软件开发经验总结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="development.html">
+            
+                
+                    <a href="../development.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         开发指南
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="6.1" data-path="wiki/setup-environment-in-windows-none.html">
+            
+                
+                    <a href="../wiki/setup-environment-in-windows-none.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                         windows下开发环境搭建—裸机版本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.2" data-path="wiki/setup-environment-in-windows.html">
+            
+                
+                    <a href="../wiki/setup-environment-in-windows.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                         windows下开发环境搭建—FreeRTOS版本
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.3" data-path="wiki/setup-environment-in-linux.html">
+            
+                
+                    <a href="../wiki/setup-environment-in-linux.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                         linux下开发环境搭建
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.4" data-path="wiki/crazepony-android-client.html">
+            
+                
+                    <a href="../wiki/crazepony-android-client.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                         Crazepony Android客户端
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6.5" data-path="wiki/flash-firmware.html">
+            
+                
+                    <a href="../wiki/flash-firmware.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                         主控固件烧写
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="about-algorithm.html">
+            
+                
+                    <a href="../about-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         四轴飞行器算法讲解
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="wiki/attitude-algorithm.html">
+            
+                
+                    <a href="../wiki/attitude-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         姿态解算简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.2" data-path="wiki/attitude-math.html">
+            
+                
+                    <a href="../wiki/attitude-math.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                         姿态的数学表示方法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.3" data-path="wiki/attitude-measure.html">
+            
+                
+                    <a href="../wiki/attitude-measure.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                         姿态的测量
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.4" data-path="wiki/attitude-algorithm-flow-graph.html">
+            
+                
+                    <a href="../wiki/attitude-algorithm-flow-graph.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                         姿态解算流程
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.5" data-path="wiki/software-algorithm.html">
+            
+                
+                    <a href="../wiki/software-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                         软件姿态解算
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.6" data-path="wiki/hardware-algorithm.html">
+            
+                
+                    <a href="../wiki/hardware-algorithm.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                         硬件姿态解算
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.7" data-path="wiki/quaternions.html">
+            
+                
+                    <a href="../wiki/quaternions.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                         四元数
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.8" data-path="wiki/mpu6050.html">
+            
+                
+                    <a href="../wiki/mpu6050.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                         三轴陀螺仪和三轴加速度计MPU6050
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7.9" data-path="wiki/algorithm-pid.html">
+            
+                
+                    <a href="../wiki/algorithm-pid.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                         PID算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="crazyflie.html">
+            
+                
+                    <a href="../crazyflie.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         Crazyflie部分原理分析
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="8.1" data-path="wiki/freertos-intro.html">
+            
+                
+                    <a href="../wiki/freertos-intro.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.1.</b>
+                        
+                         FreeRTOS简介
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.2" data-path="wiki/macro-controls.html">
+            
+                
+                    <a href="../wiki/macro-controls.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.2.</b>
+                        
+                         介绍几个常用的宏的作用
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.3" data-path="wiki/system-flow-graph.html">
+            
+                
+                    <a href="../wiki/system-flow-graph.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.3.</b>
+                        
+                         固件系统流程框架
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8.4" data-path="wiki/comm-protocol.html">
+            
+                
+                    <a href="../wiki/comm-protocol.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.4.</b>
+                        
+                         通信协议
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="other.html">
+            
+                
+                    <a href="../other.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         其他
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="9.1" data-path="wiki/crazepony-construct.html">
+            
+                
+                    <a href="../wiki/crazepony-construct.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.1.</b>
+                        
+                         Crazepony的板型及结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9.2" data-path="wiki/source-setting.html">
+            
+                
+                    <a href="../wiki/source-setting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.2.</b>
+                        
+                         源代码的文件编码和文件格式
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Generated using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="page-wrapper" tabindex="-1">
+                <div class="book-progress">
+    <div class="bar">
+        <div class="inner" style="width: 21.73913043478261%;min-width: 19.565217391304348%;"></div>
+    </div>
+    <div class="chapters">
+    
+        <a href="../index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
+    
+        <a href="../about-crazepony.html" title="闪亮登场" class="chapter done new-chapter" data-progress="1" style="left: 2.1739130434782608%;"></a>
+    
+        <a href="../quad-copter.html" title="四轴飞行器" class="chapter done new-chapter" data-progress="2" style="left: 4.3478260869565215%;"></a>
+    
+        <a href="../wiki/quadcopter-history.html" title="四轴飞行器历史回顾" class="chapter done " data-progress="2.1" style="left: 6.521739130434782%;"></a>
+    
+        <a href="../wiki/opensource-quadcopter.html" title="开源四轴飞行器" class="chapter done " data-progress="2.2" style="left: 8.695652173913043%;"></a>
+    
+        <a href="../wiki/quadcopter-star.html" title="四轴飞行器明星产品" class="chapter done " data-progress="2.3" style="left: 10.869565217391305%;"></a>
+    
+        <a href="../model-aircraft.html" title="航模基本概念扫盲" class="chapter done new-chapter" data-progress="3" style="left: 13.043478260869565%;"></a>
+    
+        <a href="../wiki/copter-terminology.html" title="航模常用术语" class="chapter done " data-progress="3.1" style="left: 15.217391304347826%;"></a>
+    
+        <a href="../wiki/large-small-quadcopter.html" title="大四轴 VS 小四轴" class="chapter done " data-progress="3.2" style="left: 17.391304347826086%;"></a>
+    
+        <a href="../wiki/pitch-yaw-roll.html" title="三维中pitch，yaw，roll的区别" class="chapter done " data-progress="3.3" style="left: 19.565217391304348%;"></a>
+    
+        <a href="../wiki/quadcopter-aerodynamic.html" title="四轴飞行器的空气动力原理" class="chapter done " data-progress="3.4" style="left: 21.73913043478261%;"></a>
+    
+        <a href="../quadcopter-base.html" title="四轴飞行器基本组成部分" class="chapter  new-chapter" data-progress="4" style="left: 23.91304347826087%;"></a>
+    
+        <a href="../wiki/rotor-propeller.html" title="电机和桨叶" class="chapter  " data-progress="4.1" style="left: 26.08695652173913%;"></a>
+    
+        <a href="../wiki/motor-control-ic.html" title="电机驱动控制" class="chapter  " data-progress="4.2" style="left: 28.26086956521739%;"></a>
+    
+        <a href="../wiki/main-controller-mcu.html" title="飞行控制器-主控MCU" class="chapter  " data-progress="4.3" style="left: 30.434782608695652%;"></a>
+    
+        <a href="../wiki/main-controller-sensor.html" title="飞行控制器——传感器" class="chapter  " data-progress="4.4" style="left: 32.608695652173914%;"></a>
+    
+        <a href="../wiki/remote-controller-2-4.html" title="遥控器——2.4G通信" class="chapter  " data-progress="4.5" style="left: 34.78260869565217%;"></a>
+    
+        <a href="../wiki/remote-controller-bt.html" title="遥控器——蓝牙通信" class="chapter  " data-progress="4.6" style="left: 36.95652173913044%;"></a>
+    
+        <a href="../crazepony-dev.html" title="Crazepony二次开发" class="chapter  new-chapter" data-progress="5" style="left: 39.130434782608695%;"></a>
+    
+        <a href="../wiki/ic-readme.html" title="Crazepony器件选型总览及说明" class="chapter  " data-progress="5.1" style="left: 41.30434782608695%;"></a>
+    
+        <a href="../wiki/hardware-base.html" title="Crazepony硬件原理讲解" class="chapter  " data-progress="5.2" style="left: 43.47826086956522%;"></a>
+    
+        <a href="../wiki/software-base.html" title="Crazepony软件框架讲解" class="chapter  " data-progress="5.3" style="left: 45.65217391304348%;"></a>
+    
+        <a href="../wiki/software-experience.html" title="Crazepony软件开发经验总结" class="chapter  " data-progress="5.4" style="left: 47.82608695652174%;"></a>
+    
+        <a href="../development.html" title="开发指南" class="chapter  new-chapter" data-progress="6" style="left: 50%;"></a>
+    
+        <a href="../wiki/setup-environment-in-windows-none.html" title="windows下开发环境搭建—裸机版本" class="chapter  " data-progress="6.1" style="left: 52.17391304347826%;"></a>
+    
+        <a href="../wiki/setup-environment-in-windows.html" title="windows下开发环境搭建—FreeRTOS版本" class="chapter  " data-progress="6.2" style="left: 54.34782608695652%;"></a>
+    
+        <a href="../wiki/setup-environment-in-linux.html" title="linux下开发环境搭建" class="chapter  " data-progress="6.3" style="left: 56.52173913043478%;"></a>
+    
+        <a href="../wiki/crazepony-android-client.html" title="Crazepony Android客户端" class="chapter  " data-progress="6.4" style="left: 58.69565217391305%;"></a>
+    
+        <a href="../wiki/flash-firmware.html" title="主控固件烧写" class="chapter  " data-progress="6.5" style="left: 60.869565217391305%;"></a>
+    
+        <a href="../about-algorithm.html" title="四轴飞行器算法讲解" class="chapter  new-chapter" data-progress="7" style="left: 63.04347826086956%;"></a>
+    
+        <a href="../wiki/attitude-algorithm.html" title="姿态解算简介" class="chapter  " data-progress="7.1" style="left: 65.21739130434783%;"></a>
+    
+        <a href="../wiki/attitude-math.html" title="姿态的数学表示方法" class="chapter  " data-progress="7.2" style="left: 67.3913043478261%;"></a>
+    
+        <a href="../wiki/attitude-measure.html" title="姿态的测量" class="chapter  " data-progress="7.3" style="left: 69.56521739130434%;"></a>
+    
+        <a href="../wiki/attitude-algorithm-flow-graph.html" title="姿态解算流程" class="chapter  " data-progress="7.4" style="left: 71.73913043478261%;"></a>
+    
+        <a href="../wiki/software-algorithm.html" title="软件姿态解算" class="chapter  " data-progress="7.5" style="left: 73.91304347826087%;"></a>
+    
+        <a href="../wiki/hardware-algorithm.html" title="硬件姿态解算" class="chapter  " data-progress="7.6" style="left: 76.08695652173913%;"></a>
+    
+        <a href="../wiki/quaternions.html" title="四元数" class="chapter  " data-progress="7.7" style="left: 78.26086956521739%;"></a>
+    
+        <a href="../wiki/mpu6050.html" title="三轴陀螺仪和三轴加速度计MPU6050" class="chapter  " data-progress="7.8" style="left: 80.43478260869566%;"></a>
+    
+        <a href="../wiki/algorithm-pid.html" title="PID算法" class="chapter  " data-progress="7.9" style="left: 82.6086956521739%;"></a>
+    
+        <a href="../crazyflie.html" title="Crazyflie部分原理分析" class="chapter  new-chapter" data-progress="8" style="left: 84.78260869565217%;"></a>
+    
+        <a href="../wiki/freertos-intro.html" title="FreeRTOS简介" class="chapter  " data-progress="8.1" style="left: 86.95652173913044%;"></a>
+    
+        <a href="../wiki/macro-controls.html" title="介绍几个常用的宏的作用" class="chapter  " data-progress="8.2" style="left: 89.1304347826087%;"></a>
+    
+        <a href="../wiki/system-flow-graph.html" title="固件系统流程框架" class="chapter  " data-progress="8.3" style="left: 91.30434782608695%;"></a>
+    
+        <a href="../wiki/comm-protocol.html" title="通信协议" class="chapter  " data-progress="8.4" style="left: 93.47826086956522%;"></a>
+    
+        <a href="../other.html" title="其他" class="chapter  new-chapter" data-progress="9" style="left: 95.65217391304348%;"></a>
+    
+        <a href="../wiki/crazepony-construct.html" title="Crazepony的板型及结构" class="chapter  " data-progress="9.1" style="left: 97.82608695652173%;"></a>
+    
+        <a href="../wiki/source-setting.html" title="源代码的文件编码和文件格式" class="chapter  " data-progress="9.2" style="left: 100%;"></a>
+    
+    </div>
+</div>
+
+                <div class="page-inner">
+                
+                    <section class="normal" id="section-gitbook_33">
+                    
+                        <h1 id="-">四轴飞行器的空气动力原理</h1>
+<h2 id="-x-">四旋翼飞行器结构以及x模式和+模式</h2>
+<p>四轴飞行器四个电机呈十字形排列, 驱动四片桨旋转产生向上的推力。四个电机轴距几何中心的距离相等, 当对角两个轴产生的升力相同时能够保证力矩的平衡, 四轴不会向任何一个方向倾转; 而四个电机一对正转,一对反转的方式使得绕竖直轴方向旋转的反扭矩平衡, 保证了四轴航向的稳定。</p>
+<p>与传统的直升机相比，四旋翼飞行器有下列优势：各个旋翼对机身所施加的反扭矩与旋翼的旋转方向相反，因此当电机1和电机3逆时针旋转的同时，电机2和电机4顺时针旋转，可以平衡旋翼对机身的反扭矩。</p>
+<p>根据用户自定义的机头的位置不同，四轴飞行器可以分为x模式和+模式。x模式的机头方向位于两个电机之间，而+模式的机头方向位于某一个电机上。x和+就是表示正对机头方向时飞行器的形状。如下图所示。x模式要难飞一点，但动作更灵活。+模式要好飞一点，动作灵活差一点，所以适合初学者。特别注意，x模式和+模式的飞控安装是不同的。如果飞控板安装错误，会剧烈的晃动，根本无法飞。</p>
+<p><strong>crazepony使用的是x模式。</strong></p>
+<p><img src="/assets/img/model.jpg" alt=""></p>
+<h2 id="-">空气动力原理</h2>
+<p>四旋翼飞行器在空间共有6个自由度（分别沿3个坐标轴作平移和旋转动作），这6个自由度的控制都可以通过调节不同电机的转速来实现。基本运动状态分别是：</p>
+<ul>
+<li>垂直运动；</li>
+<li>俯仰运动；</li>
+<li>滚转运动；</li>
+<li>偏航运动；</li>
+<li>前后运动；</li>
+<li>侧向运动。</li>
+</ul>
+<p>在图中，电机1和电机3作逆时针旋转，电机2和电机4作顺时针旋转，规定沿x轴正方向运动称为向前运动，箭头在旋翼的运动平面上方表示此电机转速提高，在下方表示此电机转速下降。</p>
+<p><strong>垂直运动</strong>：垂直运动相对来说比较容易。在图中，因有两对电机转向相反，可以平衡其对机身的反扭矩，当同时增加四个电机的输出功率，旋翼转速增加使得总的拉力增大，当总拉力足以克服整机的重量时，四旋翼飞行器便离地垂直上升；反之，同时减小四个电机的输出功率，四旋翼飞行器则垂直下降，直至平衡落地，实现了沿z轴的垂直运动。当外界扰动量为零时，在旋翼产生的升力等于飞行器的自重时，飞行器便保持悬停状态。保证四个旋翼转速同步增加或减小是垂直运动的关键。</p>
+<p><strong>俯仰运动</strong>：在图（b）中，电机1的转速上升，电机3的转速下降，电机2、电机4的转速保持不变。为了不因为旋翼转速的改变引起四旋翼飞行器整体扭矩及总拉力改变，旋翼1与旋翼3转速该变量的大小应相等。由于旋翼1的升力上升，旋翼3的升力下降，产生的不平衡力矩使机身绕y轴旋转（方向如图所示），同理，当电机1的转速下降，电机3的转速上升，机身便绕y轴向另一个方向旋转，实现飞行器的俯仰运动。</p>
+<p><img src="/assets/img/aerodynamic-1.png" alt=""></p>
+<p><strong>滚转运动</strong>：与图b的原理相同，在图c中，改变电机2和电机4的转速，保持电机1和电机3的转速不变，则可使机身绕x轴旋转（正向和反向），实现飞行器的滚转运动。</p>
+<p><strong>偏航运动</strong>：四旋翼飞行器偏航运动可以借助旋翼产生的反扭矩来实现。旋翼转动过程中由于空气阻力作用会形成与转动方向相反的反扭矩，为了克服反扭矩影响，可使四个旋翼中的两个正转，两个反转，且对角线上的来年各个旋翼转动方向相同。反扭矩的大小与旋翼转速有关，当四个电机转速相同时，四个旋翼产生的反扭矩相互平衡，四旋翼飞行器不发生转动；当四个电机转速不完全相同时，不平衡的反扭矩会引起四旋翼飞行器转动。在图d中，当电机1和电机3的转速上升，电机2和电机4的转速下降时，旋翼1和旋翼3对机身的反扭矩大于旋翼2和旋翼4对机身的反扭矩，机身便在富余反扭矩的作用下绕z轴转动，实现飞行器的偏航运动，转向与电机1、电机3的转向相反。</p>
+<p><img src="/assets/img/aerodynamic-2.png" alt=""></p>
+<p><strong>前后运动</strong>：要想实现飞行器在水平面内前后、左右的运动，必须在水平面内对飞行器施加一定的力。在图e中，增加电机3转速，使拉力增大，相应减小电机1转速，使拉力减小，同时保持其它两个电机转速不变，反扭矩仍然要保持平衡。按图b的理论，飞行器首先发生一定程度的倾斜，从而使旋翼拉力产生水平分量，因此可以实现飞行器的前飞运动。向后飞行与向前飞行正好相反。当然在图b图c中，飞行器在产生俯仰、翻滚运动的同时也会产生沿x、y轴的水平运动。</p>
+<p><strong>倾向运动</strong>：在图f中，由于结构对称，所以倾向飞行的工作原理与前后运动完全一样。</p>
+<p><img src="/assets/img/aerodynamic-3.png" alt=""></p>
+<p>总得来说就是控制四个电机的速度了。然后相应的提高速度和减慢速度就可以让四轴动起来了。</p>
+<h2 id="-">飞行器构造公开课</h2>
+<p><a href="http://v.163.com/special/opencourse/aircraftsystem.html" target="_blank">麻省理工学院公开课：飞行器构造工程</a>，来自网易公开课。讲师Prof. Jeffrey Hoffman,Prof. Aaron Cohen，教授，曾供职于美国国家航空航天局（NASA）。</p>
+
+                    
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../wiki/pitch-yaw-roll.html" class="navigation navigation-prev " aria-label="Previous page: 三维中pitch，yaw，roll的区别"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../quadcopter-base.html" class="navigation navigation-next " aria-label="Next page: 四轴飞行器基本组成部分"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
