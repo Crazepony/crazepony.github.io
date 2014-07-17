@@ -183,3 +183,21 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 @media (max-width: 1300px){
     .home-menu { position:absolute; }
 }
+
+
+#cc{
+    color: #999999;
+    padding-top:10px;
+    margin-top:20px;
+}
+
+#cc a{
+    color: #999999;
+    padding-top:10px;
+    margin-top:20px;
+}
+
+#cc {
+    padding-top:10px;
+    border-top: 2px solid #CCCCCC;
+}
