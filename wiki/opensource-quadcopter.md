@@ -18,9 +18,11 @@ title: 开源四轴飞行器
 
 [http://diydrones.com/](http://diydrones.com/)
 
-其背后的商业公司是3D Robotics。3D Robotics创始人是克里斯·安德森（Chris Anderson），前《连线》主编，著有《长尾理论》，《创客：新工业革命》等畅销书。创客运动的积极倡导者和领袖级人物。
+其背后的商业公司是3D Robotics。3D Robotics创始人是克里斯·安德森（Chris Anderson），前《连线》主编，著有《长尾理论》，《创客：新工业革命》等畅销书。创客运动的积极倡导者和领袖级人物。有关克里斯·安德森和他的无人机，可以参看《开源杂志》上的报道[《变革推动者.克里斯安德森的无人机梦想腾飞》](http://obook.cc/openbook8/maker/changers.html).
 
 [http://3drobotics.com/](http://3drobotics.com/)
+
+![](/assets/img/3d-robotics.png)
 
 ## MikroKopter
 在2006年10月24号，Holger Buss和Ingo Busker创造了MK，一个伟大的Mikrokopter四轴社区。 在2007年中，Mikrokopter便像一个“ 空中的钉子”，像一只鸟一样，稳步的停留在空中。这对于开源四轴飞行器是一个很大的里程碑。
