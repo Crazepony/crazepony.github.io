@@ -16,7 +16,8 @@ layout: blog-default
 <div id="content">
     <div class="entry">
         <h1 class="entry-title"><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
-        <p class="entry-date">{{ page.date|date:"%Y-%m-%d" }}</p>
+        <p class="entry-date"><i class="fa fa-calendar fa-1x"></i>&nbsp;{{ page.date|date:"%Y-%m-%d" }} &nbsp; &nbsp; &nbsp; &nbsp; <i class="fa fa-user fa-1x"></i>&nbsp;{{page.author}}</p>
+
         {{ content }}
 
         <div id="disqus_container">
