@@ -1493,6 +1493,7 @@ h1[id] {
   top: 0;
   left: 0;
   height: 500px;
+  max-width:none;
 }
 
 .carousel-caption p {
