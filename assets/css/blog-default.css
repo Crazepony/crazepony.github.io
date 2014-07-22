@@ -92,7 +92,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .project .aside{
     background-image:url('https://d233eq3e3p3cv0.cloudfront.net/max/1000/0*kTUZamBulGQZg1MW.jpeg')
 }
-.index-content .section { margin-left:30%; padding-top:80px; padding-right:15%; ;}
+.index-content .section { margin-left:30%; padding-top:80px; padding-right:0%; ;}
 
 .index-content .artical-list { width:70%; margin:0 auto; }
 .index-content .artical-list li { margin-bottom:70px; }
@@ -189,6 +189,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     color: #999999;
     padding-top:10px;
     margin-top:20px;
+    width: 100%;
 }
 
 #cc a{
