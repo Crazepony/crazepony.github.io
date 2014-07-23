@@ -2,9 +2,31 @@
 layout: wiki
 title: Crazepony Wiki
 ---
-<div class="jumbotron">
-    <p class="lead">这是CrazePony和CrazePOV的维基百科。</p>
+
+<h2>下载</h2>
+<div class="col-sm-4">
+  <h4>飞控</h4>
+  <p><strong></strong></p>
+  <p>
+    <a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >下载源码</a>
+  </p>
 </div>
+<div class="col-sm-4">
+  <h4>STM32开发IDE</h4>
+  <p><strong></strong></p>
+  <p>
+    <a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >Keil 4破解版</a>
+    <a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >固件烧写工具</a>
+  </p>
+</div>
+<div class="col-sm-4">
+  <h4>上位机和Android客户端</h4>
+  <p><strong></strong></p>
+  <p>
+    <a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >下载源码</a>
+  </p>
+</div>
+
 
 <h2>开发指南</h2>
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
