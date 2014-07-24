@@ -6,7 +6,7 @@ layout: blog-home
     <div class="section">
         <ul class="artical-cate">
             <li class="on"><a href="/blog-new.html"><span>博客</span></a></li>
-            <li style="text-align:right"><a href="/about-us.html"><span>团队介绍</span></a></li>
+            <li style="text-align:right"><a href="/about-us.html"><span>贡献者</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>

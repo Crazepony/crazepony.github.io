@@ -96,7 +96,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 
 .index-content .artical-list { width:70%; margin:0 auto; }
 .index-content .artical-list li { margin-bottom:70px; }
-.index-content h2 { font-size:20px; margin-bottom:15px; word-break: break-all;}
+.index-content h2 { font-size:20px; margin-top:42px; margin-bottom:12px; word-break: break-all;}
 .index-content h2 a { color:#444 }
 .index-content h2 a:hover { color:#E50053; text-decoration:none; }
 .index-content .title-desc {color:#999;font-size:14px;line-height:1.6em;}
