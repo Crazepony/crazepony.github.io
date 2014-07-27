@@ -10,6 +10,33 @@ title: POV
 </div>
 </div>
 
+## 美图欣赏
+
+<div class="row">
+  <div class="col-sm-3">
+    <a href="/assets/img/flyingpov-1.jpg" title="PCB板刚到" data-gallery>
+        <img src="/assets/img/flyingpov-1.jpg" alt="PCB板刚到" class="img-responsive">
+    </a>
+  </div>
+  <div class="col-sm-3">
+<a href="/assets/img/flyingpov-14.jpg" title="组装完成展示" data-gallery>
+    <img src="/assets/img/flyingpov-14.jpg" alt="组装完成展示" class="img-responsive">
+</a>
+  </div>
+  <div class="col-sm-3">
+<a href="/assets/img/flyingpov-5.jpg" title="空板旋转展示" data-gallery>
+    <img src="/assets/img/flyingpov-5.jpg" alt="空板旋转展示" class="img-responsive">
+</a>
+  </div>
+  <div class="col-sm-3">
+<a href="/assets/img/flyingpov-15.jpg" title="效果图" data-gallery>
+    <img src="/assets/img/flyingpov-15.jpg" alt="效果图" class="img-responsive">
+</a>
+  </div>
+</div>
+
+
+## CrazePOV介绍
 旋转时钟（或称POV-LED），也就是利用视觉暂留现象，通过一排（或数目有限）的LED灯快速地在一定区域重复扫过，来实现一个面的图像或文字的显示。相信很多有电子设计基础、会写单片机的朋友都做过。
 
 笔者最初就是在一个宣讲会上看到一位学长做的旋转时钟，从此便热爱上了电子设计，并计划着自己实现一个旋转时钟。通过学习和努力，最终完成了这一制作，在传统的旋转时钟的基础之上，也进行了一些改进，接下来便会同大家分享这一制作。笔者还有很多很有趣的点子，也会持续更新这个项目并实现这些点子。欢迎大家持续关注这个项目，有任何建议也欢迎告知笔者，让我们一起完善这个有趣的东西！
