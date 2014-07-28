@@ -8,7 +8,7 @@ title: 开源四轴飞行器
 ## ArduPilot & 3D Robotics
 ![](/assets/img/diy-drone.png)
 
-无人机爱好者社区，并且提供无人机控制器ArduPilot，最新版本为APM 2.6，其中有无人机控制开源软件。无人机控制包括：
+无人机爱好者社区，并且提供无人机控制器ArduPilot，一般我们简称为APM飞控系统。最新版本为APM 2.6，其中有无人机控制开源软件。无人机控制包括：
 
 * ArduCopter, a fully-autonomous multicopter and heli UAV system
 * ArduPlane, a pro-level UAV system for planes of all types
@@ -33,36 +33,46 @@ MikroKopter来自德国。毫无疑问，MikroKopter这个名字来源于德语�
 
 ![](/assets/img/mikrokopter.png)
 
+## KK飞控
+最经典的多轴飞控，价格十分便宜，很多人就是用它学会飞四轴的。主要问题是没有自稳，更不用说什么定高、GPS之类的高级功能了。因为没有自稳，新手练习起来就比较困难，不过对于从直升机转过来的玩家来说就是小case了。支持3轴、四轴、6轴、V22的飞行模式；
+
+[http://www.kkmulticopter.com/](http://www.kkmulticopter.com/)
+
 ## erlerobot
 
-Building the next generation of educational drones
-
-DIVE INTO ROBOTICS
-
-with the first small size, open and low cost personal drone.
+这是一个使用Linux系统的开源四轴飞行器项目。他们的口号是：Building the next generation of educational drones。
 
 [http://erlerobot.com/](http://erlerobot.com/)
+
 [https://github.com/erlerobot](https://github.com/erlerobot)
 
-由比较齐全的wiki，直接使用github的wiki进行编辑的。
+有比较齐全的wiki，并且使用gitbook形式提供四轴飞行器开发的电子书。
 
 [https://github.com/erlerobot/wiki/wiki](https://github.com/erlerobot/wiki/wiki)
 
-并且提供一个叫做gitbook的电子书。
-
 [http://erlerobot.github.io/erle_gitbook/en/](http://erlerobot.github.io/erle_gitbook/en/)
+
+## MultWii
+一般简称为MWC飞控，是完全开源的。价格根据选配的附件，和板材质量而有所不同，但整体不贵。玩这种开源飞控，最好有点玩数字电路或和编程的底子，不过如果悟性好，看看文档也能搞起来。主要难点在于调教，很难把它调得很稳，需要很大的耐心。不太适合新手。
+
+[http://www.multiwii.com/](http://www.multiwii.com/)
 
 ## Paparazzi
 
 ![](/assets/img/penguin.gif)
 
-这是国外一个开源的固定翼，多轴飞行器项目。一个做固定翼的朋友购买了它的组件。github上的资料，wiki等都挺全面的。
+这是国外一个开源的固定翼，多轴飞行器项目。一个做固定翼的朋友购买了它的组件。github上的资料，wiki等都挺全面的。项目不仅仅只包括飞控板的软硬件，包括从稳压电源和GPS到卡尔曼滤波代码, 而是一个强大和不断扩大的地面空中软硬件群，包括数传电台，天线和一个高度进化的用户友好的地面控制软件界面。
 
 [http://wiki.paparazziuav.org/wiki/Main_Page](http://wiki.paparazziuav.org/wiki/Main_Page)
 
 [https://github.com/paparazzi/](https://github.com/paparazzi/)
 
-## open drone
+## OpenPilot
+和大多数飞控功能差不多，自稳，定高（有高度计的），等功能，这个项目还在持续开发中，目前四轴飞行器用这个控的cc3d版的人也很多。
+
+[www.openpilot.org](www.openpilot.org)
+
+## open drone（国内）
 ![](/assets/img/open-drone.png)
 
 [http://www.open-drone.org/](http://www.open-drone.org/)
