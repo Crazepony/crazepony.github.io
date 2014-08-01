@@ -2,24 +2,23 @@
 layout: blog-home
 ---
 
-<div class="index-content blog">
+<div class="index-content project">
     <div class="section">
         <ul class="artical-cate">
-            <li class="on"><a href="/blog-new.html"><span>博客</span></a></li>
+            <li><a href="/blog-new.html"><span>博客</span></a></li>
             <li style="text-align:center"><a href="/about-us.html"><span>贡献者</span></a></li>
-            <li style="text-align:right"><a href="/blog-archive.html"><span>Archive</span></a></li>
+            <li class="on" style="text-align:right"><a href="/blog-archive.html"><span>Archive</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>
 
-        <ul class="artical-list">
-        {% for post in site.posts %}
-            <li>
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                <div class="title-desc">{{ post.description }}</div>
-            </li>
-        {% endfor %}
-        </ul>
+
+        <div class="artical-list">
+            {% include JB/setup %}
+
+            {% assign posts_collate = site.posts %}
+            {% include JB/posts_collate %}
+        </div>
 
         <div class="container" id="cc">
              <p>
