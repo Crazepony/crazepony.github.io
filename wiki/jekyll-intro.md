@@ -5,7 +5,7 @@ title: Jekyll的安装和使用
 
 # {{ page.title }}
 
-这个站点使用了github提供的jekyll服务生成html网页。所以在本地进行调试时，最好在本地安装jekyll工具，模拟在github生成网页的效果。
+这个站点使用了github提供的jekyll工具生成html静态网页。所以在本地进行调试时，最好在本地安装jekyll工具，模拟在github生成网页的效果。详细可以参考Github Help中的[Using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages)。
 
 ## ubuntu下安装jekyll
 在ubuntu中使用下面的命令安装jekyll：
