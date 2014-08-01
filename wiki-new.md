@@ -71,8 +71,9 @@ title: Crazepony Wiki
 * [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.html)
 
 <h2>四轴飞行器基本组成部分</h2>
-* [电机和桨叶](wiki/rotor-propeller.html)
+* [航模电机](wiki/motor-aircraft-model.html)
 * [电机驱动控制](wiki/motor-control-ic.html)
+* [航模桨叶](wiki/propeller.html)
 * [飞行控制器-主控MCU](wiki/main-controller-mcu.html)
 * [飞行控制器——传感器](wiki/main-controller-sensor.html)
 * [遥控器——2.4G通信](wiki/remote-controller-2-4.html)
