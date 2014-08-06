@@ -1518,3 +1518,8 @@ blockquote {
     border-left: 2px solid #888;
     font-size: 16px;
 }
+
+blockquote p,
+p {
+    font-size:16px;
+}
