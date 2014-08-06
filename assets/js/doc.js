@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
     //导航滑动效果
-	$('a[href^="#"]').on('click',function (e) {
+	$('a[href^="#intro"]').on('click',function (e) {
 	    e.preventDefault();
 
 	    var target = this.hash,
@@ -33,6 +33,7 @@ $(document).ready(function(){
 		});
 	});
 
+
     //响应navbar上面的active
     var pathname = window.location.pathname;
     $(".nav .active").removeClass("active");
@@ -41,6 +42,8 @@ $(document).ready(function(){
         $("#todo").addClass("active");
     }else if(pathname.indexOf("pov") >= 0){
         $("#pov").addClass("active");
+    }else if(pathname.indexOf("faq") >= 0){
+        $("#faq").addClass("active");
     }else if(pathname.indexOf("index") >= 0){
         $("#index").addClass("active");
     }else{

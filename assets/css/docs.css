@@ -1523,3 +1523,8 @@ blockquote p,
 p {
     font-size:16px;
 }
+
+.page_disqus{
+    margin-top: 25px;
+    font-size: 16px;
+}
