@@ -55,29 +55,29 @@ PID控制器由偏差的比例（P）、积分（I）和微分（D）来对被�
 
 * 测得ROLL轴向偏差：
 
-```
+~~~
 偏差=目标期望角度-传感器实测角度 
 DIF_ANGLE.X = EXP_ANGLE.X - Q_ANGLE.Roll;
-```
+~~~
 
 * 比例项的计算：
 
-```
+~~~
 比例项输出 = 比例系数P * 偏差
 Proportion =  PID_Motor.P * DIF_ANGLE.X;
-```
+~~~
 
 * 微分项计算：
 由于陀螺仪测得的是ROLL轴向旋转角速率，角速率积分就是角度，那么角度微分即角速率，所以微分量刚好是陀螺仪测得的值。
-```
+~~~
 微分输出=微分系数D*角速率
 DifferentialCoefficient = PID_Motor.D * DMP_DATA.GYROx;
-```
+~~~
 * 整合结果总输出为：
 
-```
+~~~
 ROLL方向总控制量=比例项输出+微分量输出
-```
+~~~
 
 ROLL 和PIT轴向按照以上公式计算PID输出，但YAW轴比较特殊，因为偏航角法线方向刚好和地球重力平行，这个方向的角度无法由加速度计直接测得，需要增加一个电子罗盘来替代加速度计。如果不使用罗盘的话，我们可以单纯的通过角速度积分来测得偏航角，缺点是由于积分环节中存在积分漂移，偏航角随着时间的推移会偏差越来越大。我们不使用罗盘就没有比例项，只仅使用微分环节来控制。
 
@@ -85,28 +85,28 @@ ROLL 和PIT轴向按照以上公式计算PID输出，但YAW轴比较特殊，因
 
 * YAW轴输出：
 
-```
+~~~
 微分输出=微分系数D*角速率
 
 ＹＡＷ方向控制量 = PID_YAW.D * DMP_DATA.GYROz;
-```
+~~~
 
 * 电机的输出：
 油门控制Throttle是电机输出的基准值，增加油门即可提高四轴高度。最后整合ROLL/PIT/YAW三轴输出量进行电机控制：
 
 ![](/assets/img/pid-motor.png)
 
-```
-Motor[2] = (int16_t)(Thr - Pitch -Rool- Yaw );     //M3
-Motor[0] = (int16_t)(Thr + Pitch +Rool- Yaw );    //M1
-Motor[3] = (int16_t)(Thr - Pitch +Rool+ Yaw );    //M4
-Motor[1] = (int16_t)(Thr + Pitch -Rool+ Yaw );    //M2
-```
+~~~
+Motor[2] = (int16_t)(Thr - Pitch - Roll - Yaw );    //M3
+Motor[0] = (int16_t)(Thr + Pitch + Roll - Yaw );    //M1
+Motor[3] = (int16_t)(Thr - Pitch + Roll + Yaw );    //M4
+Motor[1] = (int16_t)(Thr + Pitch - Roll + Yaw );    //M2
+~~~
 
 如图四轴绕ROW轴向右下倾斜5度，那么电机1电机2应该提高升力，电机3电机0减小升力恢复平衡状态，所以有以下规则：
 
-* Roll 方向电机1 电机2同侧出力，电机0电机3反向出力
-* Pit  方向电机2 电机3同侧出力，电机0电机1反向出力
-* Yaw方向电机0 电机 1同侧出力，电机2电机3反向出力
+* Roll方向旋转，则电机1电机2同侧出力，电机0电机3反向出力
+* Pitch方向旋转，则电机2电机3同侧出力，电机0电机1反向出力
+* Yaw方向旋转，则电机1电机3同侧出力，电机0电机4反向出力
 
 
