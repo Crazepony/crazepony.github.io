@@ -44,6 +44,8 @@ $(document).ready(function(){
         $("#pov").addClass("active");
     }else if(pathname.indexOf("faq") >= 0){
         $("#faq").addClass("active");
+    }else if(pathname.indexOf("download") >= 0){
+        $("#download").addClass("active");
     }else if(pathname.indexOf("index") >= 0){
         $("#index").addClass("active");
     }else{

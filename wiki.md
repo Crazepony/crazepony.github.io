@@ -7,29 +7,6 @@ title: Crazepony Wiki
     <p class="lead">这里是CrazePony的维基百科。我们提供DIY一个属于你自己四轴飞行器的文档，也提供对CrazePony四轴飞行器进行二次开发的指导。 </p>
 </div>
 
-<h2>下载</h2>
-<div class="col-sm-4">
-  <h4>飞控</h4>
-  <p>飞控代码托管在<a href="https://github.com/Crazepony/crazepony-firmware-none" target="_blank">github</a>上。现在飞控<strong>没有</strong>FreeRTOS，代码更加简单明了，适合初学者使用。</p>
-  <p>
-    <a href="https://github.com/Crazepony/crazepony-firmware-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >下载源码</a>
-  </p>
-</div>
-<div class="col-sm-4">
-  <h4>Windows开发安装包</h4>
-  <p>裸机版本的代码使用Keil 4进行开发编译。固件的烧写可以使用JLink工具，也可以直接通过micro USB进行烧写。</p>
-  <p>
-    <a href="http://pan.baidu.com/s/1ntNqLdv" class="btn btn-lg btn-outline" role="button" target="_blank" >Keil 4破解版</a>
-    <a href="http://pan.baidu.com/s/1eQ1kfPw" class="btn btn-lg btn-outline" role="button" target="_blank" >固件烧写工具</a>
-  </p>
-</div>
-<div class="col-sm-4">
-  <h4>上位机和Android客户端</h4>
-  <p>正在开发中……</p>
-  <p>
-  </p>
-</div>
-
 
 <h2>开发指南</h2>
 * [入手组装试飞教程](wiki/user-guide.html)
