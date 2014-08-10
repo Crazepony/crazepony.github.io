@@ -32,6 +32,7 @@ title: Crazepony Wiki
 
 
 <h2>开发指南</h2>
+* [入手组装试飞教程](wiki/user-guide.html)
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
 * [windows下开发环境搭建—FreeRTOS版本](wiki/setup-environment-in-windows.html)
 * [linux下开发环境搭建](wiki/setup-environment-in-linux.html)
