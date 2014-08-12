@@ -6,6 +6,19 @@ title: faq
 <h2>常见问题（FAQ）</h2>
 <p class="lead">这里集结了大家经常问的一些问题。如果没有解决你的疑惑，你可以到下面写下你的问题，给我们留言。</p>
 
+<div class="alert alert-info" role="alert"><h3>Crazepony四轴飞行器相关</h3></div>
+
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony四轴飞行器是否入手即飞？
+
+Crazepony四轴飞行器是入手即飞的。只需要安装桨叶，遥感冒等配件就可以体验飞行的乐趣了。
+
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony四轴飞行器是否针对有电子设计基础的伙伴提供深度DIY套件。
+
+对于有电子设计基础和愿意DIY的伙伴，我们提供飞控主板，遥控器等套件。我们将会尽快整理出DIY套件清单和DIY的实例以供大家参考。
+
+
+<div class="alert alert-info" role="alert"><h3>四轴飞行器相关</h3></div>
+
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;我是新手，如何入门？
 
 参考[DIY四轴飞行器如何入门？](2014/07/31/diy-quadcopter.html)，这是介绍关于如何玩四轴的，以及大小四轴的区别。
@@ -30,4 +43,6 @@ title: faq
 调参一般是一个锦上贴花的事情，四轴复杂在于飞控中的姿态结算和pid控制。可以看看crazyflie的调参协议，很有参考价值的。
 
 我在看crazyflie的过程中，做了[部分笔记](http://www.crazepony.com/wiki/comm-protocol.html)。
+
+<div class="alert alert-info" role="alert"><h3>Crazepony v4.1版本存在的问题</h3></div>
 
