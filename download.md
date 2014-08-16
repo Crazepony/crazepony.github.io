@@ -1,9 +1,7 @@
 ---
-layout: pov
+layout: download
 title: 下载中心
 ---
-
-## 下载中心
 
 ## 源代码
 

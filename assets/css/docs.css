@@ -241,10 +241,10 @@ border-right-color: #646668;
 .bs-docs-header {
   position: relative;
   padding: 30px 15px;
-  color: #cdbfe3;
+  color: #999;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,.1);
-  background: url("../img/background-70.jpg");
+  background: #e5e9ec;;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: repeat-x;
