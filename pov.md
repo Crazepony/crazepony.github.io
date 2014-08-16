@@ -3,11 +3,6 @@ layout: pov
 title: POV
 ---
 
-<div class="jumbotron">
-    <p class="lead"> POV(Persistence of Vision 视觉暂留)实验是很多电子DIY初学者都会愿意尝试的项目。下面就是我刚刚接触电子设计时做的POV时钟，我们都称它为CrazePOV。我将持续更新CrazePOV项目。如果你想要做些什么，那么请毫不犹豫地向我提出问题。</p>
-    <p class="lead text-right">CrazePOV项目发起人：钟晟</p>
-</div>
-
 ## 美图欣赏
 
 <div class="row">
