@@ -1,10 +1,7 @@
 ---
-layout: pov
+layout: faq
 title: faq
 ---
-
-<h2>常见问题（FAQ）</h2>
-<p class="lead">这里集结了大家经常问的一些问题。如果没有解决你的疑惑，你可以到下面写下你的问题，给我们留言。</p>
 
 <div class="alert alert-info" role="alert"><h3>Crazepony四轴飞行器相关</h3></div>
 
