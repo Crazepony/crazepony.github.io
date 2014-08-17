@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: 入手组装试飞教程
+title: 入手试飞教程
 ---
 
 ## {{ page.title }}

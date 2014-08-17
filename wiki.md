@@ -7,9 +7,10 @@ title: Crazepony Wiki
     <p class="lead">这里是CrazePony的维基百科。我们提供DIY一个属于你自己四轴飞行器的文档，也提供对CrazePony四轴飞行器进行二次开发的指导。 </p>
 </div>
 
+* [散件组装教程](wiki/assemble-guide.html)
+* [入手试飞教程](wiki/user-guide.html)
 
 <h2>开发指南</h2>
-* [入手组装试飞教程](wiki/user-guide.html)
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
 * [windows下开发环境搭建—FreeRTOS版本](wiki/setup-environment-in-windows.html)
 * [linux下开发环境搭建](wiki/setup-environment-in-linux.html)
