@@ -1514,9 +1514,9 @@ h1[id] {
 }
 
 blockquote {
-    padding: 0.4em;
-    border-left: 2px solid #888;
-    font-size: 16px;
+    border-left: 4px solid #ddd;
+    padding: 0 15px;
+    color: #777;
 }
 
 blockquote p,
