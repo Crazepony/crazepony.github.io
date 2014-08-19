@@ -1561,7 +1561,7 @@ h1[id] {
 .carousel-control:focus {
   color: #ffffff;
   text-decoration: none;
-
+  opacity: 1;
   filter: alpha(opacity=90);
 }
 
