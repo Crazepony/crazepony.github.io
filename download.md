@@ -10,7 +10,7 @@ title: 下载中心
 飞控代码托管在[crazepony-firmware-none项目](https://github.com/Crazepony/crazepony-firmware-none)下。其中名字中的none表示**没有**使用FreeRTOS，是裸机代码，代码更加简单明了，适合初学者使用。
 
 <a href="https://github.com/Crazepony/crazepony-firmware-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >飞控源码</a>
-<a href="https://github.com/Crazepony/crazepony-firmware-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >遥控器源码</a>
+<a href="https://github.com/Crazepony/crazepony-remote-none" class="btn btn-lg btn-outline" role="button" target="_blank" >遥控器源码</a>
 <a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP源码（整理中）</a>
 <a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机源码（整理中）</a>
 
