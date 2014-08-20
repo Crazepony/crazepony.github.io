@@ -45,6 +45,10 @@ body {
   position: relative; /* For scrollspy */
 }
 
+h2{
+  margin-top: 40px;
+}
+
 /* Keep code small in tables on account of limited space */
 .table code {
   font-size: 13px;
