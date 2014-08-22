@@ -68,9 +68,9 @@ MikroKopter来自德国。毫无疑问，MikroKopter这个名字来源于德语�
 [https://github.com/paparazzi/](https://github.com/paparazzi/)
 
 ## OpenPilot
-和大多数飞控功能差不多，自稳，定高（有高度计的），等功能，这个项目还在持续开发中，目前四轴飞行器用这个控的cc3d版的人也很多。
+和大多数飞控功能差不多，自稳，定高（有高度计的），等功能，这个项目还在持续开发中，目前四轴飞行器用cc3d版本飞控的人也很多。
 
-[www.openpilot.org](www.openpilot.org)
+[www.openpilot.org](http://www.openpilot.org)
 
 ## open drone（国内）
 ![](/assets/img/open-drone.png)
