@@ -56,3 +56,12 @@ Portable Python下载地址[http://portablepython.com/](http://portablepython.co
 ![](/assets/img/python.png)
 
 至此，在windows下的终端cmd中应该存在jekyll命令。切换到源码路径下，使用`jekyll serve`命令就能够开启jekyll的服务，和ubuntu下的使用是一样的。
+
+## jekyll的相关配置
+
+本站点使用到的jekyll功能或者配置。
+
+* [jekyll配置代码高亮](http://jekyllrb.com/docs/templates/#code-snippet-highlighting)
+* [内嵌gist代码](http://jekyllrb.com/docs/templates/#gist)
+
+[Poople](http://getpoole.com/)是一个jekyll模板站点，有很不错适合个人博客的模板提供。
