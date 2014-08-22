@@ -72,6 +72,8 @@ MikroKopter来自德国。毫无疑问，MikroKopter这个名字来源于德语�
 
 [www.openpilot.org](http://www.openpilot.org)
 
+![](/assets/img/cc3d.png)
+
 ## open drone（国内）
 ![](/assets/img/open-drone.png)
 
