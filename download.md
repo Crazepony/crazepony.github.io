@@ -11,8 +11,8 @@ title: 下载中心
 
 <a href="https://github.com/Crazepony/crazepony-firmware-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >飞控源码</a>
 <a href="https://github.com/Crazepony/crazepony-remote-none" class="btn btn-lg btn-outline" role="button" target="_blank" >遥控器源码</a>
-<a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP源码（整理中）</a>
-<a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机源码（整理中）</a>
+<a href="https://github.com/Crazepony/crazepony-android-client-none" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP源码</a>
+<a href="https://github.com/Crazepony/crazepony-host-client" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机源码</a>
 
 ## 原理图&芯片资料
 通过百度网盘提供所有版本原理图的下载。并且将所使用芯片的资料（datasheet，封装图等）进行了整理，供大家下载。
@@ -30,4 +30,5 @@ title: 下载中心
 </p>
 
 ## 上位机和Android客户端
-<a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >整理中</a>
+<a href="http://pan.baidu.com/s/1q5bEu" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机应用程序</a>
+<a href="http://pan.baidu.com/s/1pJsMyqJ" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP下载</a>
