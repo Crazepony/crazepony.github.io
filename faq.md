@@ -50,4 +50,13 @@ crazepony上的一个716空心杯电机在工作时，大概需要700mA的电流
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;U10元器件没有贴片
 U10是电子罗盘，我们还没有调试好，所以统一都还没有贴。没有调试好的原因，一是因为电路设计问题。另外，电子罗盘是磁场敏感元器件，很容易受到电机的影响。
 
+<hr>
 
+## Craze粉丝贡献榜单
+Crazepony出来之后，很多网友建言献策，默默的为四轴的成长添砖加瓦。众人拾柴火焰高，有小伙伴提出Crazepony的改进意见，有小伙伴指出百科文档中的错误，还有小伙伴为Crazepony的推广不遗余力……
+
+| Craze粉丝 | 贡献值 | 备注 |
+|:--------|:-------:|--------:|
+| @前面的风景会更好    | 百科文档：[9f7dd0](https://github.com/Crazepony/crazepony.github.io/commit/9f7dd03c12828adfe62f6f87393e8bc5b65db66c)   |    |
+| @宇智波 佥源   | 百科文档：[8bf733](https://github.com/Crazepony/crazepony.github.io/commit/8bf733ca4e182efe379e71a09ad679dfaf070a69)   |    |
+|  @﹎仰望情空ぷ  | 百科文档：[5fa4fe](https://github.com/Crazepony/crazepony.github.io/commit/5fa4fe0c9d02a5ea579ceb44a6a9e88c03fbd4d9)   |    |
