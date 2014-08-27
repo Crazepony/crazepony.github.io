@@ -47,7 +47,7 @@ Crazepony四轴飞行器是入手即飞的。只需要安装桨叶，遥感冒�
 其中最为复杂的在于飞行控制部分，参考文档[飞行控制器-主控MCU](http://www.crazepony.com/wiki/main-controller-mcu.html)。
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;能否使用普通电池代替航模电池
-现在提供的380mAh电池不够飞，能否使用手机电池等代理。回答是，不行。因为放电电流不够，不需要专门的航模电池。电池上有个参数叫做放电倍率。例如crazepony使用的是是25c，这里的25c就是指的放电倍率为25C(5.0A)。也就是能够提供5A左右的电流。
+现在提供的380mAh电池不够飞，能否使用手机电池等代理。回答是，不行。因为手机电池放电电流不够，需要专门的航模电池。电池上有个参数叫做放电倍率。例如crazepony使用的是是25c，这里的25c就是指的放电倍率为25C(5.0A)。也就是能够提供5A左右的电流。
 
 crazepony上的一个716空心杯电机在工作时，大概需要700mA的电流。那么单单4个电机工作的电流，就需要2.8A。所以我们选用了能够提供5A电流的航模电池。
 
@@ -57,10 +57,19 @@ crazepony上的一个716空心杯电机在工作时，大概需要700mA的电流
 
 我在看crazyflie的过程中，做了[部分笔记](http://www.crazepony.com/wiki/comm-protocol.html)。
 
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;拥有一个遥控器，能够自制接收机嘛？
+
+要自制遥控器，就需要对该厂商遥控器的编码进行破解。例如crazyflie就支持ESky的遥控器，因为该遥控器的编码被大神破解并且公开。所以有人专门争对这个提供了接收机代码包。详见[Crazyflie笔记](http://www.crazepony.com/wiki/comm-protocol.html)。
+
 ## V4.1版本存在的问题
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;U10元器件没有贴片
 U10是电子罗盘，我们还没有调试好，所以统一都还没有贴。没有调试好的原因，一是因为电路设计问题。另外，电子罗盘是磁场敏感元器件，很容易受到电机的影响。
+
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;遥控器无法充电的问题
+有小伙伴反应，遥控器无法充电。具体现象为充电的时候红色LED是半暗半亮状态，导致无法充电。最后发现是遥控器上是r7虚焊。如果有小伙伴也遇到这个问题，可以补焊一下。以后我们在发出之前会重点检查类似的问题。
+
+如果有类似虚焊的问题，请告诉我们。感谢@!为我们指出这个问题。
 
 <hr>
 
@@ -70,5 +79,5 @@ Crazepony出来之后，很多网友建言献策，默默的为四轴的成长�
 | Craze粉丝 | 贡献值 | 备注 |
 |:--------|:-------:|--------:|
 | @前面的风景会更好    | 百科文档：[9f7dd0](https://github.com/Crazepony/crazepony.github.io/commit/9f7dd03c12828adfe62f6f87393e8bc5b65db66c)   |    |
-| @宇智波 佥源   | 百科文档：[8bf733](https://github.com/Crazepony/crazepony.github.io/commit/8bf733ca4e182efe379e71a09ad679dfaf070a69)   |    |
+| @宇7
 |  @﹎仰望情空ぷ  | 百科文档：[5fa4fe](https://github.com/Crazepony/crazepony.github.io/commit/5fa4fe0c9d02a5ea579ceb44a6a9e88c03fbd4d9)   |    |
