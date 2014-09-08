@@ -55,7 +55,7 @@ title: Crazepony Wiki
 * [航模桨叶](wiki/propeller.html)
 * [飞行控制器-主控MCU](wiki/main-controller-mcu.html)
 * [飞行控制器——传感器](wiki/main-controller-sensor.html)
-* [遥控器——2.4G通信](wiki/remote-controller-2-4.html)
+* [航模遥控器](wiki/remote-controller-2-4.html)
 * [遥控器——蓝牙通信](wiki/remote-controller-bt.html)
 
 

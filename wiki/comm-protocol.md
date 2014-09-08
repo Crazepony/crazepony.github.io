@@ -28,7 +28,7 @@ title: 通信部分介绍
 $ make clean && make USE_ESKYLINK=1 CLOAD=1 all 
 ~~~
 
-所谓的Esky Protocol，其实时ESky公司遥控器使用的通信协议。所以如果选用这种通信方式，那么可以使用ESky航模公司的遥控器进行控制。Crazyflie官网支持[ESKY ET6I Remote Control](http://wiki.bitcraze.se/projects:crazyflie:hacks:et6i)遥控器。
+所谓的Esky Protocol，其实就是ESky公司遥控器使用的通信协议。所以如果选用这种通信方式，那么可以使用ESky航模公司的遥控器进行控制。Crazyflie官网支持[ESKY ET6I Remote Control](http://wiki.bitcraze.se/projects:crazyflie:hacks:et6i)遥控器。
 
 关于ESky公司的2.4G遥控器设备的通信协议，参考[ArduinoRCLib](http://sourceforge.net/projects/arduinorclib/)项目中的描述：
 

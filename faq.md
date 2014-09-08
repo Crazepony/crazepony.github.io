@@ -59,7 +59,7 @@ crazepony上的一个716空心杯电机在工作时，大概需要700mA的电流
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;拥有一个遥控器，能够自制接收机嘛？
 
-要自制遥控器，就需要对该厂商遥控器的编码进行破解。例如crazyflie就支持ESky的遥控器，因为该遥控器的编码被大神破解并且公开。所以有人专门争对这个提供了接收机代码包。详见[Crazyflie笔记](http://www.crazepony.com/wiki/comm-protocol.html)。
+要自制接收机，就需要对该厂商遥控器的编码进行破解。例如crazyflie就支持ESky的遥控器，因为该遥控器的编码被大神破解并且公开。所以有人专门争对这个提供了接收机代码包。详见[Crazyflie笔记](http://www.crazepony.com/wiki/comm-protocol.html)。
 
 ## V4.1版本存在的问题
 
