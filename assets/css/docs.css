@@ -1470,6 +1470,10 @@ h1[id] {
     font-size:16px;
 }
 
+.wiki img{
+    max-width: 100%;
+}
+
 .img-responsive{
     display:inline;
 }
