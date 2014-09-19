@@ -26,6 +26,12 @@ Crazepony四轴飞行器是入手即飞的。只需要安装桨叶，遥感冒�
 
 当然，我们尝试着把crazyflie的飞控代码（带有FreeRTOS操作系统）移植到我们的平台上来。但是没有完全弄好，当时为了学习crazyflie做过一些功课，参考Crazepony百科的最后[Crazyflie部分](http://www.crazepony.com/wiki.html)。对于想学习RTOS的朋友，建议阅读这部分代码，其软件架构/思路都非常优雅。
 
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony的尺寸是怎么样的？
+
+Crazepony的长宽都是100mm，中间还有两处螺丝孔，可以用来安装桨叶保护圈（保护圈需要自己DIY）。
+
+![](/assets/img/crazepony-size.jpg)
+
 ## 四轴飞行器相关
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;我是新手，如何入门？
