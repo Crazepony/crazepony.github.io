@@ -92,6 +92,11 @@ Crazepony出来之后，很多网友建言献策，默默的为四轴的成长�
   </thead>
   <tbody>
     <tr>
+      <td>ooo @610645105</td>
+      <td>提出百科文档中的错误：<a href="https://github.com/Crazepony/crazepony.github.io/commit/4f95259939399d11b0d2852eed54b8afe7a567a1">4f9525</a></td>
+      <td></td>
+    </tr>
+    <tr>
       <td>前面的风景会更好 @735661895</td>
       <td>百科文档：<a href="https://github.com/Crazepony/crazepony.github.io/commit/9f7dd03c12828adfe62f6f87393e8bc5b65db66c">9f7dd0</a></td>
       <td></td>
