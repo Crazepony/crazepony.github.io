@@ -5,13 +5,17 @@ title: faq
 
 ## Crazepony四轴飞行器相关
 
-### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony四轴飞行器是否入手即飞？
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony四轴飞行器提供了什么
 
-Crazepony四轴飞行器是入手即飞的。只需要安装桨叶，遥感冒等配件就可以体验飞行的乐趣了。
+Crazepony提供的是入手即飞的四轴飞行器开发平台。只需要安装桨叶，遥感冒等配件就可以体验飞行的乐趣。并且提供所有的接口，源代码，原理图等DIY的支持。
 
-### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony四轴飞行器是否针对有电子设计基础的伙伴提供深度DIY套件。
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;[淘宝店铺](http://shop111225004.taobao.com/category-955813395-834909469.htm?spm=a1z10.1.w5002-8186408937.3.WeUcc2&search=y&catName=crazepony)中成品和散件的区别
 
-对于有电子设计基础和愿意DIY的伙伴，我们提供飞控主板，遥控器等套件。我们将会尽快整理出DIY套件清单和DIY的实例以供大家参考。
+我们提供成品和散件两种供大家选择，在物料和功能上没有区别。成品是一个入手即飞的四轴。散件主要针对有电子设计基础和愿意DIY的伙伴，需要自行焊接，安装，调试。详细请参见[入手试飞教程](./wiki/user-guide.html)和[散件组装教程](./wiki/assemble-guide.html)。
+
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;如何充电，如何下载程序，如何调试
+
+Crazepony四轴带有一个Micro USB接口。套件中带有一根USB线，连接到电脑，充电宝等的USB接口上就可以给Crazepony四轴充电。同时也可以通过该USB接口下载程序，查看打印信息。除此之外，STM32的SWD接口被保留在外面，可以使用JLink调试器进行调试开发。
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;无法垂直起飞的问题
 小伙伴在拿到四轴飞行器试飞的时候，遇到无法垂直起飞的问题，可以从下面4个方面循序渐进，依次改进。
