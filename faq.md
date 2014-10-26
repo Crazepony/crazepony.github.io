@@ -96,6 +96,11 @@ Crazepony出来之后，很多网友建言献策，默默的为四轴的成长�
   </thead>
   <tbody>
     <tr>
+      <td><a href="https://github.com/vivijie">vivijie</a></td>
+      <td>github上提出pull request，修改文案：<a href="https://github.com/Crazepony/crazepony.github.io/commit/867d923a49998694ee0d9fe43ec7844996a46968">867d923a4</a></td>
+      <td></td>
+    </tr>
+    <tr>
       <td>ooo @610645105</td>
       <td>提出百科文档中的错误：<a href="https://github.com/Crazepony/crazepony.github.io/commit/4f95259939399d11b0d2852eed54b8afe7a567a1">4f9525</a></td>
       <td></td>
