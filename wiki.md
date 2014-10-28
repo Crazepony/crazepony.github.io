@@ -9,6 +9,8 @@ title: Crazepony Wiki
 
 * [散件组装教程](wiki/assemble-guide.html)
 * [入手试飞教程](wiki/user-guide.html)
+* [散件组装教程--4.1版本](wiki/assemble-guide-4-1.html)
+* [入手试飞教程--4.1版本](wiki/user-guide-4-1.html)
 
 <h2>开发指南</h2>
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
