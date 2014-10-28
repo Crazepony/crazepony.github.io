@@ -6,6 +6,12 @@ layout: blog-about-us
 
 我们是一个开源电子爱好社区组织。开放，合作，分享是我们的理念。欢迎任何志同道合的朋友加入，这个位置就是属于你的……
 
+## Ziv.Lin
+
+CrazePony的视觉攻城狮，擅长的部分是计算机视觉和嵌入式编程。博文[《CrazePony与计算机视觉》](2014/09/19/crazepony-computer-vision.html)作者。
+
+现居深圳。
+
 ## 钟晟
 
 **CrazePOV项目发起人**
