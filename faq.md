@@ -7,7 +7,7 @@ title: faq
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony四轴飞行器提供了什么
 
-Crazepony提供的是入手即飞的四轴飞行器开发平台。只需要安装桨叶，遥感冒等配件就可以体验飞行的乐趣。并且提供所有的接口，源代码，原理图等DIY的支持。
+Crazepony提供入手即飞的四轴飞行器开发平台。只需要安装桨叶，摇杆帽就可以体验飞行的乐趣。并且开源所有源代码，原理图，提供二次开发DIY文档和指导。
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;[淘宝店铺](http://shop111225004.taobao.com/category-955813395-834909469.htm?spm=a1z10.1.w5002-8186408937.3.WeUcc2&search=y&catName=crazepony)中成品和散件的区别
 
@@ -70,6 +70,8 @@ crazepony上的一个716空心杯电机在工作时，大概需要700mA的电流
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;拥有一个遥控器，能够自制接收机嘛？
 
 要自制接收机，就需要对该厂商遥控器的编码进行破解。例如crazyflie就支持ESky的遥控器，因为该遥控器的编码被大神破解并且公开。所以有人专门争对这个提供了接收机代码包。详见[Crazyflie笔记](http://www.crazepony.com/wiki/comm-protocol.html)。
+
+## V5.0版本存在的问题
 
 ## V4.1版本存在的问题
 
