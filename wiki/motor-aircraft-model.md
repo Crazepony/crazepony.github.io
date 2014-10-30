@@ -36,5 +36,7 @@ Crazepony空心杯高速电机拆解图，可以明显看到线圈中间没有�
 
 关于无刷直流电机原理的讲解。
 
+<p>
 <embed src="http://player.youku.com/player.php/sid/XMzI4MzkxMTg4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+</p>
 

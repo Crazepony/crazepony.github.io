@@ -33,4 +33,6 @@ CrazePonzy的计算机视觉定位我打算分为三步走:
 
 最后附上Crazepony视觉定位系统的优酷视频。
 
+<p>
 <embed src="http://player.youku.com/player.php/sid/XNzc1NjI4NTEy/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+</p>

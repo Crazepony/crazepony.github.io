@@ -28,4 +28,6 @@ description: 离上次参加makeblock周末马拉松比赛已经快一个月了�
 最后放上Crazepony在拳击擂台里跌跌撞撞的视频。
 
 
+<p>
 <embed src="http://player.youku.com/player.php/sid/XNzYwNTA2NjUy/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+</p>
