@@ -17,7 +17,8 @@ title: 入手试飞教程
 ## 桨叶安装
 四轴飞行器的桨叶分为两种，正桨和反桨。安装的时候不能够搞混淆。桨叶上标示有R的安装到M2，M4两个机臂的电机上。标示有L桨叶安装到M1，M3两个机臂电机上。
 
-![](/assets/img/user-guide-1.png)
+![](/assets/img/user-guide-5-0-1.jpg)
+![](/assets/img/user-guide-5-0-2.jpg)
 
 ## 遥控器安装
 你拿到Crazepony的包裹的时候，需要自行安装遥控器摇杆帽，没有左右之分。
