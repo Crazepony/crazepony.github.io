@@ -17,7 +17,7 @@ title: Crazepony Wiki
 * [windows下开发环境搭建—FreeRTOS版本](wiki/setup-environment-in-windows.html)
 * [linux下开发环境搭建](wiki/setup-environment-in-linux.html)
 * [Crazepony Android客户端](wiki/crazepony-android-client.html)
-* [主控固件烧写](wiki/flash-firmware.html)
+* [固件烧写](wiki/flash-firmware.html)
 
 <h2>Crazepony原理讲解</h2>
 * [Crazepony器件选型总览及说明](wiki/ic-readme.html)
