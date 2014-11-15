@@ -10,7 +10,7 @@ title: Jekyll的安装和使用
 ## ubuntu下安装jekyll
 在ubuntu中使用下面的命令安装jekyll：
 
-```
+~~~
 //jekyll是用ruby写的，所以需要先安装ruby开发环境
 $ sudo apt-get install ruby
 $ sudo apt-get install ruby-dev
@@ -18,16 +18,16 @@ $ sudo gem install rdoc
 
 //安装jekyll
 $ gem install jekyll
-```
+~~~
 
 在本地调试crazepony网站效果：
 
-```
+~~~
 //进入站点源码目录，开启jekyll服务
 $ cd crazepony.github.io
 $ jekyll serve
 
-```
+~~~
 
 开启jekyll服务之后，在站点源代码下，会生成一个名为_site的目录，该目录下就是jekyll生成的站点静态网页。并且jekyll在本地开启了一个简单的http服务，在浏览器中输入`http://localhost:4000/`，就能够看到站点的效果。
 
@@ -43,13 +43,13 @@ Ruby和Ruby DevKit下载地址[http://rubyinstaller.org/downloads/](http://rubyi
 * 安装上面下载的Ruby和Ruby DevKit；
 * 打开Ruby DevKit安装目录下的shell，输入下面的命令安装jekyll；
 
-```
+~~~
 $ cd c:
 $ cd RubyDevKit193 //进入Ruby DevKit的安装目录
 $ ruby dk.rb init
 $ ruby dk.rb install
 $ gem install jekyll
-```
+~~~
 
 Portable Python下载地址[http://portablepython.com/](http://portablepython.com/)。下载python 2.7版本并且安装。
 
@@ -64,4 +64,4 @@ Portable Python下载地址[http://portablepython.com/](http://portablepython.co
 * [jekyll配置代码高亮](http://jekyllrb.com/docs/templates/#code-snippet-highlighting)
 * [内嵌gist代码](http://jekyllrb.com/docs/templates/#gist)
 
-[Poople](http://getpoole.com/)是一个jekyll模板站点，有很不错适合个人博客的模板提供。
+[Poople](http://getpoole.com/)是一个jekyll模板站点，有很不错适合个人博客的模板提供。Crazepony的博客站点使用的[BeiYuu](http://beiyuu.com/)的模板，最原始就应该是来自Poople中的Hyde模板。
