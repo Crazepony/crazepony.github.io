@@ -14,7 +14,9 @@ Crazepony网站建设和部署使用了多种开源的技术和平台。
 * 前端框架使用[bootstrap](https://github.com/twbs/bootstrap)开源项目
 * 百科站点和博客站点内容全部使用markdown标志语言编辑。
 
-markdown文本解析库使用了[kramdown](http://kramdown.gettalong.org/)，该库支持的语法是markdown的一个超集，和标准markdown语法有最小的区别。[quick reference](http://kramdown.gettalong.org/quickref.html)提供了kramdown的快速入门，也可以从[syntax page](http://kramdown.gettalong.org/syntax.html)看到对kramdown支持的markdown语法一个更加详细的说明。
+markdown文本解析库使用了[kramdown](http://kramdown.gettalong.org/)，该库支持的语法是markdown的一个超集，和标准markdown语法有最小的区别。[quick reference](http://kramdown.gettalong.org/quickref.html)提供了kramdown的快速入门，也可以从[syntax page](http://kramdown.gettalong.org/syntax.html)看到对kramdown支持的markdown语法一个更加详细的说明。kramdown和markdown最大的一个语法不同点，就是对代码段的注释不一样，导致原来很多地方需要修改。
+
+> markdown的code段注释为```，而kramdown的code段注释为~~~
 
 ## Crazepony站点源码结构
 Crazepony站点源代码托管在github上，点击[这里](https://github.com/Crazepony/crazepony.github.io)。由于本站点使用了jekyll框架，所以其结构基本上符合jekyll框架结构。
@@ -48,7 +50,7 @@ Crazepony站点源代码托管在github上，点击[这里](https://github.com/C
 ## 将源码下载到本地
 可以将该网站源码clone到本地，进行修改调试。
 
-```
+~~~
 //将github上的源代码clone到本地
 $git clone git@github.com:Crazepony/crazepony.github.io.git
 
@@ -58,7 +60,7 @@ $ git commit -m 'xxxx'
 $ git pull --rebase
 $ git push
 
-```
+~~~
 
 ## 添加新的博客
 
