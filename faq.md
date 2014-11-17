@@ -17,6 +17,10 @@ Crazepony提供入手即飞的四轴飞行器开发平台。只需要安装桨�
 
 Crazepony四轴带有一个Micro USB接口。套件中带有一根USB线，连接到电脑，充电宝等的USB接口上就可以给Crazepony四轴充电。同时也可以通过该USB接口下载程序，查看打印信息。除此之外，STM32的SWD接口被保留在外面，可以使用JLink调试器进行调试开发。
 
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;是否提供桨叶/电机/电池等的购买
+
+我们暂时不提供桨叶/空心杯电机/电池等易损耗配件的购买。Craze团队整理了部分淘宝上的购买地址，大家可以自行购买。参见[Crazepony器件总览及选型说明](wiki/ic-readme.html)。
+
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;无法垂直起飞的问题
 小伙伴在拿到四轴飞行器试飞的时候，遇到无法垂直起飞的问题，可以从下面4个方面循序渐进，依次改进。
 
