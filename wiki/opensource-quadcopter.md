@@ -52,8 +52,19 @@ MikroKopter来自德国。毫无疑问，MikroKopter这个名字来源于德语�
 
 [http://erlerobot.github.io/erle_gitbook/en/](http://erlerobot.github.io/erle_gitbook/en/)
 
-## MultWii
-一般简称为MWC飞控，是完全开源的。价格根据选配的附件，和板材质量而有所不同，但整体不贵。玩这种开源飞控，最好有点玩数字电路或和编程的底子，不过如果悟性好，看看文档也能搞起来。主要难点在于调教，很难把它调得很稳，需要很大的耐心。不太适合新手。
+## MWC飞控（唯一基于Arduino硬件平台的飞控）
+MWC是MultWii Copter的缩写，是开源的多轴飞行器固件。此固件的原创作者是来自法国的Alex，他为了打造自己的Y3飞行器（一个三轴飞行器）而开发了最初的MWC固件。几年来经过许多高手的参与及共同努力，开发进度越来越快，已经基本成熟，支持三轴，四轴，六轴等多种飞行器。其最大的特点是，**其硬件是基于Arduino平台。**这为很多熟悉开源硬件Arduino的人入门提供方便。
+
+下图为Alex最早使用MWC的Y3飞行器。
+
+![](/assets/img/mwc.jpg)
+
+MWC飞控通常有两种版本（使用的单片机不一样），都是基于开源的Arduino平台。
+
+* Atmega328P 版本 
+* Atmega2560 版本
+
+所以我们可以使用Arduino Pro Mini/Arduino Mega等开发板搭建自己的四轴飞行器。当然，需要有数字电路和编程的底子，不过如果悟性好，看看文档也能搞起来。主要难点在于调试，很难把它调得很稳，需要很大的耐心。
 
 [http://www.multiwii.com/](http://www.multiwii.com/)
 
