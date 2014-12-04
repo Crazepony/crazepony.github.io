@@ -35,6 +35,7 @@ title: Crazepony Wiki
 * [硬件姿态解算](wiki/hardware-algorithm.html)
 * [四元数](wiki/quaternions.html)
 * [三轴陀螺仪和三轴加速度计MPU6050](wiki/mpu6050.html)
+* [气压计MS5611](wiki/ms5611.html)
 * [PID算法](wiki/algorithm-pid.html)
 
 <h2>四轴飞行器</h2>
