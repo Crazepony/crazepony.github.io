@@ -5,24 +5,33 @@ title: 开源四轴飞行器
 
 # {{ page.title }}
 
-## ArduPilot & 3D Robotics
-![](/assets/img/diy-drone.png)
+## APM & 3D Robotics
+3D Robotics公司旗下的飞控有3款，分别是ArduPilot（简称APM），PX4和Pihawk。
 
-无人机爱好者社区，并且提供无人机控制器ArduPilot，一般我们简称为APM飞控系统。最新版本为APM 2.6，其中有无人机控制开源软件。无人机控制包括：
+APM是比较古老的版本，处理核心使用的是Arduino，16位mega系列单片机，开发环境为arduino-IDE，基于Arduino这点和MWC飞控是一样的。功能上依然很强大，地面站使用apm-planner和mission-planner。最新版本为APM 2.6，开源。
 
-* ArduCopter, a fully-autonomous multicopter and heli UAV system
-* ArduPlane, a pro-level UAV system for planes of all types
-* ArduRover, a fully-autonomous ground-based vehicle system
+PX4是apm的升级版，使用了很流行的stm32f407单片机，处理速度上了一个大台阶，摆脱了arduino的瓶颈，走向了发烧级的道路。不过PX4实际上是由两部分组成的，PX4FMU和PX4IO板。
 
-编者按：据业内人士透露，ArduPilot是现在最活跃的四轴飞行器，无人机论坛，日活跃用户有2万多（2014-6，这个数据是否真实没有验证过）。所以把这个放在第一位介绍给大家。
+![](/assets/img/px4.png)
 
-[http://diydrones.com/](http://diydrones.com/)
+后来又推出了Pixhawk飞控，其实就是把PX4FMU和PX4IO板结合在了一起，更高的集成度。
+
+![](/assets/img/pixhawk.jpg)
 
 其背后的商业公司是3D Robotics。3D Robotics创始人是克里斯·安德森（Chris Anderson），前《连线》主编，著有《长尾理论》，《创客：新工业革命》等畅销书。创客运动的积极倡导者和领袖级人物。有关克里斯·安德森和他的无人机，可以参看《开源杂志》上的报道[《变革推动者.克里斯安德森的无人机梦想腾飞》](http://obook.cc/openbook8/maker/changers.html).
 
-[http://3drobotics.com/](http://3drobotics.com/)
+围绕着3DR公司的产品，形成了一个活跃的无人机爱好者社区，无人机飞控功能很强大，能飞固定翼、旋翼、直升机等。旗下网站也有好几个ardupilot.com、diydrones.com、3drobotics.com，很是混杂，很多资料和文档看的眼花缭乱。
+
+据业内人士透露，diydrones是现在最活跃的四轴飞行器，无人机论坛，日活跃用户有2万多（2014-6，这个数据是否真实没有验证过）。所以把这个放在第一位介绍给大家。
+
+* 3DR官网： [http://3drobotics.com/](http://3drobotics.com/)。这个网站简单来说就是3dr卖飞控的官方旗舰店，我还以为开发者的一些东西也在上面，，好浪费感情。
+* apm飞控的官网：[http://copter.ardupilot.com](http://copter.ardupilot.com) 。见名知意，基于arduino的飞控，肯定是apm的官网了，一些开发者资料在[http://dev.ardupilot.com](http://dev.ardupilot.com)。 
+* pixhawk飞控的官网：[https://pixhawk.org](https://pixhawk.org/) 。 PIX4和Pixhawk的资料都在上面，此外上述代码都托管在GitHub上。
+* diydones论坛：[http://diydrones.com](http://diydrones.com) 。这个是3dr旗下的交流论坛，你可以在这里找到很多国外的飞控爱好者。
 
 ![](/assets/img/3d-robotics.png)
+
+本节内容部分来自Wellmakers博客[3D Robotics相关介绍](http://wellmakers.com/?p=221)。
 
 ## MikroKopter
 在2006年10月24号，Holger Buss和Ingo Busker创造了MK，一个伟大的Mikrokopter四轴社区。 在2007年中，Mikrokopter便像一个“ 空中的钉子”，像一只鸟一样，稳步的停留在空中。这对于开源四轴飞行器是一个很大的里程碑。
@@ -52,7 +61,7 @@ MikroKopter来自德国。毫无疑问，MikroKopter这个名字来源于德语�
 
 [http://erlerobot.github.io/erle_gitbook/en/](http://erlerobot.github.io/erle_gitbook/en/)
 
-## MWC飞控（唯一基于Arduino硬件平台的飞控）
+## MWC飞控（基于Arduino硬件平台的飞控）
 MWC是MultWii Copter的缩写，是开源的多轴飞行器固件。此固件的原创作者是来自法国的Alex，他为了打造自己的Y3飞行器（一个三轴飞行器）而开发了最初的MWC固件。几年来经过许多高手的参与及共同努力，开发进度越来越快，已经基本成熟，支持三轴，四轴，六轴等多种飞行器。其最大的特点是，**其硬件是基于Arduino平台。**这为很多熟悉开源硬件Arduino的人入门提供方便。
 
 下图为Alex最早使用MWC的Y3飞行器。
