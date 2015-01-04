@@ -57,16 +57,16 @@ h2{
 
 /* Outline button for use within the docs */
 .btn-outline {
-  color: #563d7c;
+  color: #393939;
   background-color: transparent;
-  border-color: #563d7c;
+  border-color: #393939;
 }
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
+  background-color: #393939;
+  border-color: #393939;
 }
 
 /* Inverted outline button (white on dark) */
@@ -78,7 +78,7 @@ h2{
 .btn-outline-inverse:hover,
 .btn-outline-inverse:focus,
 .btn-outline-inverse:active {
-  color: #563d7c;
+  color: #393939;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
@@ -89,7 +89,7 @@ h2{
   display: block;
   font-weight: 500;
   color: #fff;
-  background-color: #563d7c;
+  background-color: #393939;
   border-radius: 15%;
   cursor: default;
   text-align: center;
@@ -107,7 +107,7 @@ h2{
   line-height: 140px;
 }
 .bs-docs-booticon-inverse {
-  color: #563d7c;
+  color: #393939;
   background-color: #fff;
 }
 .bs-docs-booticon-outline {
@@ -252,7 +252,7 @@ border-right-color: #646668;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#393939', endColorstr='#6F5499', GradientType=0);
 }
 
  /* Masthead (headings and download button) */
@@ -560,19 +560,19 @@ border-right-color: #646668;
 .bs-docs-sidebar .nav > li > a:hover,
 .bs-docs-sidebar .nav > li > a:focus {
   padding-left: 19px;
-  color: #563d7c;
+  color: #393939;
   text-decoration: none;
   background-color: transparent;
-  border-left: 1px solid #563d7c;
+  border-left: 1px solid #393939;
 }
 .bs-docs-sidebar .nav > .active > a,
 .bs-docs-sidebar .nav > .active:hover > a,
 .bs-docs-sidebar .nav > .active:focus > a {
   padding-left: 18px;
   font-weight: bold;
-  color: #563d7c;
+  color: #393939;
   background-color: transparent;
-  border-left: 2px solid #563d7c;
+  border-left: 2px solid #393939;
 }
 
 /* Nav: second level (shown on .active) */
@@ -610,7 +610,7 @@ border-right-color: #646668;
 }
 .back-to-top:hover {
   text-decoration: none;
-  color: #563d7c;
+  color: #393939;
 }
 
 @media (min-width: 768px) {
@@ -758,7 +758,7 @@ h1[id] {
 .color-swatches .brand-info    { background-color: #5bc0de; }
 
 /* Docs colors */
-.color-swatches .bs-purple          { background-color: #563d7c; }
+.color-swatches .bs-purple          { background-color: #393939; }
 .color-swatches .bs-purple-light    { background-color: #c7bfd3; }
 .color-swatches .bs-purple-lighter  { background-color: #e5e1ea; }
 .color-swatches .bs-gray            { background-color: #f9f9f9; }
@@ -1232,7 +1232,7 @@ h1[id] {
 }
 .bs-glyphicons li:hover {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #393939;
 }
 
 @media (min-width: 768px) {
@@ -1352,7 +1352,7 @@ h1[id] {
   width: 100%;
   margin-bottom: 15px;
   overflow: hidden;
-  color: #563d7c;
+  color: #393939;
   background-color: #f9f9f9;
   border-radius: 4px;
 }
@@ -1367,7 +1367,7 @@ h1[id] {
 }
 .bs-brand-logos .inverse {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #393939;
 }
 
 /* Heading content within */
