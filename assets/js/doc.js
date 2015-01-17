@@ -10,9 +10,6 @@ $(document).ready(function(){
 		}
 	});
 
-    //修改bootstrap image gallery插件的显示效果
-    $('#blueimp-gallery').data('useBootstrapModal', false);
-    $('#blueimp-gallery').toggleClass('blueimp-gallery-controls', true);
 
     // 滑到顶部
     $('.scrolltop').click(function () {
