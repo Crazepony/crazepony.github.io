@@ -1,5 +1,15 @@
 $(document).ready(function(){
-	
+
+    $(".fancybox").fancybox();
+
+	$('.fancybox-media').fancybox({
+		openEffect  : 'none',
+		closeEffect : 'none',
+		helpers : {
+			media : {}
+		}
+	});
+
     //修改bootstrap image gallery插件的显示效果
     $('#blueimp-gallery').data('useBootstrapModal', false);
     $('#blueimp-gallery').toggleClass('blueimp-gallery-controls', true);
