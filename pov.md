@@ -7,22 +7,22 @@ title: POV
 
 <div class="row">
   <div class="col-sm-3">
-    <a href="/assets/img/flyingpov-1.jpg" title="PCB板刚到" data-gallery>
+    <a href="/assets/img/flyingpov-1.jpg" title="PCB板刚到"  class="fancybox" rel="group">
         <img src="/assets/img/flyingpov-1.jpg" alt="PCB板刚到" class="img-responsive">
     </a>
   </div>
   <div class="col-sm-3">
-<a href="/assets/img/flyingpov-14.jpg" title="组装完成展示" data-gallery>
+<a href="/assets/img/flyingpov-14.jpg" title="组装完成展示"  class="fancybox" rel="group">
     <img src="/assets/img/flyingpov-14.jpg" alt="组装完成展示" class="img-responsive">
 </a>
   </div>
   <div class="col-sm-3">
-<a href="/assets/img/flyingpov-5.jpg" title="空板旋转展示" data-gallery>
+<a href="/assets/img/flyingpov-5.jpg" title="空板旋转展示"  class="fancybox" rel="group">
     <img src="/assets/img/flyingpov-5.jpg" alt="空板旋转展示" class="img-responsive">
 </a>
   </div>
   <div class="col-sm-3">
-<a href="/assets/img/flyingpov-15.jpg" title="效果图" data-gallery>
+<a href="/assets/img/flyingpov-15.jpg" title="效果图"  class="fancybox" rel="group">
     <img src="/assets/img/flyingpov-15.jpg" alt="效果图" class="img-responsive">
 </a>
   </div>
