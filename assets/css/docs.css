@@ -1588,3 +1588,7 @@ p {
     margin-top: 25px;
     font-size: 16px;
 }
+
+ul, ol{
+    font-size:16px;
+}
