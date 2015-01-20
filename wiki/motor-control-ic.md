@@ -54,4 +54,4 @@ Crazepony使用的是有刷空心杯电机，所以电机的控制属于有刷�
 
 ## 扩展阅读
 
-IT公司关于电机驱动和控制解决方IT公司关于电机驱动和控制解决方案案[IT公司关于电机驱动和控制解决方案](http://www.ti.com.cn/ww/motor_drive_and_control_solutions/index.htm)。
+[TI公司关于电机驱动和控制解决方案](http://www.ti.com.cn/ww/motor_drive_and_control_solutions/index.htm)。
