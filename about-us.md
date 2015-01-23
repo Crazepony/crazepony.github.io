@@ -8,7 +8,7 @@ layout: blog-about-us
 
 ## 黄永祥
 
-哈尔滨工业大学毕业，Crazepony深度参与者，软件算法工程师，曾就职与DJI。
+哈尔滨工业大学毕业，Crazepony深度参与者，软件算法工程师，曾就职于DJI。
 
 ## Ziv.Lin
 

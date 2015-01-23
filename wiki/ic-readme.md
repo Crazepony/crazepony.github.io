@@ -20,6 +20,17 @@ title: Crazepony器件总览及选型说明
 
 购买时需要注意电池接口。
 
+## 2.4G模块
+遥控器上使用市面上的2.4G模块，根据遥控距离的不同，有下面两种可以选择。
+
+加PA的鞭状天线，最大发送功率20dBm，可以遥控距离100米。购买[地址](http://detail.tmall.com/item.htm?spm=a230r.1.14.1.6SuQ2w&id=40504364189&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=13)。
+
+![](/assets/img/rm-ctrl-8.png)
+
+不加PA的发射模块，最大发射功率0dBm，可以遥控距离10米。购买[地址](http://detail.tmall.com/item.htm?spm=a230r.1.14.1.qbCmu0&id=41587731684&ad_id=&am_id=&cm_id=140105335569ed55e27b&pm_id=&abbucket=13)。
+
+![](/assets/img/rm-ctrl-7.jpg)
+
 ## 主控MCU（单片机）
 STM32f103T8U6，内核为ARM Cotex-M3，72MHz主频，AD/硬件I2C/硬件PWM。
 

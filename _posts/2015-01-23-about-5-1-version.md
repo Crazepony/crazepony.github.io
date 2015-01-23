@@ -19,6 +19,12 @@ description: 进入2015年，Crazepony终于迎来了5.1版本。
 
 ![](/assets/img/techspace-2.jpg)
 
+加PA鞭状天线的遥控器及飞远了的Crazepony。
+
+![](/assets/img/antenna-3.jpg)
+![](/assets/img/antenna-1.jpg)
+![](/assets/img/antenna-2.jpg)
+
 再放几张室内飞行的靓照。在最新版本Crazepony上实现的无头飞行模式，气压计Z轴定高悬停模式，让新手操控变得简单。
 
 ![](/assets/img/techspace-4.jpg)

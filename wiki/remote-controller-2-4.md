@@ -34,6 +34,8 @@ Crazepony的2.4G模块使用的是单片2.4G无线射频收发芯片NRF24L01。�
 
 ![](/assets/img/rm-ctrl-8.png)
 
+![](/assets/img/antenna-3.jpg)
+
 ## 市场上航模遥控器介绍
 
 进口遥控，有名的品牌有[JR](http://www.jramericas.com/),FUTABA,SANWA等。
