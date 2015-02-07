@@ -1,19 +1,19 @@
 CACHE MANIFEST
-# Revision 1405412311906
+# Revision 1423321076167
 
 CACHE:
-crazepony-dev.html
 index.html
 about-algorithm.html
 about-crazepony.html
+crazepony-dev.html
 crazyflie.html
 development.html
 model-aircraft.html
 other.html
 quad-copter.html
 quadcopter-base.html
-wiki/main-controller-mcu.html
 wiki/algorithm-pid.html
+wiki/assemble-guide.html
 wiki/attitude-algorithm-flow-graph.html
 wiki/attitude-algorithm.html
 wiki/attitude-math.html
@@ -29,18 +29,21 @@ wiki/hardware-base.html
 wiki/ic-readme.html
 wiki/large-small-quadcopter.html
 wiki/macro-controls.html
+wiki/main-controller-mcu.html
 wiki/main-controller-sensor.html
+wiki/motor-aircraft-model.html
 wiki/motor-control-ic.html
 wiki/mpu6050.html
+wiki/ms5611.html
 wiki/opensource-quadcopter.html
 wiki/pitch-yaw-roll.html
+wiki/propeller.html
 wiki/quadcopter-aerodynamic.html
 wiki/quadcopter-history.html
 wiki/quadcopter-star.html
 wiki/quaternions.html
 wiki/remote-controller-2-4.html
 wiki/remote-controller-bt.html
-wiki/rotor-propeller.html
 wiki/setup-environment-in-linux.html
 wiki/setup-environment-in-windows-none.html
 wiki/setup-environment-in-windows.html
@@ -49,6 +52,7 @@ wiki/software-base.html
 wiki/software-experience.html
 wiki/source-setting.html
 wiki/system-flow-graph.html
+wiki/user-guide.html
 gitbook/app.js
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot

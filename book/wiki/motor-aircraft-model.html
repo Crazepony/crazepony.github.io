@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>大四轴 VS 小四轴 | Crazepony四轴飞行器</title>
+        <title>航模电机 | Crazepony四轴飞行器</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.6.3">
@@ -19,10 +19,10 @@
     <meta name="author" content="Crazepony">
     
     
-    <link rel="next" href="../wiki/pitch-yaw-roll.html" />
+    <link rel="next" href="../wiki/motor-control-ic.html" />
     
     
-    <link rel="prev" href="../wiki/copter-terminology.html" />
+    <link rel="prev" href="../quadcopter-base.html" />
     
 
         
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="Crazepony/crazepony-gitbook" data-level="3.2" data-basepath=".." data-revision="1423321076166">
+    <div class="book" data-github="Crazepony/crazepony-gitbook" data-level="4.1" data-basepath=".." data-revision="1423321076166">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -118,7 +118,7 @@
         
         
         <li>
-            <a href="https://github.com/Crazepony/crazepony-gitbook/edit/master/wiki/large-small-quadcopter.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/Crazepony/crazepony-gitbook/edit/master/wiki/motor-aircraft-model.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -302,7 +302,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="3.2" data-path="wiki/large-small-quadcopter.html">
+        <li class="chapter " data-level="3.2" data-path="wiki/large-small-quadcopter.html">
             
                 
                     <a href="../wiki/large-small-quadcopter.html">
@@ -372,7 +372,7 @@
                 
     
         
-        <li class="chapter " data-level="4.1" data-path="wiki/motor-aircraft-model.html">
+        <li class="chapter active" data-level="4.1" data-path="wiki/motor-aircraft-model.html">
             
                 
                     <a href="../wiki/motor-aircraft-model.html">
@@ -1014,7 +1014,7 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 20%;min-width: 18%;"></div>
+        <div class="inner" style="width: 28%;min-width: 26%;"></div>
     </div>
     <div class="chapters">
     
@@ -1040,13 +1040,13 @@
     
         <a href="../wiki/large-small-quadcopter.html" title="大四轴 VS 小四轴" class="chapter done " data-progress="3.2" style="left: 20%;"></a>
     
-        <a href="../wiki/pitch-yaw-roll.html" title="三维中pitch，yaw，roll的区别" class="chapter  " data-progress="3.3" style="left: 22%;"></a>
+        <a href="../wiki/pitch-yaw-roll.html" title="三维中pitch，yaw，roll的区别" class="chapter done " data-progress="3.3" style="left: 22%;"></a>
     
-        <a href="../wiki/quadcopter-aerodynamic.html" title="四轴飞行器的空气动力原理" class="chapter  " data-progress="3.4" style="left: 24%;"></a>
+        <a href="../wiki/quadcopter-aerodynamic.html" title="四轴飞行器的空气动力原理" class="chapter done " data-progress="3.4" style="left: 24%;"></a>
     
-        <a href="../quadcopter-base.html" title="四轴飞行器基本组成部分" class="chapter  new-chapter" data-progress="4" style="left: 26%;"></a>
+        <a href="../quadcopter-base.html" title="四轴飞行器基本组成部分" class="chapter done new-chapter" data-progress="4" style="left: 26%;"></a>
     
-        <a href="../wiki/motor-aircraft-model.html" title="航模电机" class="chapter  " data-progress="4.1" style="left: 28%;"></a>
+        <a href="../wiki/motor-aircraft-model.html" title="航模电机" class="chapter done " data-progress="4.1" style="left: 28%;"></a>
     
         <a href="../wiki/motor-control-ic.html" title="电机驱动控制" class="chapter  " data-progress="4.2" style="left: 30%;"></a>
     
@@ -1125,27 +1125,37 @@
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_26">
+                    <section class="normal" id="section-gitbook_30">
                     
-                        <h1 id="-vs-">大四轴 VS 小四轴</h1>
-<p>按照四轴飞行器的大小，我们粗略的将四轴飞行器分为大四轴和小四轴。其有很多部分是相同的，例如飞控部分基本一样；但是又有区别，例如动力部分（包括电机和电机驱动）就可能完全不相同。作为四轴飞行器爱好者，我们当然需要知道DIY大小四轴的区别。</p>
-<p>当然，Crazepony是一个小四轴。</p>
-<h2 id="">大四轴</h2>
-<p>大四轴根据其承载能力的大小，也分为不同的级别。例如DJI的S800大四轴，能够挂载专业的单反相机，主要用于电影等的拍摄，其大小有大人双手怀抱那么大。风火轮系列则要小很多，大概有脸盆大小，适合挂载gopro等运动相机。</p>
-<p><img src="/assets/img/s800.jpg" alt=""></p>
-<p>对于航模爱好者来说，DIY一个大的四轴飞行器也不是一件容易的事情。你可以购买品牌厂商的整套解决方案，然后自己进行组装调试，例如DJI的S800系列。不过对于很多爱好者来说，价格会比较贵，一套S800的价格在3万人民币左右。你也可以自己购买组件，自己组装。一般需要购买的组件包括：<strong>飞控，电调，无刷电机，遥控器，电池，支架</strong>等。当然，也见过有爱好者自己用各种材料DIY支架，有用铝合金的，也有用木头的。根据自己的需求购买组件DIY的成本会低很多，一般的可能就是￥1000～￥2000左右。</p>
-<p>DIY大四轴需要有比较专业的知识，例如电子部分的连接，飞行器结构重心的调整，遥控器的对频和干扰，根据飞行器结构或者飞行现场风力等对飞控PID等参数的调节（简称调参）。总之，如果有一个环节出现了问题，那么就会导致飞行器无法飞起来，或者出现炸机（指飞行器从空中摔下来）或者失控（指飞行器不受遥控器控制）的问题。</p>
-<p><img src="/assets/img/flame-wheel.jpg" alt=""></p>
-<p>另外还需要注意的一点是，大四轴由于其块头大，螺旋桨转速快，撞到人或者物都会比较危险。所以一定要选择无人，空间宽阔，视野好的地方进行飞行。常见的一个事故就是<strong>射桨</strong>。射桨就是飞行器的螺旋桨因为旋转时转速太高，超出了旋翼所承受拉力的设计值时，桨根断裂，由于旋转时的巨大惯性，残桨像炮弹破片那样高速飞出去，威力很大（相对来说），会打伤人，所以形象的称为“射桨”。有时旋翼固定螺丝松脱或碰到异物导致旋翼断裂也会导致射桨。如果射桨击中人，尤其是眼睛等脆弱的部位，会是非常危险的。所以对于新手来说，调四轴最好带护目镜保护眼睛。</p>
-<h2 id="">小四轴</h2>
-<p>小四轴是相对于上面的大四轴来说的，这里我们指手掌大小的四轴飞行器。一般来说，小四轴直接使用电路板作为承载的支架，当然也有使用单独支架的。</p>
-<p>小四轴由于其体型小，所以一般无法承载太重的负载。但是用来研究飞行器的原理，作为入门航模的通道，已经完全绰绰有余。在大四轴中提到的组件飞控，电调，电机，遥控器，电池，支架等都一样在小四轴中存在，只是可能根据小四轴的特点有些改变。下面这些就是小四轴的好处。</p>
-<ul>
-<li>价格便宜，相对于大四轴动则上千元的成本，小四轴一般几百块钱就能够搞定</li>
-<li>危险性很小，基本上随处都能飞</li>
-<li>自己设计飞控电路板，自己移植编写开源飞控程序和算法。而大四轴的飞控一般是商业公司的产品，开源有限，DIY的可能性少</li>
-<li>由于小四轴飞行的距离有限，所以可以省去遥控器，直接使用智能手机控制</li>
-</ul>
+                        <p>电动机有有刷和无刷之分。结构上，无刷电机和有刷电机有相似之处，也有转子和定子，只不过和有刷电机的结构相反；有刷电机的转子是线圈绕组，和动力输出轴相连，定子是永磁磁钢；无刷电机的转子是永磁磁钢，连同外壳一起和输出轴相连，定子是绕组线圈，去掉了有刷电机用来交替变换电磁场的换向电刷，故称之为无刷电机（Brushless motor）。</p>
+<h2 id="">有刷电机</h2>
+<p>有刷电动机是内部含有换相电刷的电动机。什么是电刷呢，直接上图。电刷通过绝缘座固定在电动机后盖上，将电源的正负极引入到转子的换相器上，而换相器连通了转子上的线圈，线圈极性不断的交替变换与外壳上固定的磁铁形成作用力而转动起来。下图是将现在Crazepony使用的电机拆解之后看到的电刷和换相器。</p>
+<p><img src="/assets/img/motor-dianshua.jpg" alt=""></p>
+<p>有刷电机由于电刷和换相器之间的物理接触，所以有摩擦大，发热大，效率低等缺点。但是有刷电机同样具有制造简单，成本低廉的优点，所以现在市面上有刷电机仍然占有很大份额。</p>
+<h2 id="">无刷电机</h2>
+<p>有刷电机通过电刷和换相器这种结构设计获得固定方向的磁场作用力而转动起来。无刷电机没有电刷和换相器，它是如何获得固定方向的磁场作用力的呢？简单而言，依靠改变输入到无刷电机定子线圈上的电流波交变频率和波形，在绕组线圈周围形成一个绕电机几何轴心旋转的磁场，这个磁场驱动转子上的永磁磁钢转动，电机就转起来了。</p>
+<p>电机的性能和磁钢数量、磁钢磁通强度、电机输入电压大小等因素有关，更与无刷电机的控制性能有很大关系，因为输入的是直流电，电流需要电子调速器将其变成3相交流电，这就是无刷电机配合的电调需要解决的问题。</p>
+<p>无刷电机拥有动力足，寿命长，效率高等优势。所以<strong>大四轴都是用无刷电机</strong>的，模型无刷电机的外观如下，区别于有刷电机，最明显的就是<strong>无刷电机有三根线，并且配合电调使用</strong>。</p>
+<p><img src="/assets/img/motor-wushua.jpg" alt=""></p>
+<p>无刷电机最重要的一个参数是KV值，这个数值是无刷电机独有的一个性能参数，是判断无刷电机性能特点的一个重要数据。</p>
+<blockquote>
+<p>无刷电机KV值定义为转速/伏特，意思为输入电压增加1伏特，无刷电机空转转速增加的转速值（转/分钟）。总这个定义来看，我们能知道，无刷电机电压的输入与电机空转转速是遵循严格的线性比例关系的。</p>
+</blockquote>
+<p>例如：某无刷电机KV值为1000KV，意思是此电机在1V电压下，每分钟转速为1000转。则在10V电压下，此电机转速为：10V*1000KV=10000转/分，当然这些都是在电机空载的时候。</p>
+<p>绕线匝数多的，KV值低，最高输出电流小，但扭力大。</p>
+<p>绕线匝数少的，KV值高，最高输出电流大，但扭力小。</p>
+<h2 id="">电机之空心杯</h2>
+<p>空心杯电机（coreless motor）属于直流、永磁、伺服微特电机。空心杯电机在结构上突破了传统电机的转子结构形式，采用的是无铁芯转子。空心杯电机具有十分突出的节能、控制和拖动特性。</p>
+<p>空心杯电机分为有刷和无刷两种，有刷空心杯电机转子无铁芯，无刷空心杯电机定子无铁芯。</p>
+<p><strong>Crazepony使用的是有刷空心杯电机，转速为30000转/分钟，直径为7mm，长度为20mm（简称720电机），电机轴直径为1mm。</strong>当然，随着现在生产工艺的进步，现在市面上已经有体积非常小的航模无刷电机，Crazepony也会尝试使用无刷电机。</p>
+<p>Crazepony空心杯高速电机拆解图，可以明显看到线圈中间没有铁芯的。</p>
+<p><img src="/assets/img/coreless-motor.png" alt=""></p>
+<h2 id="">扩展阅读</h2>
+<p>关于无刷直流电机原理的讲解。</p>
+<p>
+<embed src="http://player.youku.com/player.php/sid/XMzI4MzkxMTg4/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+</p>
+
 
                     
                     </section>
@@ -1155,10 +1165,10 @@
         </div>
 
         
-        <a href="../wiki/copter-terminology.html" class="navigation navigation-prev " aria-label="Previous page: 航模常用术语"><i class="fa fa-angle-left"></i></a>
+        <a href="../quadcopter-base.html" class="navigation navigation-prev " aria-label="Previous page: 四轴飞行器基本组成部分"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../wiki/pitch-yaw-roll.html" class="navigation navigation-next " aria-label="Next page: 三维中pitch，yaw，roll的区别"><i class="fa fa-angle-right"></i></a>
+        <a href="../wiki/motor-control-ic.html" class="navigation navigation-next " aria-label="Next page: 电机驱动控制"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
