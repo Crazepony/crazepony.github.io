@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Crazyflie部分原理分析 | Crazepony四轴飞行器</title>
+        <title>Crazyflie研究笔记 | Crazepony四轴飞行器</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.6.3">
@@ -34,7 +34,7 @@
 
 
         
-    <div class="book" data-github="Crazepony/crazepony-gitbook" data-level="8" data-basepath="." data-revision="1423321076166">
+    <div class="book" data-github="Crazepony/crazepony-gitbook" data-level="8" data-basepath="." data-revision="1423408705332">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
@@ -497,7 +497,7 @@
                         
                             <b>5.</b>
                         
-                         Crazepony二次开发
+                         Crazepony原理讲解
                     </a>
                 
             
@@ -583,7 +583,7 @@
                         
                             <b>6.</b>
                         
-                         开发指南
+                         二次开发指南
                     </a>
                 
             
@@ -867,7 +867,7 @@
                         
                             <b>8.</b>
                         
-                         Crazyflie部分原理分析
+                         Crazyflie研究笔记
                     </a>
                 
             
@@ -1060,7 +1060,7 @@
     
         <a href="./wiki/remote-controller-bt.html" title="遥控器——蓝牙通信" class="chapter done " data-progress="4.7" style="left: 40%;"></a>
     
-        <a href="./crazepony-dev.html" title="Crazepony二次开发" class="chapter done new-chapter" data-progress="5" style="left: 42%;"></a>
+        <a href="./crazepony-dev.html" title="Crazepony原理讲解" class="chapter done new-chapter" data-progress="5" style="left: 42%;"></a>
     
         <a href="./wiki/ic-readme.html" title="Crazepony器件选型总览及说明" class="chapter done " data-progress="5.1" style="left: 44%;"></a>
     
@@ -1070,7 +1070,7 @@
     
         <a href="./wiki/software-experience.html" title="Crazepony软件开发经验总结" class="chapter done " data-progress="5.4" style="left: 50%;"></a>
     
-        <a href="./development.html" title="开发指南" class="chapter done new-chapter" data-progress="6" style="left: 52%;"></a>
+        <a href="./development.html" title="二次开发指南" class="chapter done new-chapter" data-progress="6" style="left: 52%;"></a>
     
         <a href="./wiki/setup-environment-in-windows-none.html" title="windows下开发环境搭建—裸机版本" class="chapter done " data-progress="6.1" style="left: 54%;"></a>
     
@@ -1104,7 +1104,7 @@
     
         <a href="./wiki/ms5611.html" title="气压计MS5611" class="chapter done " data-progress="7.10" style="left: 84%;"></a>
     
-        <a href="./crazyflie.html" title="Crazyflie部分原理分析" class="chapter done new-chapter" data-progress="8" style="left: 86%;"></a>
+        <a href="./crazyflie.html" title="Crazyflie研究笔记" class="chapter done new-chapter" data-progress="8" style="left: 86%;"></a>
     
         <a href="./wiki/freertos-intro.html" title="FreeRTOS简介" class="chapter  " data-progress="8.1" style="left: 88%;"></a>
     
@@ -1127,7 +1127,10 @@
                 
                     <section class="normal" id="section-gitbook_5">
                     
-                        <p>Crazyflie使用了实时嵌入式操作系统FreeRTOS。相比于uCOS，FreeRTOS是完全开源免费的，而uCOS在商业上的应用是要收费的。作为一个轻量级的操作系统，功能包括：任务管理、时间管理、信号量、消息队列、内存管理、记录功能等，可基本满足较小系统的需要。下面介绍FreeRTOS的基本框架，在STM32上的移植等。</p>
+                        <h1 id="crazyflie">Crazyflie四轴飞行器</h1>
+<p><a href="http://www.bitcraze.se/" target="_blank">Crazyflie</a>四轴飞行器是一个和Crazepony非常类似的迷你四轴飞行器项目，由瑞士三个工程师设计开发。该项目现在由深圳Seeed Studio公司负责生产和销售。Crazyflie是Crazepony的前辈和学习的对象。</p>
+<p>我们研究了Crazyflie的结构/硬件/软件，并且做了相关的笔记和分析。这里我们将笔记分享出来，方便后面人们的研究和学习。</p>
+<p><img src="/assets/img/crazyflie-2.jpg" alt=""></p>
 
                     
                     </section>
