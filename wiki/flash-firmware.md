@@ -16,6 +16,10 @@ cp2102是Crazepony上使用的USB转串口芯片。cp2102和STM32芯片以串口
 
 ![](/assets/img/cp2102.jpg)
 
+安装成功之后，在我的电脑->设备管理->端口（COM和LPT），就可以看到Crazepony对应的串口号，例如下图为COM3。看到该串口中有关于CP210x的描述。
+
+![](/assets/img/param-assistant-3.png)
+
 ## 烧入hex文件
 打开下载器，然后用这个下载器下载hex文件。如果无法烧入成功，可以重新插拔一下。
 
