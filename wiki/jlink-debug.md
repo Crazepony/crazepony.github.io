@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: J-Link的使用及常见文件
+title: J-Link的使用及常见问题
 ---
 
 # {{ page.title }}
@@ -57,7 +57,7 @@ crazepony除了可以使用usb接口下载程序之外，还将swd接口预留�
 
 在Keil 5下面，老版本的J-Link可能无法使用，出现下面的提示。这个时候需要升级J-Link固件。参考文档[MDK5安装与JLINK问题解决方法(支持代码自动补全)](http://www.9mcu.com/9mcubbs/forum.php?mod=viewthread&tid=1050785)
 
-![](/assets/img/jlink-5.jpg)
+![](/assets/img/jlink-5.png)
 
 
 
