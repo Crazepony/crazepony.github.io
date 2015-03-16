@@ -18,6 +18,7 @@ title: Crazepony Wiki
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
 * [windows下开发环境搭建—FreeRTOS版本](wiki/setup-environment-in-windows.html)
 * [linux下开发环境搭建](wiki/setup-environment-in-linux.html)
+* [J-Link的使用及常见文件](wiki/jlink-debug.html)
 * [Crazepony Android客户端](wiki/crazepony-android-client.html)
 * [固件烧写](wiki/flash-firmware.html)
 * [Crazepony上位机使用](wiki/param-assistant-manual.html)
