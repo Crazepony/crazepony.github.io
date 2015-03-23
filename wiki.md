@@ -73,6 +73,13 @@ title: Crazepony Wiki
 * [固件系统流程框架](wiki/system-flow-graph.html)
 * [通信协议](wiki/comm-protocol.html)
 
+<h2>手把手教你做穿越机H250</h2>
+
+* [H250的材料列表](wiki/h250-list.html)
+* [H250的组装](wiki/h250-assemble.html)
+* [H250的调试和试飞](wiki/h250-debug.html)
+* [H250的图传](wiki/h250-fpv.html)
+
 <h2>其他</h2>
 * [Crazepony的板型及结构](wiki/crazepony-construct.html)
 * [源代码的文件编码和文件格式](wiki/source-setting.html)
