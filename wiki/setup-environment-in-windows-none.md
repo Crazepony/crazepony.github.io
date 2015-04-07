@@ -5,7 +5,7 @@ title: Windows下开发环境搭建-裸机版本
 
 # {{ page.title }}
 
-IDE开发工具Keil v5.10下载地址：Crazepony百度云网盘[Keil-uVision5-MDK5-12.zip]()（推荐）。
+IDE开发工具Keil v5.10下载地址：Crazepony百度云网盘[Keil-uVision5-MDK5-12.zip](http://pan.baidu.com/s/1sjr24qD)（推荐）。
 
 IDE开发工具Keil v4.10下载地址：Crazepony百度云网盘[Keil-uVision4-MDK4-12.zip](http://pan.baidu.com/s/1ntNqLdv)。
 
@@ -16,12 +16,18 @@ cp2102驱动及isp烧录工具下载地址：Crazepony百度云网盘[开发工�
 ## 环境配置说明
 裸机版本是指没有使用RTOS的主控固件版本,由于没有使用RTOS，程序代码显得更加简单明了，开发环境配置简单，f非常适合初学者使用。
 
-裸机版本的代码使用Keil 4环境进行开发编译，下面介绍编译环境的搭建和编译过程。在crazepony 5.1版本及以前，使用keil 4.10进行开发。但是由于其不支持utf-8编码，所以从5.1版本之后都会使用keil 5.10版本进行开发。 将crazepony-firmware-none代码通过链接下载，下载后将代码压缩包解压在一个文件夹，如下图所示：![](open uvproj.png)
+裸机版本的代码使用Keil 4环境进行开发编译，下面介绍编译环境的搭建和编译过程。在crazepony 5.1版本及以前，使用keil 4.10进行开发。但是由于其不支持utf-8编码，所以从5.1版本之后都会使用keil 5.10版本进行开发。
+
+将crazepony-firmware-none代码通过链接下载，下载后将代码压缩包解压在一个文件夹，如下图所示：![](open uvproj.png)
 
 以Keil 5为例，点击Project栏目下Open project，打开代码解压所在文件夹选中Crazepony.uvproj，此时已将代码项目工程所有文件导入Keil 5，如图所示：![](import file.png)
 
-如果对crazepony开源代码有兴趣，可以打开Project目录栏查看源码的相关算法。代码工程导入后，可以对工程进行编译、调试及烧录，烧录代码在此介绍一种比较简单的方法，采用isp下载，操作简单，只需要装载cp2102驱动程序及一根miniusb数据线即可。烧录界面如图所示:![](programming.png)
+如果对crazepony开源代码有兴趣，可以打开Project目录栏查看源码的相关算法。代码工程导入后，可以对工程进行编译、调试及烧录，烧录代码在此介绍一种比较简单的方法，采用isp下载，操作简单，只需要装载cp2102驱动程序及一根miniusb数据线即可。烧录界面如图所示:
+
+![](programming.png)
+
 在此说明一点，在选择RTS和DTR的用法时，经过测试选择以下五种模式均可行
+
 * RTS高电平复位，DTR高电平进Bootloader
 * DTR高电平复位，RTS低电平进Bootloader
 * DTR低电平复位，RTS低电平进Bootloader
