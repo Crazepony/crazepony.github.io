@@ -79,6 +79,7 @@ title: Crazepony Wiki
 * [H250的组装](wiki/h250-assemble.html)
 * [H250的调试和试飞](wiki/h250-debug.html)
 * [H250的图传](wiki/h250-fpv.html)
+* [H250的配置](wiki/h250-config.html)
 
 <h2>其他</h2>
 * [Crazepony的板型及结构](wiki/crazepony-construct.html)
