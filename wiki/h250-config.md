@@ -4,8 +4,8 @@ title: H250选材列表
 ---
 
 ##CC3D配置向导
-作为一个之前对CC3D没有接触的新手，我们应该怎样快速入门CC3D让H250飞起来呢？OpenPilot CC3D给出了一个非常适合初学者入手的地面站，14.01地面站下载链接：https://wiki.openpilot.org/display/WIKI/OpenPilot+Downloads
-百度云分享链接：http://pan.baidu.com/s/1o6so6Ki
+作为一个之前对CC3D没有接触的新手，我们应该怎样快速入门CC3D让H250飞起来呢？OpenPilot CC3D给出了一个非常适合初学者入手的地面站，14.01地面站下载链接：[地面站](https://wiki.openpilot.org/display/WIKI/OpenPilot+Downloads)
+百度云分享链接：百度云网盘[OpenPilot-RELEASE-14.01-win32](http://pan.baidu.com/s/1o6so6Ki)
 界面语言为English，当然地面站也有汉化版，下面以版本为14.01为例介绍CC3D向导配置过程
 
 ##地面站的安装
