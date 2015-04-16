@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: 
+title: 软件框架讲解
 ---
 
 # {{ page.title }}
@@ -13,7 +13,7 @@ title:
 
 ## 软件流程图
 
-![](/assets/img/main.jpg)
+![](/assets/img/software-1.png)
 
 总体的流程图，就是这么简单。使用定时器4产生中断来置标志位，弄外使用定时器3来产生中断串口输出里面的任务，是整个飞机的核心。下面具体介绍实现细节。
 
