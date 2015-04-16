@@ -897,15 +897,23 @@ h1[id] {
 }
 
 /* Typography */
-.bs-example-type .table .type-info {
+table .type-info {
   color: #999;
   vertical-align: middle;
 }
-.bs-example-type .table td {
-  padding: 15px 0;
+table th {
+  padding-left: 5px;
+  padding-right: 35px;
   border-color: #eee;
+  border: 1px solid #ddd;
 }
-.bs-example-type .table tr:first-child td {
+table td {
+  padding-left: 5px;
+  padding-right: 35px;
+  border-color: #eee;
+  border: 1px solid #ddd;
+}
+table tr:first-child td {
   border-top: 0;
 }
 .bs-example-type h1,
