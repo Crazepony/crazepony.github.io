@@ -46,7 +46,7 @@ body {
 }
 
 h2{
-  margin-top: 40px;
+  padding-top: 20px;
 }
 
 /* Keep code small in tables on account of limited space */
@@ -552,7 +552,7 @@ border-right-color: #646668;
 /* All levels of nav */
 .bs-docs-sidebar .nav > li > a {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: #999;
   padding: 4px 20px;
