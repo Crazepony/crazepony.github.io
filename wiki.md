@@ -82,6 +82,9 @@ title: Crazepony Wiki
 * [H250的图传](wiki/h250-fpv.html)
 * [H250的配置](wiki/h250-config.html)
 
+<h2>Crazepony5.1版本</h2>
+* [Crazepony5.1软件结构](wiki/softmain.html)
+
 <h2>其他</h2>
 * [Crazepony的板型及结构](wiki/crazepony-construct.html)
 * [源代码的文件编码和文件格式](wiki/source-setting.html)
