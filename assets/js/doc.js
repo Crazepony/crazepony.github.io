@@ -59,6 +59,19 @@ $(document).ready(function(){
         $("#home").addClass("active");
     }
 
+	//wiki页面根据h2标签生成右边栏目录
+	var html = '';
+	var flg = false;
+	
+	$("h2").each(function(){
+		flg = true;
+		html += '<li><a href="#' + $(this).attr("id") + '">' + $(this).html() + '</a></li>';
+	});
+	
+	if(flg){
+		$(".sidebar-container").append(html);
+	}
+
 });
 
 
