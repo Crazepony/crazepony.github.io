@@ -59,6 +59,49 @@ $(document).ready(function(){
         $("#home").addClass("active");
     }
 
+	//wiki页面根据h2标签生成右边栏目录
+	var html = '';
+	var flg = false;
+	
+	$("h2").each(function(){
+		flg = true;
+		html += '<li><a href="#' + $(this).attr("id") + '">' + $(this).html() + '</a></li>';
+	});
+	
+	if(flg){
+		$(".sidebar-container").append(html);
+	}
+
+    // Sidenav affixing
+    var $sideBar = $('.bs-docs-sidebar')
+
+    $sideBar.affix({
+    offset: {
+      top: function () {
+        var offsetTop      = $sideBar.offset().top
+        var sideBarMargin  = parseInt($sideBar.children(0).css('margin-top'), 10)
+        var navOuterHeight = $('.bs-docs-nav').height()
+
+        return (this.top = offsetTop - navOuterHeight - sideBarMargin)
+      },
+      bottom: function () {
+        return (this.bottom = $('.bs-docs-footer').outerHeight(true))
+      }
+    }
+    });
+
+    // Scrollspy
+    var $window = $(window);
+    var $body   = $(document.body);
+
+    $body.scrollspy({
+      target: '.bs-docs-sidebar'
+    });
+
+    $window.on('load', function () {
+      $body.scrollspy('refresh')
+    });
+
 });
 
 
