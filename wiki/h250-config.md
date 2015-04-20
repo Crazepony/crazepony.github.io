@@ -4,11 +4,13 @@ title: H250选材列表
 ---
 
 ##CC3D配置向导
-作为一个之前对CC3D没有接触的新手，我们应该怎样快速入门CC3D让H250飞起来呢？OpenPilot CC3D给出了一个非常适合初学者入手的地面站，
-百度云分享链接：[OpenPilot-RELEASE-14.01-win32](http://pan.baidu.com/s/1o6so6Ki)，官网14.01地面站下载链接：[CC3D地面站](https://wiki.openpilot.org/display/WIKI/OpenPilot+Downloads) 官网还有其他版本地面站，读者可自行下载，14.01版本界面语言为English，当然地面站有汉化版，下面以版本为14.01为例介绍CC3D向导配置过程。
+作为一个之前对CC3D没有接触的新手，我们应该怎样快速入门CC3D让H250飞起来呢？OpenPilot CC3D拥有一个非常详尽的上位机，下面提供了百度云和官网下载的链接，读者可自行下载，14.01版本界面语言为English，当然地面站有汉化版，下面以版本为14.01为例介绍CC3D向导配置过程。
+
+<a href="http://pan.baidu.com/s/1o6so6Ki" class="btn btn-lg btn-outline" role="button" target="_blank" >CC3D上位机（百度云）</a>
+<a href="https://wiki.openpilot.org/display/WIKI/OpenPilot+Downloads" class="btn btn-lg btn-outline" role="button" target="_blank" >CC3D上位机（CC3D官网）</a>
 
 ##地面站的安装
-通过连接下载OpenPilot GCS，点击CC3D上位机程序OpenPilot-RELEASE-14.01-win32.exe，默认安装，一路next即可，安装进程即将结束时窗口弹出提示安装驱动，该上位机安装完成后会安装驱动程序，安装驱动程序之后用数据线将CC3D与电脑连接，有可能你的电脑会提示该驱动安装未成功，大家不要着急，去设备管理器看COM口是不是出现，笔者的电脑系统为Window7 32位系统，每次连接CC3D都会提示驱动安装不成功，在设备管理器里COM端口有出现但是CopterControl黄色感叹号标识，但是连接上位机则正常，其他系统尚未测试。
+点击CC3D上位机安装程序OpenPilot-RELEASE-14.01-win32.exe，默认安装，一路next即可。安装进程即将结束时窗口弹出提示安装驱动，该上位机安装完成后会安装驱动程序。安装驱动程序之后用数据线将CC3D与电脑连接，有可能你的电脑会提示该驱动安装未成功，大家不要着急，去设备管理器看COM口是不是出现。笔者的电脑系统为Window7 32位系统，每次连接CC3D都会提示驱动安装不成功，在设备管理器里COM端口有出现但是CopterControl黄色感叹号标识，但是连接上位机则正常。
 
 ![](/assets/img/h250-config-1.png)
 
