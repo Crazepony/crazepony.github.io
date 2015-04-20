@@ -4,7 +4,7 @@ title: Crazepony5.1软件结构
 ---
 
 # {{ page.title }}
-#Crazepony5.1版本软件框架讲解
+
 ##软件流程图
 
 ![](/assets/img/main.jpg)
