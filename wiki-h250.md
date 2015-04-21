@@ -13,9 +13,11 @@ title: H250 Wiki
 无论你是新手还是“老鸟”，H250终将属于你！！对于新手来说，入门要求低，飞控CC3D配置操作简单的地面站，支持新手向导配置，硬件配置为缩小版的大四轴，原理及架构更容易理解；对于一个久沙场的“老鸟”而言，CC3D支持自定义配参，调参配置不同飞行模式，穿越神器的快速、灵活定能享受不一样的爽飞体验。</p>
 
 * [H250的材料列表](wiki/h250-list.html)
-* [H250的组装](wiki/h250-assemble.html)
+* [H250机架组装](wiki/h250-assemble.html)
+* [H250整机安装](wiki/h250-elec-assemble.html)
+* [H250飞控CC3D配置](wiki/h250-config.html)
+
 * [H250的调试和试飞](wiki/h250-debug.html)
 * [H250的图传](wiki/h250-fpv.html)
-* [H250的配置](wiki/h250-config.html)
 
 
