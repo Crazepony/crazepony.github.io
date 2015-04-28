@@ -18,21 +18,17 @@ cp2102驱动及isp烧录工具下载地址：Crazepony百度云网盘[开发工�
 
 裸机版本的代码使用Keil 4环境进行开发编译，下面介绍编译环境的搭建和编译过程。在crazepony 5.1版本及以前，使用keil 4.10进行开发。但是由于其不支持utf-8编码，所以从5.1版本之后都会使用keil 5.10版本进行开发。
 
-将crazepony-firmware-none代码通过链接下载，下载后将代码压缩包解压在一个文件夹，如下图所示：![](open uvproj.png)
+将crazepony-firmware-none代码通过链接下载，下载后将代码压缩包解压在一个文件夹，如下图所示：
 
-以Keil 5为例，点击Project栏目下Open project，打开代码解压所在文件夹选中Crazepony.uvproj，此时已将代码项目工程所有文件导入Keil 5，如图所示：![](import file.png)
+![](/assets/img/open uvproj.png)
 
-如果对crazepony开源代码有兴趣，可以打开Project目录栏查看源码的相关算法。代码工程导入后，可以对工程进行编译、调试及烧录，烧录代码在此介绍一种比较简单的方法，采用isp下载，操作简单，只需要装载cp2102驱动程序及一根miniusb数据线即可。烧录界面如图所示:
+以Keil 5为例，点击Project栏目下Open project，打开代码解压所在文件夹选中Crazepony.uvproj，此时已将代码项目工程所有文件导入Keil 5，如图所示：
 
-![](programming.png)
+![](/assets/img/import file.png)
 
-在此说明一点，在选择RTS和DTR的用法时，经过测试选择以下五种模式均可行
+如果对crazepony开源代码有兴趣，可以打开Project目录栏查看源码的相关算法。代码工程导入后，可以对工程进行编译、调试及烧录，烧录代码在此介绍一种比较简单的方法，采用isp下载，操作简单，只需要装载cp2102驱动程序及一根MiniUSB数据线即可。**若资料写入不成功，检查是否正确设置RTS高电平复位，DTR高电平进Bootloader**，烧录界面如图所示:
 
-* RTS高电平复位，DTR高电平进Bootloader
-* DTR高电平复位，RTS低电平进Bootloader
-* DTR低电平复位，RTS低电平进Bootloader
-* DTR低电平（<3V）复位，不用RTS
-* 不使用RTS和DTR
+![](/assets/img/shaolu.png)
 
 ## Keil 4的安装和破解
 由于主控使用的是ARM Cortex-M3内核的STM32，所以必须使用带有ARM编译工具链的Keil 4。网络上很多只有几十兆大小的的Keil 4可能只支持C51开发。Crazepony百度云网盘提供带有ARM编译工具链的Keil 4安装文件下载，带有破解注册机和破解说明文档。用户自行下载安装，可以看到该Keil版本为v4.10。
