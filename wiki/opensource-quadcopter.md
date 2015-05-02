@@ -76,6 +76,35 @@ CC3D是现在OpenPilot现在提供的唯一大量使用的飞控。由于其飞�
 * OpenPilot官网：[www.openpilot.org](http://www.openpilot.org)
 * OpenPilot Wiki：[https://wiki.openpilot.org](https://wiki.openpilot.org)
 
+## Cleanflight
+在前面谈到MWC和CC3D飞控的时候，都有谈到Cleanflight，那么到底什么是Cleanflight呢？在crazepony的wiki中为什么要详细单独介绍它呢？
+
+正如在MWC介绍中提到的，由于MWC使用的是8位单片机做的主控芯片，在后来的发展中受到了性能的限制。很多玩家就把MWC飞控代码移植到32位处理器上（例如STM32），形成了[BaseFlight](https://github.com/multiwii/baseflight)飞控代码，后来从BaseFlight项目又分出来（fork）了CleanFlight飞控项目。Cleanflight其实只是一个基于MWC的飞控代码，它现在已经支持了下面这些飞控硬件平台：
+
+* AlienWii32
+* Naze32
+* CC3D
+* CJMCU
+* CheBuzzF3
+* Olimexino
+* Sparky
+
+上面的硬件飞控平台，除了CC3D比较有名之外，Naze32算是一个后起之秀。但是他们都有一个特点，基本上都是基于STM32主控MCU，内核为32位ARM Contex-M。那么crazepony的wiki中为什么要详细介绍这个飞控呢，有下面几点：
+
+* crazepony也是使用的STM32作为主控MCU，而且硬件选型和Naze32完全一样，很有借鉴意义
+* CC3D和Naze32飞控都可以刷Cleanflight的飞控，用于研究CrazeFPV H250穿越机
+* Naze32作为后起之秀，有超越CC3D的趋势，在国外穿越机玩家中非常流行
+
+Naze32的正面图，和CC3D最大的区别是它有加入气压计MS5611：
+
+![](/assets/img/naze32.jpg)
+
+下面是Cleanflight的官网和代码库。
+
+* Cleanflight官网：[http://cleanflight.com/](http://cleanflight.com/)
+* Cleanflight官方在Github上的代码库：[https://github.com/cleanflight](https://github.com/cleanflight)
+
+
 ## MikroKopter
 在2006年10月24号，Holger Buss和Ingo Busker创造了MK，一个伟大的Mikrokopter四轴社区。 在2007年中，Mikrokopter便像一个“ 空中的钉子”，像一只鸟一样，稳步的停留在空中。这对于开源四轴飞行器是一个很大的里程碑。
 
