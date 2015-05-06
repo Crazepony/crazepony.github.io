@@ -84,6 +84,8 @@ title: Crazepony Wiki
 * [H250的配置](wiki/h250-config.html)
 
 
+* [Cleanflight飞控研究](wiki/cleanflight-config.html)
+
 <h2 id="other">其他</h2>
 * [Crazepony的板型及结构](wiki/crazepony-construct.html)
 * [源代码的文件编码和文件格式](wiki/source-setting.html)
