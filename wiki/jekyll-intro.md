@@ -17,7 +17,7 @@ $ sudo apt-get install ruby-dev
 $ sudo gem install rdoc
 
 //安装jekyll
-$ gem install jekyll
+$ sudo gem install jekyll
 ~~~
 
 在本地调试crazepony网站效果：
