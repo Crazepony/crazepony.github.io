@@ -3,7 +3,7 @@ layout: wiki
 title: 散件组装教程
 ---
 
-> 本教程适合Crazepony-II 5.1版本
+> 本教程适合Crazepony 5.2，5.1版本
 
 从5.1版本开始，Crazepony**不再提供散件销售**。本组装教程主要目的是提供给后期的维修和改装。
 
