@@ -74,18 +74,6 @@ title: Crazepony Wiki
 * [固件系统流程框架](wiki/system-flow-graph.html)
 * [通信协议](wiki/comm-protocol.html)
 
-<h2 id="h250">手把手教你做穿越机H250</h2>
-<p>H250是采用经典的碳纤机架组装的一款四轴飞行器，由于机架呈H型结构，故称之为H250。以其重量轻、体积小，续航时间长，易改装、控制灵活，又被誉为穿越机。H250与大四轴相比凸显为成本低，体积小，能穿梭楼道、丛里之间，亦可挂载GPS、图传数传设备，可谓具备大四轴的所有性能；与微型四轴飞行器对比，动力足速度快，抗干扰能力强，改装不受局限性，可实现空中特技飞行，足以体现暴力特点。
-无论你是新手还是“老鸟”，H250终将属于你！！对于新手来说，入门要求低，飞控CC3D配置操作简单的地面站，支持新手向导配置，硬件配置为缩小版的大四轴，原理及架构更容易理解；对于一个久沙场的“老鸟”而言，CC3D支持自定义配参，调参配置不同飞行模式，穿越神器的快速、灵活定能享受不一样的爽飞体验。</p>
-* [H250的材料列表](wiki/h250-list.html)
-* [H250的组装](wiki/h250-assemble.html)
-* [H250的调试和试飞](wiki/h250-debug.html)
-* [H250的图传](wiki/h250-fpv.html)
-* [H250的配置](wiki/h250-config.html)
-
-
-* [Cleanflight飞控研究](wiki/cleanflight-config.html)
-
 <h2 id="other">其他</h2>
 * [Crazepony的板型及结构](wiki/crazepony-construct.html)
 * [源代码的文件编码和文件格式](wiki/source-setting.html)

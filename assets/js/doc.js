@@ -49,6 +49,8 @@ $(document).ready(function(){
         $("#todo").addClass("active");
     }else if(pathname.indexOf("pov") >= 0){
         $("#pov").addClass("active");
+    }else if(pathname.indexOf("h250") >= 0){
+        $("#h250").addClass("active");
     }else if(pathname.indexOf("faq") >= 0){
         $("#faq").addClass("active");
     }else if(pathname.indexOf("download") >= 0){
