@@ -22,6 +22,8 @@ title: Crazepony Wiki
 * [大四轴 VS 小四轴](wiki/large-small-quadcopter.html)
 * [美国手 VS 日本手](wiki/japan-american-rc.html)
 * [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.html)
+* [无头模式](wiki/head-free.html)
+* [四轴飞行器之+模式x模式](wiki/head-free.html)
 
 <h2 id="copter">四轴飞行器基本组成部分</h2>
 * [航模电机](wiki/motor-aircraft-model.html)
