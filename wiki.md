@@ -14,9 +14,9 @@ title: Crazepony Wiki
 * [四轴飞行器历史回顾](wiki/quadcopter-history.html)
 * [开源四轴飞行器](wiki/opensource-quadcopter.html)
 * [四轴飞行器明星产品](wiki/quadcopter-star.html)
+* [多旋翼 VS 直升机 VS 固定翼](wiki/heli-quad-fix-copter.html)
 
-<h2 id="copter-term">航模基本概念扫盲</h2>
-<p>四轴飞行器有其特有的力学结构，这部分是四轴结构的基本知识和组装。</p>
+<h2 id="copter-term">航模概念扫盲</h2>
 * [航模常用术语](wiki/copter-terminology.html)
 * [三维中pitch/yaw/roll的区别](wiki/pitch-yaw-roll.html)
 * [大四轴 VS 小四轴](wiki/large-small-quadcopter.html)
@@ -25,7 +25,8 @@ title: Crazepony Wiki
 * [无头模式](wiki/head-free.html)
 * [四轴飞行器之+模式x模式](wiki/head-free.html)
 
-<h2 id="copter">四轴飞行器基本组成部分</h2>
+<h2 id="copter">航模基本组成部分</h2>
+<p>航模基本组成部分的介绍，包括了动力系统，飞控，遥控器，图传等部分。在这里主要以多旋翼飞行器为讲解目标。当然，很多知识点在固定翼/直升机上也是通用的。</p>
 * [航模电机](wiki/motor-aircraft-model.html)
 * [电机驱动控制](wiki/motor-control-ic.html)
 * [航模桨叶](wiki/propeller.html)
