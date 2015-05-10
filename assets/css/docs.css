@@ -897,6 +897,10 @@ h1[id] {
 }
 
 /* Typography */
+table {
+  margin-bottom:10px;
+}
+
 table .type-info {
   color: #999;
   vertical-align: middle;
