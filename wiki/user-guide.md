@@ -18,7 +18,7 @@ Crazepony默认固件使用是的X结构，无头模式，遥控默认固件为�
 
 一般我们站在飞机的后方，面向飞机开始操控。
 
-> Crazepony遥控默认固件为美国手固件。更多关于[遥控器美国手](./japan-american-rc.html)。
+> Crazepony遥控默认固件为美国手，无头模式。更多关于[遥控器美国手](./japan-american-rc.html)。更多关于[无头模式飞行](./head-free.html)。
 
  
 ## 遥控器操作
