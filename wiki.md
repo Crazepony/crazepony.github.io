@@ -23,7 +23,6 @@ title: Crazepony Wiki
 * [美国手 VS 日本手](wiki/japan-american-rc.html)
 * [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.html)
 * [无头模式](wiki/head-free.html)
-* [四轴飞行器之+模式x模式](wiki/head-free.html)
 
 <h2 id="copter">航模基本组成部分</h2>
 <p>航模基本组成部分的介绍，包括了动力系统，飞控，遥控器，图传等部分。在这里主要以多旋翼飞行器为讲解目标。当然，很多知识点在固定翼/直升机上也是通用的。</p>
