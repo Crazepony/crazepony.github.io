@@ -25,7 +25,7 @@ title: H250 Wiki
 
 <h2 id="exp">开发经验总结</h2>
 * [自主悬停](wiki/auto-hold.html)
-* [桨叶的选型和动力效率](wiki/crazepony-props.html)
+* [动力效率和续航时间](wiki/crazepony-props.html)
 * [四轴飞行器调试方法](wiki/crazepony-debug.html)
 * [2.4G天线设计及遥控距离](wiki/crazepony-antenna.html)
 
