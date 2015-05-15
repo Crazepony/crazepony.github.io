@@ -27,7 +27,7 @@ title: H250 Wiki
 * [自主悬停](wiki/auto-hold.html)
 * [动力效率和续航时间](wiki/crazepony-props.html)
 * [飞行器平衡调试](wiki/crazepony-debug.html)
-* [2.4G天线设计及遥控距离](wiki/crazepony-antenna.html)
+* [天线设计及遥控距离](wiki/crazepony-antenna.html)
 
 <h2>Crazepony原理讲解</h2>
 * [Crazepony器件选型总览及说明](wiki/ic-readme.html)
