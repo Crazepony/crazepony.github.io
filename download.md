@@ -12,7 +12,7 @@ title: 下载中心
 <a href="https://github.com/Crazepony" class="btn btn-lg btn-outline" role="button" target="_blank" >Github查看</a>
 <a href="https://github.com/Crazepony/crazepony-firmware-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >飞控源码下载</a>
 <a href="https://github.com/Crazepony/crazepony-remote-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >遥控器源码下载</a>
-<a href="" class="btn btn-lg btn-outline" role="button" target="_blank" >烧写固件下载</a>
+<a href="http://pan.baidu.com/s/1bnm7jOF" class="btn btn-lg btn-outline" role="button" target="_blank" >烧写固件下载</a>
 
 ## 原理图&芯片资料
 通过百度网盘提供所有版本原理图的下载。并且将所使用芯片的资料（datasheet，封装图等）进行了整理，供大家下载。
