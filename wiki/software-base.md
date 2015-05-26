@@ -1,15 +1,15 @@
 ---
 layout: wiki
-title: 软件框架讲解
+title: 软件框架讲解（5.0及以前）
 ---
 
-# {{ page.title }}
+# {{page.title}}
 
-飞控源代码部分，截止目前为止，都是属于一砖一瓦敲出来的。没有使用实时操作系统（RTOS），我们称之为裸机代码，在Github上名字为[crazepony-firmware-none](https://github.com/Crazepony/crazepony-firmware-none)，尾缀none表示未使用操作系统裸跑的意思。后续会移植FreeRtos的实时操作系统，因为bitcraze团队的crazyflie就用的这个，向他们无限靠近是我们的目标。
+飞控源代码部分，都是属于一砖一瓦敲出来的。没有使用实时操作系统（RTOS），我们称之为裸机代码，托管在[Github](https://github.com/Crazepony/crazepony-firmware-none)上，名字为crazepony-firmware-none，尾缀none表示未使用操作系统裸跑的意思。 
 
 那么，现在就结合裸机代码，来说说Crazepony的软件框架。
 
-> 本文档以Crazepony 5.0版本为基础。
+> 本文档以Crazepony 5.0版本为基础。Crazepony 5.0版本及以前的代码主要由马骏（CamelGo）完成。贡献者黄永祥在5.1版本中对飞控代码进行了重构，将Crazepony的稳定性推向了一个新的高度。贡献者Nieyong在5.2版本中对代码进行了整理。
 
 ## 软件流程图
 

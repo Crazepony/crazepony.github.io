@@ -22,7 +22,6 @@ title: H250 Wiki
 * [Crazepony Android客户端](wiki/crazepony-android-client.html)
 * [固件烧写](wiki/flash-firmware.html)
 * [Crazepony上位机使用](wiki/param-assistant-manual.html)
-* [通信协议](wiki/crazepony-communication.html)
 
 <h2 id="exp">开发经验总结</h2>
 * [自主悬停](wiki/auto-hold.html)
@@ -34,9 +33,10 @@ title: H250 Wiki
 <h2>Crazepony原理讲解</h2>
 * [Crazepony器件选型总览及说明](wiki/ic-readme.html)
 * [Crazepony硬件原理讲解](wiki/hardware-base.html)
-* [Crazepony软件框架讲解](wiki/software-base.html)
+* [Crazepony软件框架讲解（5.0及以前）](wiki/software-base.html)
+* [Crazepony软件框架讲解](wiki/softmain.html)
 * [Crazepony软件开发经验总结](wiki/software-experience.html)
-* [Crazepony 5.1版本软件讲解](wiki/softmain.html)
+* [Crazepony通信协议](wiki/crazepony-communication.html)
 
 <h2 id="quadcopter-dev">四轴飞行器算法讲解</h2>
 <p>姿态解算是指把陀螺仪、加速度计、罗盘等数据融合在一起，得出飞行器的空中姿态，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
