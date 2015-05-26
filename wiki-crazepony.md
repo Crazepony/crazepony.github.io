@@ -22,12 +22,14 @@ title: H250 Wiki
 * [Crazepony Android客户端](wiki/crazepony-android-client.html)
 * [固件烧写](wiki/flash-firmware.html)
 * [Crazepony上位机使用](wiki/param-assistant-manual.html)
+* [通信协议](wiki/crazepony-communication.html)
 
 <h2 id="exp">开发经验总结</h2>
 * [自主悬停](wiki/auto-hold.html)
 * [动力效率和续航时间](wiki/crazepony-props.html)
 * [飞行器平衡调试](wiki/crazepony-debug.html)
 * [天线设计及遥控距离](wiki/crazepony-antenna.html)
+* [摄像头和图传](wiki/crazepony-camera.html)
 
 <h2>Crazepony原理讲解</h2>
 * [Crazepony器件选型总览及说明](wiki/ic-readme.html)
