@@ -122,6 +122,12 @@ h2{
  * Turn the `.navbar` at the top of the docs purple.
  */
 
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #393939;
+}
+
 .bs-docs-nav {
   margin-bottom: 0;
   background-color: #393939;
@@ -134,6 +140,7 @@ h2{
 .bs-docs-nav .navbar-nav > li > a {
   color: #aaa;
   font-weight: 500;
+  background-color: #393939;
 }
 .bs-docs-nav .navbar-nav > li > a:hover{
   color: #fff;
@@ -1056,10 +1063,17 @@ table tr:first-child td {
 }
 
 /* Example dropdowns */
-.bs-example > .dropdown > .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 5px;
+.dropdown > .dropdown-menu {
+    background-color: #333;
+}
+
+.dropdown > .dropdown-menu > li >a{
+    color: #aaa;
+}
+
+.dropdown > .dropdown-menu > li >a:hover{
+    color: #fff;
+    background-color: #393939;
 }
 
 /* Example tabbable tabs */
