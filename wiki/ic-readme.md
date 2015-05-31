@@ -5,13 +5,13 @@ title: Crazepony器件总览及选型说明
 
 # {{ page.title }}
 
-## 电机
-716有刷空心杯电机（4.1版本）。
+我们不提供桨叶/空心杯电机/电池等易损耗配件的购买。Craze团队整理了部分淘宝上的购买地址，大家可以自行购买。
 
-720有刷空心杯电机（5.0版本及以后），中心轴直径1mm。淘宝购买地址：[地址1](http://item.taobao.com/item.htm?ut_sk=1.U5nfk/5pPyADAHT9gIoKBhWX_21380790_1416310719.Copy.ShareSceneItemDetail&id=41176268103)。
+## 电机
+
+720有刷空心杯电机，中心轴直径1mm。淘宝购买地址：[地址1](http://item.taobao.com/item.htm?ut_sk=1.U5nfk/5pPyADAHT9gIoKBhWX_21380790_1416310719.Copy.ShareSceneItemDetail&id=41176268103)。
 
 ## 桨叶
-直径为45mm桨（4.1版本）。
 
 直径为75cm桨叶，桨叶中心孔直径为1mm，正好配上面的720电机。淘宝购买地址：[地址1](http://item.taobao.com/item.htm?spm=a230r.1.0.0.ZZNieR&id=35723782642&ns=1&abbucket=7#detail)。
 
