@@ -9,10 +9,6 @@ title: H250 Wiki
 
 * [入手试飞教程](wiki/user-guide.html)
 * [组装维修教程](wiki/assemble-guide.html)
-* [散件组装教程--5.0版本](wiki/assemble-guide-5-0.html)
-* [入手试飞教程--5.0版本](wiki/user-guide-5-0.html)
-* [散件组装教程--4.1版本](wiki/assemble-guide-4-1.html)
-* [入手试飞教程--4.1版本](wiki/user-guide-4-1.html)
 
 <h2 id="rd">开发指南</h2>
 * [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
@@ -60,3 +56,7 @@ title: H250 Wiki
 
 <h2 id="other">其他</h2>
 * [Crazepony的板型及结构](wiki/crazepony-construct.html)
+* [散件组装教程--5.0版本](wiki/assemble-guide-5-0.html)
+* [入手试飞教程--5.0版本](wiki/user-guide-5-0.html)
+* [散件组装教程--4.1版本](wiki/assemble-guide-4-1.html)
+* [入手试飞教程--4.1版本](wiki/user-guide-4-1.html)
