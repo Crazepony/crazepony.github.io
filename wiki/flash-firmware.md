@@ -1,11 +1,15 @@
 ---
 layout: wiki
-title: 固件烧写
+title: USB固件烧写
 ---
 
 # {{ page.title }}
 
+> 作者：nieyong
+
 编译好STM32的代码，得到hex格式的固件文件，如何烧写到主控中？
+
+Crazepony将SWD调试接口预留出来，可以使用J-Link或者ST-Link等调试器进行开发，详见[J-Link的使用及常见问题](./jlink-debug.html)。Crazepony也支持USB口烧入，即采用ISP下载，操作简单。只需要安装cp2102驱动程序，使用一根Mini USB数据线连接电脑。这里就详细介绍使用USB固件烧写流程。
 
 首先从crazepony的百度云盘中下载开发工具，点击[这里](http://pan.baidu.com/s/1eQ1kfPw)。解压压缩文件得到3个文件夹。
 

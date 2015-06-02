@@ -5,6 +5,8 @@ title: Crazepony Android APP开发和配置
 
 # {{ page.title }}
 
+> 作者：nieyong
+
 Crazepony的Android客户端源代码也是托管在github的crazepony项目下，点击[这里](https://github.com/Crazepony/crazepony-android-client-none)查看。可以直接下载zip压缩包，也可以通过git clone到本地。
 
 ~~~
