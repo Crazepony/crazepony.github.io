@@ -80,7 +80,7 @@ $ cd obj/
 
 ![](../assets/img/cleanflight_003.jpg)
 
-连接飞控成功
+连接飞控
 
 ![](../assets/img/cleanflight_004.jpg)
 
