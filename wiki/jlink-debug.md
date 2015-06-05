@@ -10,15 +10,16 @@ title: J-Link的使用及常见问题
 crazepony除了可以使用usb接口下载程序之外，还将swd接口预留到了板外。可以使用J-Link，ST-Link等工具进行代码的烧写/在线调试等。下面介绍J-Link的配置和常见问题。
 
 ## J-Link与Crazepony的接线
-J—Link实物接口图
+一般我们买到的J-Link如下所示，是一个20针的排线口。对于SWD接口，我们只需要使用3根线就可以。J-Link和Crazepony的连接如图如下，使用彩虹排线连接就可以。（Crazepony的SWD接口排阵默认未焊接）
 
-![](/assets/img/jlink-6.jpg)
-
-绿色线接J—Link 1并与飞控的VCC相连，黄色线接J—Link 2并与飞控的GND相连，橙色线接J—Link 3并与飞控的DIO相连，红色线接J—Link 4并与飞控的CLK相连，接线方式如下图
+* 1所指排针与飞控的VCC相连（如果飞机自己供电，可以不连接）
+* 2所指排阵与飞控的GND相连
+* 3所指排阵并飞控的DIO相连
+* 4所指排阵并与飞控的CLK相连
 
 ![](/assets/img/jlink-7.4.jpg)
 
-与Crazepony相连
+J-Link与Crazepony相连示意图。Crazepony遥控器的连接也是同理。
 
 ![](/assets/img/jlink-8.jpg)
 
