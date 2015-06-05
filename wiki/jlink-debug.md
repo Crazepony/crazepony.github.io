@@ -9,12 +9,29 @@ title: J-Link的使用及常见问题
 
 crazepony除了可以使用usb接口下载程序之外，还将swd接口预留到了板外。可以使用J-Link，ST-Link等工具进行代码的烧写/在线调试等。下面介绍J-Link的配置和常见问题。
 
+## J-Link与Crazepony的接线
+J—Link实物接口图
+
+![](/assets/img/jlink-6.jpg)
+
+绿色线接J—Link 1并与飞控的VCC相连，黄色线接J—Link 2并与飞控的GND相连，橙色线接J—Link 3并与飞控的DIO相连，红色线接J—Link 4并与飞控的CLK相连，接线方式如下图
+
+![](/assets/img/jlink-7.4.jpg)
+
+与Crazepony相连
+
+![](/assets/img/jlink-8.jpg)
+
 ## J-Link的配置和使用
-使用keil打开crazepony工程文件，点击Options，选择Debug部分，下拉选择J-Link/J-Trace Adapter，然后点击设置，配置如下。
+使用keil打开crazepony工程文件，点击Options for Target 'Crazepony'，选择Debug部分，下拉选择J-Link/J-Trace Cortex.
+
+![](/assets/img/jlink-9.png)
+
+然后点击设置，配置如下。
 
 ![](/assets/img/jlink-1.png)
 
-在选择了SW接口之后，如果连接正确，就会扫描到开发板上的SW接口。
+在选择了SW接口之后，将飞控开关打到on，点击Auto Alk，如果连接正确，就会扫描到开发板上的SW接口。
 
 ## J-Link固件烧写
 
