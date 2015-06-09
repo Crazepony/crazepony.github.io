@@ -2,3 +2,6 @@
 markdown: kramdown
 highlighter: pygments
 encoding: utf-8
+
+paginate:            10
+paginate_path: "/blog/page:num/"
