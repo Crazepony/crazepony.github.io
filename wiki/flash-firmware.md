@@ -25,20 +25,17 @@ cp2102是Crazepony上使用的USB转串口芯片。cp2102和STM32芯片以串口
 ![](/assets/img/param-assistant-3.png)
 
 ## 烧入hex文件
-打开下载器，然后用这个下载器下载hex文件。如果无法烧入成功，可以重新插拔一下。
-
-![](/assets/img/download.jpg)
-
-下载成功的标注。
-
-![](/assets/img/download-done.jpg)
-
-对于Crazepony-II 5.0及以后的版本，实现了连续下载固件功能，直接使用cp2102复位STM32并且引导进入串口升级固件的ISP下载模式。所以必须选择左下角的“RTS的高电平复位，DTR高电平进Bootloader”，如下图所示：
+打开ISP下载器，载入需要下载的hex文件，具体如下图所示。
 
 ![](/assets/img/download-1.jpg)
 
+在硬件设计上，直接使用CP2102复位STM32并且引导进入串口升级固件的ISP下载模式。CP2102使用RTS高电平复位STM32芯片，然后使用DTR将STM32的Boot0引脚拉低，STM32进入串口升级固件的ISP下载模式。所以在ISP下载器上，必须选择左下角的“RTS的高电平复位，DTR高电平进Bootloader”。
+
+
 ## 查看打印信息
 
-连上usb线，打开压缩包的里的串口助手，波特率115200，查看调试参数，确认hex烧入成功，并且正常运行。注意选择正确的串口。如果没有信息，可以按下复位键复位飞行器主控（对于5.0版本之后，没有复位按键）。
+连上USB线，打开串口助手，波特率设置为115200，查看串口打印信息。默认每隔1秒打印一次传感器数据信息。
+
+> Crazepony默认出厂固件串口打印信息关闭了，串口用于上位机数据传送。所以在串口助手上看到的是乱码。要使用串口打印信息，请烧入"Crazepony-xx-机身-UART.hex"固件。该固件开启了`SysConfig.h`中的`DEBUG_UART`宏。
 
 ![](/assets/img/uart-info.jpg)
