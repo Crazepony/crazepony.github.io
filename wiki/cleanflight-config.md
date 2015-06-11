@@ -5,13 +5,12 @@ title: Cleanflight的配置
 
 # {{ page.title }}
 
-## 在ubuntu下下载cleanflight固件
+## ubuntu下cleanflight开发环境搭建
 
 ~~~
 $ git clone git@github.com:cleanflight/cleanflight.git
 ~~~
 
-![](../assets/img/cleanflight_001.png)
 
 交叉编译链的安装
 
@@ -39,11 +38,9 @@ Ubuntu 12.04:
 $ sudo apt-get install gcc-arm-none-eabi=4.9.3.2014q4-0precise12
 ~~~
 
-如果安装失败，请使用第二种方法：
+如果安装失败，请使用第二种方法，直接下载对应版本gcc-arm-none-eabi在ubuntu下的[安装包](http://ppa.launchpad.net/terry.guo/gcc-arm-embedded/ubuntu/pool/main/g/gcc-arm-none-eabi)。
 
-[点击链接](http://ppa.launchpad.net/terry.guo/gcc-arm-embedded/ubuntu/pool/main/g/gcc-arm-none-eabi)
-
-请下载安装4.8 2014q2版的编译链：
+安装下载的4-8-2014q2版的编译链：
 
 ~~~
 $ sudo dpkg -i gcc-arm-none-eabi_4-8-2014q2-0saucy9_amd64.deb
@@ -62,13 +59,14 @@ cleanflight支持的飞控类型可以点击查找
 
 编译成功会生成相应的.hex文件
 
-![](../assets/img/cleanflight_002.png)
-
 ~~~
-$ cd obj/
+arm-none-eabi-size ./obj/main/cleanflight_NAZE.elf 
+   text    data     bss     dec     hex filename
+    115396      264   12940  128600   1f658 ./obj/main/cleanflight_NAZE.elf
+arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/main/cleanflight_NAZE.elf obj/cleanflight_NAZE.hex
 ~~~
 
-就可以看到.hex文件
+在obj文件夹下，就可以看到hex可烧写固件。
 
 ##cleanflight固件的烧录
 
