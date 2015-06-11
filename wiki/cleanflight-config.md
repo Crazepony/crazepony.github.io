@@ -5,7 +5,10 @@ title: Cleanflight的配置
 
 # {{ page.title }}
 
-## ubuntu下cleanflight开发环境搭建
+
+## 开发环境搭建
+
+下面介绍在Linux下（以Ubuntu为例），cleanflight交叉编译链的安装。
 
 ~~~
 $ git clone git@github.com:cleanflight/cleanflight.git
@@ -53,11 +56,9 @@ $ make TARGET='Flight Control Type Name'
 例如：$ make TARGET=NAZE
 ~~~
 
-cleanflight支持的飞控类型可以点击查找
+cleanflight支持的飞控类型可以[点击查找](https://github.com/cleanflight/cleanflight/tree/master/docs)。
 
-[点击链接](https://github.com/cleanflight/cleanflight/tree/master/docs)
-
-编译成功会生成相应的.hex文件
+编译成功会生成相应的hex文件
 
 ~~~
 arm-none-eabi-size ./obj/main/cleanflight_NAZE.elf 
@@ -68,11 +69,9 @@ arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/main/cleanflight_NAZE.el
 
 在obj文件夹下，就可以看到hex可烧写固件。
 
-##cleanflight固件的烧录
+## 固件的烧录
 
-将生成的.hex文件通过下面的方法进行固件烧录
-
-[点击链接](http://www.crazepony.com/wiki/flash-firmware)
+将生成的hex文件通过ISP的方法进行固件烧录，和crazepony烧入相同。参考 [链接](http://www.crazepony.com/wiki/flash-firmware)。
 
 烧录是否成功需要在谷歌浏览器应用下载cleanflight APP测试一下
 
@@ -83,3 +82,12 @@ arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/main/cleanflight_NAZE.el
 ![](../assets/img/cleanflight_004.jpg)
 
 烧录cleanflight固件成功
+
+## cleanflight GUI安装
+需要Chrome浏览器（或者chromium）的版本大于38。
+
+在ubuntu下，需要开启chrome应用访问串口的权限。
+
+~~~
+
+~~~

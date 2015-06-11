@@ -104,6 +104,13 @@ Naze32的正面图，和CC3D最大的区别是它有加入气压计MS5611：
 * Cleanflight官网：[http://cleanflight.com/](http://cleanflight.com/)
 * Cleanflight官方在Github上的代码库：[https://github.com/cleanflight](https://github.com/cleanflight)
 
+cleanflight飞控几个大的特点：
+* 飞控代码基于MWC，稳定简洁；
+* 为现在的32位处理器而开发，删除了原来为了支持8位处理器而存在的冗余代码。
+* 加入了很多好玩的功能。例如支持LED灯带，支持OLED，支持超声波传感器
+* 使用了先进的代码开发管理，代码结构清晰，冗余性强，测试充分
+* 支持多个硬件平台，例如CC3D，Naze32等
+
 
 ## MikroKopter
 在2006年10月24号，Holger Buss和Ingo Busker创造了MK，一个伟大的Mikrokopter四轴社区。 在2007年中，Mikrokopter便像一个“ 空中的钉子”，像一只鸟一样，稳步的停留在空中。这对于开源四轴飞行器是一个很大的里程碑。
