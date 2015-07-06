@@ -51,6 +51,8 @@ $(document).ready(function(){
         $("#pov").addClass("active");
     }else if(pathname.indexOf("h250") >= 0){
         $("#h250").addClass("active");
+    }else if(pathname.indexOf("manual") >= 0){
+        $("#manual").addClass("active");
     }else if(pathname.indexOf("faq") >= 0){
         $("#faq").addClass("active");
     }else if(pathname.indexOf("download") >= 0){
