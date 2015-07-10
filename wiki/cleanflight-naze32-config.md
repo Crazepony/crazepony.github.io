@@ -1,4 +1,4 @@
-﻿---
+---
 layout: wiki
 title: naze32刷cleanflight固件
 ---
@@ -94,7 +94,7 @@ naze32带10DOF，气压计可以辅助H250在空中实现定高，对于新手�
 
 ![](/assets/img/naze-config-12.png)
 
-* 十、cmd命令界面，以上所有配置均可使用cmd命令匹配。注：以上各分项配置没有具体顺序。
+* 十、cmd命令界面，以上所有配置均可使用cmd命令匹配。注：以上各分项配置没有具体顺序!!
 
 ![](/assets/img/naze-config-13.png)
 
