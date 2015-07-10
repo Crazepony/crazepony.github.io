@@ -41,8 +41,11 @@ cleanflight 是谷歌浏览器下的一个应用工具，我们首先需要翻�
 ## naze32重写Bootloader方法
 
 若naze32本地固件烧写或者是在线烧写提示Bootloader错误，无法写入固件时我们应该怎么办？若自己在配置或者因接线导致naze32 FMU引脚烧掉，重新更换stm32因没有Bootloader无法完成第一次固件烧写，我们应该怎么解决？下面笔者为大家介绍怎样去解决怎样写入Bootloader的方法。
+
 * 一、下载烧写工具。已通过百度网盘为大家提供烧写工具链接，工具中我附带了一个1.9.0版本的cleanfligh-naze32固件。
+
 * 二、烧写前准备。烧写步骤。USB上电前，用镊子短接naze32飞控板的Boot引脚；USB上电后，点击所下载文件中STMicroelectronics flash loader应用进入烧写界面，查看设备管理器COM是否与烧写界面COM口一致，波特率设置为115200，其他默认即可。
+
 * 三、按照默认选项一直next，直到出现如下界面。首先要选择我们要写入的文件，也就是在工具中附带的1.9.0版本cleanfligh-naze32固件，根据自己的情况选择是否要擦除资料。若更换新的STM32请选择no erase，next即开始写入。
 
 ![](/assets/img/firmware-flash-loader.png)  
