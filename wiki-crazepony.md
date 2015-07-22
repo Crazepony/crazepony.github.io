@@ -25,6 +25,7 @@ title: H250 Wiki
 * [飞行器平衡调试](wiki/crazepony-debug.html)
 * [天线设计及遥控距离](wiki/crazepony-antenna.html)
 * [摄像头和图传](wiki/crazepony-camera.html)
+* [手机APP蓝牙遥控](wiki/remote-controller-bt.html)
 
 <h2>Crazepony原理讲解</h2>
 * [Crazepony器件选型总览及说明](wiki/ic-readme.html)

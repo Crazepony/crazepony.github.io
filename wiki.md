@@ -32,7 +32,6 @@ title: Crazepony Wiki
 * [飞行控制器-主控MCU](wiki/main-controller-mcu.html)
 * [飞行控制器——传感器](wiki/main-controller-sensor.html)
 * [航模遥控器](wiki/remote-controller-2-4.html)
-* [遥控器——蓝牙通信](wiki/remote-controller-bt.html)
 
 
 <h2 id="other">其他</h2>
