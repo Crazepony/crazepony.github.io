@@ -32,16 +32,19 @@ title: 下载中心
 
 ## 上位机和Android客户端
 <a href="http://pan.baidu.com/s/1gdf9bKf" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机</a>
-<a href="http://pan.baidu.com/s/1eQfBgye" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（5.0版本及以后，APK文件）</a>
+<a href="http://pan.baidu.com/s/1nt69pUD" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（蓝牙4.0 BLE）</a>
+<a href="http://pan.baidu.com/s/1eQfBgye" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（蓝牙2.1）</a>
 
 
-上位机使用C#写成，现在已经加入了飞行姿态模拟，姿态数据显示，PWM输出显示等功能。截图如下所示。
+上位机使用C#写成，现在已经加入了飞行姿态模拟，姿态数据显示，PWM输出显示等功能。现在**默认固件已经关闭PC上位机数据（配合BLE低带宽模块）**，截图如下所示。
 
 ![](/assets/img/assistant-2.jpg)
 
-现在Crazepony支持Android手机蓝牙链接，使用手机的体感控制飞行。Android APP截图如下。
+现在Crazepony支持Android手机蓝牙4.0 BLE链接，需要**手机Android 4.3及以上**。Android APP截图如下。
 
-![](/assets/img/android-app-2.jpg)
+![](/assets/img/ble-app-1.jpg)
+
+![](/assets/img/ble-app-2.jpg)
 
 <a href="http://pan.baidu.com/s/1q5bEu" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机安装程序（5.0版本以前）</a>
 <a href="http://pan.baidu.com/s/1pJsMyqJ" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（5.0版本以前，APK文件）</a>
