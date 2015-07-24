@@ -19,6 +19,7 @@ title: H250 Wiki
 * [H250的调试和试飞](wiki/h250-debug.html)
 * [H250的图传](wiki/h250-fpv.html)
 
+* [Cleanfliht飞控介绍](wiki/cleanflight-know.html)
 * [Cleanflight飞控研究](wiki/cleanflight-config.html)
-* [naze32飞控刷Cleanflight-naze固件配置](wiki/cleanflight-naze32-config.html)
-* [cc3d飞控刷Cleanflight-naze固件配置](wiki/cleanflight-cc3d-config.html)
+* [Cleanflight固件烧写](wiki/cleanflight-firmware-flasher.html)
+* [Cleanflight固件配置](wiki/cleanflight-firmware-config.html)

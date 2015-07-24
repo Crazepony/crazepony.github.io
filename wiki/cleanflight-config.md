@@ -69,25 +69,4 @@ arm-none-eabi-objcopy -O ihex --set-start 0x8000000 obj/main/cleanflight_NAZE.el
 
 在obj文件夹下，就可以看到hex可烧写固件。
 
-## 固件的烧录
 
-将生成的hex文件通过ISP的方法进行固件烧录，和crazepony烧入相同。参考 [链接](http://www.crazepony.com/wiki/flash-firmware)。
-
-烧录是否成功需要在谷歌浏览器应用下载cleanflight APP测试一下
-
-![](../assets/img/cleanflight_003.jpg)
-
-连接飞控
-
-![](../assets/img/cleanflight_004.jpg)
-
-烧录cleanflight固件成功
-
-## cleanflight GUI安装
-需要Chrome浏览器（或者chromium）的版本大于38。
-
-在ubuntu下，需要开启chrome应用访问串口的权限。
-
-~~~
-
-~~~
