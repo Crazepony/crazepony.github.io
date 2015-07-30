@@ -46,7 +46,7 @@ title: H250 Wiki
 * [四元数](wiki/quaternions.html)
 * [三轴陀螺仪和三轴加速度计MPU6050](wiki/mpu6050.html)
 * [气压计MS5611](wiki/ms5611.html)
-* [PID算法](wiki/algorithm-pid.html)
+* [四轴PID控制算法](wiki/algorithm-pid.html)
 
 <h2 id="crazyflie">Crazyflie</h2>
 <p>Crazyflie使用了实时嵌入式操作系统FreeRTOS。相比于uCOS，FreeRTOS是完全开源免费的，而uCOS在商业上的应用是要收费的。作为一个轻量级的操作系统，功能包括：任务管理、时间管理、信号量、消息队列、内存管理、记录功能等，可基本满足较小系统的需要。下面介绍FreeRTOS的基本框架，在STM32上的移植等。</p>
