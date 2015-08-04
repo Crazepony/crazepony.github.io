@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title:cleanflight-know
+title: cleanflight-know
 ---
 
 ## Cleanflight介绍

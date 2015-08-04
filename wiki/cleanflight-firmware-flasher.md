@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title:cleanflight固件烧写方法
+title: cleanflight固件烧写方法
 ---
 
 ## naze32 Cleanflight固件两种烧写方法
