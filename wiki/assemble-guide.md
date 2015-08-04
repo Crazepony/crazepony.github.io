@@ -11,7 +11,7 @@ title: 散件组装教程
 
 * Crazepony主控电路板（PCBA）
 * 720空心杯有刷电机
-* 75cm正反桨叶
+* 75mm正反桨叶
 * 有刷电机套
 * Crazepony遥控器主控板（PCBA）
 * 380mAh航模电池

@@ -12,7 +12,7 @@ Crazepony MINI是一件入手即飞的微型四轴飞行器。旨在为大学生
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;Crazepony微型四轴飞行器技术参数
 
 * 电子系统：STM32F103（MCU）+ MPU6050（6轴传感器）+ MS5611（气压计）+ NRF24L01（2.4G遥控）+ HM-06（手机蓝牙遥控）
-* 动力系统：650mAh航模电池 + 720空心杯电机 + 75cm桨叶
+* 动力系统：650mAh航模电池 + 720空心杯电机 + 75mm桨叶
 * 飞控软件：Crazepony飞控/Cleanflight飞控（计划）
 * 遥控器：Crazepony 2.4G遥控器/Android APP遥控
 * 其它：机身大小10cm*10cm，自重45g，最大负重20g，续航6分钟，遥控距离20米（可选配[100米遥控器](./2015/01/23/about-5-1-version.html)）

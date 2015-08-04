@@ -13,7 +13,7 @@ title: Crazepony器件总览及选型说明
 
 ![](/assets/img/motor-720.jpg)
 
-直径为75cm桨叶，桨叶中心孔直径为1mm，正好配中心轴直径为1mm的720电机。淘宝购买地址：[地址1](http://item.taobao.com/item.htm?spm=a230r.1.0.0.ZZNieR&id=35723782642&ns=1&abbucket=7#detail)。
+直径为75mm桨叶，桨叶中心孔直径为1mm，正好配中心轴直径为1mm的720电机。淘宝购买地址：[地址1](http://item.taobao.com/item.htm?spm=a230r.1.0.0.ZZNieR&id=35723782642&ns=1&abbucket=7#detail)。
 
 ![](/assets/img/prop-75.png)
 
