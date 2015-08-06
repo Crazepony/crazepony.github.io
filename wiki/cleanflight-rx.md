@@ -1,9 +1,13 @@
 ---
 layout: wiki
-title: Cleanflight系列——接收机
+title: 接收机
 ---
 
 # {{ page.title }}
+
+> 作者：nieyong
+
+文档地址[Rx.md](https://github.com/Crazepony/cleanflight/blob/master/docs/Rx.md)，下面是翻译文章。
 
 A receiver is used to receive radio control signals from your transmitter and convert them into signals that the flight controller can understand.
 

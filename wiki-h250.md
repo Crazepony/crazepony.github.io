@@ -23,3 +23,8 @@ title: H250 Wiki
 * [Cleanflight飞控研究](wiki/cleanflight-config.html)
 * [Cleanflight固件烧写](wiki/cleanflight-firmware-flasher.html)
 * [Cleanflight固件配置](wiki/cleanflight-firmware-config.html)
+
+## Cleanflight文案翻译
+这是Cleanflight文档的翻译，文档位于[cleanflight](https://github.com/Crazepony/cleanflight)工程`./docs`文件夹下。
+
+* [接收机](wiki/cleanflight-rx.html)
