@@ -10,6 +10,29 @@
 
     <title>Crazepony四轴飞行器</title>
 
+    <!-- 根据浏览器语言版本切换到英文网站 -->
+    <script type="text/javascript">
+        var type=navigator.appName
+        if (type=="Netscape"){
+            var lang = navigator.language
+        }else{
+            var lang = navigator.userLanguage
+        }
+
+        //取得浏览器语言的前两个字母
+        console.log(window.location.href);
+        var lang = lang.substr(0,2)
+        if (lang != "zh"){
+            //非中文请求一律跳转到英文网站
+            //并且只在进入首页的时候，进行跳转
+            if((window.location.href == 'http://0.0.0.0:4000/')
+                || (window.location.href == 'http://www.crazepony.com/')){
+                window.location.href = window.location.href + 'en/';
+            }
+        }
+
+    </script>
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
 
