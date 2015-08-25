@@ -20,7 +20,7 @@ title: H250 Wiki
 * [Crazepony上位机使用](wiki/param-assistant-manual.html)
 
 <h2 id="exp">开发经验总结</h2>
-* [自主悬停](wiki/auto-hold.html)
+* [自主悬停&高度融合](wiki/auto-hold.html)
 * [动力效率和续航时间](wiki/crazepony-props.html)
 * [飞行器平衡调试](wiki/crazepony-debug.html)
 * [天线设计及遥控距离](wiki/crazepony-antenna.html)
