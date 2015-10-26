@@ -1523,7 +1523,7 @@ table tr:first-child td {
 
 @media (min-width: 1200px){
 .carousel-container {
-  width: 1280px;
+  width: 100%;
 }
 }
 
