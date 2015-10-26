@@ -1521,10 +1521,10 @@ table tr:first-child td {
     border-top: 2px solid #CCCCCC;
 }
 
-@media (min-width: 1200px){
 .carousel-container {
   width: 100%;
-}
+  padding-left:0px;
+  padding-right:0px;
 }
 
 .carousel {
@@ -1570,7 +1570,7 @@ table tr:first-child td {
   opacity: 1;
   filter: alpha(opacity=50);
 }
-
+/*
 .carousel-control.left {
   background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(255, 255, 255, 1)), to(rgba(255,255,255, 0.0001)));
   background-image: -webkit-linear-gradient(left, color-stop(rgba(255, 255, 255, 1) 0), color-stop(rgba(255,255,255, 0.0001) 100%));
@@ -1590,6 +1590,7 @@ table tr:first-child td {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
+*/
 
 .carousel-control:hover,
 .carousel-control:focus {
