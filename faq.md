@@ -17,10 +17,17 @@ Crazepony MINI是一件入手即飞的微型四轴飞行器。旨在为大学生
 * 遥控器：Crazepony 2.4G遥控器/Android APP遥控
 * 其它：机身大小10cm*10cm，自重45g，最大负重20g，续航6分钟，遥控距离20米（可选配[100米遥控器](./2015/01/23/about-5-1-version.html)）
 
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;关于电池电池电量及充电
 
-### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;如何充电，如何下载程序，如何调试
+当4个机臂上的LED同时闪烁，表示电池电量低。此时按下遥控器上的“+”按键无法启动电机，必须充电。充电使用安卓（Android）手机的Micro USB数据线。充电时开关一定要打到CHG位置（即关机位置）。正常充电时红色LED亮起，充满则暗下去。可以使用电脑USB接口/充电宝/手机充电器等充电，使用2A充电器大约40分钟充满。遥控器充电同理。
 
-飞机和遥控都是通过Micro USB接口充电，下载，调试。用USB线将飞机连接到电脑，充电宝等就可以给Crazepony四轴充电。同时也可以通过该USB接口下载程序，查看打印信息。除此之外，STM32的SWD接口被引出，可以使用JLink调试器进行在线调试开发。
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;如何下载程序，如何调试
+
+飞机和遥控都是通过Micro USB接口充电，下载，调试。可以通过该USB接口下载程序，查看打印信息。除此之外，STM32的SWD接口被引出，可以使用JLink调试器进行在线调试开发。
+
+### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;如何开启串口打印，如何使用上位机
+
+首先注意，USB串口打印和USB上位机同时只能够一个，不能够同时使用。出厂固件为了配合蓝牙4.0 BLE模块的低带宽特性，USB串口打印信息和USB上位机数据都是关闭的。要使用串口打印信息，请开启`SysConfig.h`中的`DEBUG_UART`宏。要使用上位机查看信息，请关闭`SysConfig.h`中的`DEBUG_UART`宏，并开启`main.c`中的`CommPCUploadHandle()`函数。详见[Wiki](wiki/flash-firmware.html#section)。
 
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;无法垂直起飞的问题
@@ -34,8 +41,6 @@ Crazepony MINI是一件入手即飞的微型四轴飞行器。旨在为大学生
 
 ### <i class="fa fa-arrow-right"></i>&nbsp;&nbsp;飞控代码未使用RTOS
 现在我们提供的飞控代码没有使用RTOS，全部是自己写的裸机代码，并非基于另外的四轴项目修改而来。
-
-我们计划将Cleanflight飞控移植到Crazepony MINI硬件平台。
 
 ## 四轴飞行器相关
 

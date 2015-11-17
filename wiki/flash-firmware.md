@@ -36,6 +36,6 @@ cp2102是Crazepony上使用的USB转串口芯片。cp2102和STM32芯片以串口
 
 连上USB线，打开串口助手，波特率设置为115200，查看串口打印信息。默认每隔1秒打印一次传感器数据信息。
 
-> Crazepony默认出厂固件串口打印信息关闭了，串口用于上位机数据传送。所以在串口助手上看到的是乱码。要使用串口打印信息，请烧入"Crazepony-xx-机身-UART.hex"固件。该固件开启了`SysConfig.h`中的`DEBUG_UART`宏。
+> Crazepony默认出厂固件串口打印信息和上位机数据都关闭。USB串口打印和USB上位机同时只能够使用一个，不能够同时使用。原因是串口上的上位机数据在串口助手上看到的是乱码。要使用串口打印信息，请开启`SysConfig.h`中的`DEBUG_UART`宏。要使用上位机查看信息，请关闭`SysConfig.h`中的`DEBUG_UART`宏，并开启`main.c`中的`CommPCUploadHandle()`函数。
 
 ![](/assets/img/uart-info.jpg)
