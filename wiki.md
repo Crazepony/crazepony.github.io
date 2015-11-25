@@ -15,11 +15,11 @@ title: Crazepony Wiki
 * [开源四轴飞行器](wiki/opensource-quadcopter.html)
 * [四轴飞行器明星产品](wiki/quadcopter-star.html)
 * [多旋翼 VS 直升机 VS 固定翼](wiki/heli-quad-fix-copter.html)
+* [大四轴 VS 小四轴](wiki/large-small-quadcopter.html)
 
 <h2 id="copter-term">航模概念扫盲</h2>
 * [航模常用术语](wiki/copter-terminology.html)
 * [三维中pitch/yaw/roll的区别](wiki/pitch-yaw-roll.html)
-* [大四轴 VS 小四轴](wiki/large-small-quadcopter.html)
 * [美国手 VS 日本手](wiki/japan-american-rc.html)
 * [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.html)
 * [无头模式](wiki/head-free.html)
