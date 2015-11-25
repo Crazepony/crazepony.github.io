@@ -56,7 +56,7 @@ title: H250 Wiki
 * [通信协议](wiki/comm-protocol.html)
 
 <h2 id="other">其他</h2>
-* [Crazepony的板型及结构](wiki/crazepony-construct.html)
+* [Crazepony的板形轮廓及沉金工艺](wiki/crazepony-construct.html)
 * [散件组装教程--5.0版本](wiki/assemble-guide-5-0.html)
 * [入手试飞教程--5.0版本](wiki/user-guide-5-0.html)
 * [散件组装教程--4.1版本](wiki/assemble-guide-4-1.html)
