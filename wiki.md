@@ -39,3 +39,4 @@ title: Crazepony Wiki
 * [如何参与站点建设](wiki/wiki-help.html)
 * [jekyll的安装和使用](wiki/jekyll-intro.html)
 * [windows下github配置](wiki/windows-git-intro.html)
+* [关于《Crazepony开源四轴飞行器》](wiki/about-book.html)
