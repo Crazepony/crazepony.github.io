@@ -3,6 +3,15 @@ layout: download
 title: 下载中心
 ---
 
+## 《Crazepony开源四轴飞行器》
+
+书籍《Crazepony开源四轴飞行器》提供PDF版本下载啦。该书籍直接由Gitbook导出，对中文字体的支持稍差。
+
+当前版本0.2版，2015-11-25发布。
+
+<a href="http://pan.baidu.com/s/1hqwdrFI" class="btn btn-lg btn-outline" role="button" target="_blank" >PDF文档百度下载&nbsp;<i class="fa fa-fire mark-hot"></i></a>
+
+
 ## 飞控/遥控器源代码
 
 源代码都托管在[Github](https://github.com/Crazepony/)下，包括飞控代码，遥控器代码，Android APP源码，PC上位机源码等。
