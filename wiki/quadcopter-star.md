@@ -5,6 +5,8 @@ title: 四轴飞行器明星产品
 
 # {{ page.title }}
 
+> 作者：nieyong
+
 ## Phantom
 
 ![](/assets/img/phantom.jpg)

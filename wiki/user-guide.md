@@ -3,6 +3,9 @@ layout: wiki
 title: 入手试飞教程
 ---
 
+# {{ page.title }}
+
+> 作者：nieyong
 > 本教程适合Crazepony 5.2，5.1版本
 
 ## 整机物料列表

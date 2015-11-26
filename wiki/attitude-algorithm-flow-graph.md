@@ -3,6 +3,11 @@ layout: wiki
 title: 姿态解算流程
 ---
 
+# {{ page.title }}
+
+> 作者：nieyong
+
+
 ## 姿态解算流程图
 
 ## 快速融合
