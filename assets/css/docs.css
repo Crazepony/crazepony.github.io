@@ -1631,3 +1631,13 @@ ul, ol{
 }
 
 
+.small-bs-docs-featurette {
+  padding-top:    10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
