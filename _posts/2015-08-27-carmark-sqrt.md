@@ -7,7 +7,9 @@ description: 在Crazepony飞控代码姿态解算融合中，有一个只有不�
 
 > 编者注：在Crazepony飞控代码姿态解算融合中，有一个只有短短不到十行的函数，求解平方根的倒数。该函数是著名的Carmack平方根求解算法，拥有极高的运算效率，堪称经典。本文就介绍该函数背后的故事，由Craze团队-nieyong整理编辑。
 
-首先粘贴Crazepony飞控代码`IMUSO3.c`文件中的该函数，求一个浮点数的平方根的倒数。
+首先粘贴Crazepony飞控代码`IMUSO3.c`文件中的该函数，求一个浮点数的平方根的倒数，即：
+
+![](/assets/img/invsqrt.gif)
 
 ~~~
 static float invSqrt(float number) 
@@ -26,9 +28,11 @@ static float invSqrt(float number)
 }
 ~~~
 
-Quake-III Arena（雷神之锤3）是90年代的经典游戏之一。该系列的游戏不但画面和内容不错，而且即使计算机配置低，也能极其流畅地运行。这要归功于它3D引擎的开发者约翰-卡马克（John Carmack）。事实上早在90年代初DOS时代，只要能在PC上搞个小动画都能让人惊叹一番的时候，John Carmack就推出了石破天惊的Castle Wolfstein, 然后再接再励，doom, doom-II, Quake...每次都把3D技术推到极致。他的3D引擎代码极度高效，几乎是在压榨PC机的每条运算指令。当初微软的Direct3D也得听取他的意见，修改了不少API。
+Quake-III Arena（雷神之锤3）是90年代的经典游戏之一。该系列的游戏不但画面和内容不错，而且即使计算机配置低，也能极其流畅地运行。这要归功于它3D引擎的开发者约翰-卡马克（John Carmack）。事实上早在90年代初DOS时代，只要能在PC上搞个小动画都能让人惊叹一番的时候，John Carmack就推出了石破天惊的Castle Wolfstein, 然后再接再励，doom, doom-II, Quake...每次都把3D技术推到极致。他的3D引擎代码极度高效，几乎是在压榨PC机的每条运算指令。当初微软的Direct 3D也得听取他的意见，修改了不少API。
 
-最近，Quake的开发商ID SOFTWARE遵守GPL协议，公开了Quake-III的原代码，让世人有幸目睹Carmack传奇的3D引擎的原码。
+![](/assets/img/quake-iii-arena.jpg)
+
+Quake的开发商ID SOFTWARE遵守GPL协议，公开了Quake-III的原代码，让世人有幸目睹Carmack传奇的3D引擎的原码。
 
 我们知道，越底层的函数，调用越频繁。3D引擎归根到底还是数学运算。那么找到最底层的数学运算函数（在`game/code/q_math.c`），必然是精心编写的。里面有很多有趣的函数，很多都令人惊奇。在`game/code/q_math.c`里发现了这样一段代码。它的作用是将一个数开平方并取倒，经测试这段代码比`(float)(1.0/sqrt(x))`快4倍。
 
@@ -66,17 +70,21 @@ float Q_rsqrt(float number)
 
 算法的原理其实不复杂,就是牛顿迭代法,用`x-f(x)/f'(x)`来不断的逼近`f(x)=a`的根。
 
+![](/assets/img/John_Carmack.jpg)
+
+> 约翰·D·卡马克二世，是美国的电玩游戏程序员、id Software的创始人之一，id是一家专门开发电子游戏、电视游戏的公司，成立于1991年。
+
 一般的求平方根都是这么循环迭代算的，但是卡马克真正牛B的地方是他选择了一个神秘的常数0x5f3759df来计算那个猜测值，就是加注释的那一行，那一行算出的值非常接近1/sqrt(n)，这样我们只需要2次牛顿迭代就可以达到我们所需要的精度。好吧如果这个还不算厉害，接着看。
 
 普渡大学的数学家Chris Lomont看了以后觉得有趣，决定要研究一下卡马克弄出来的这个猜测值有什么奥秘。Lomont也是个牛人，在精心研究之后从理论上也推导出一个最佳猜测值，和卡马克的数字非常接近, 0x5f37642f。Lomont计算出结果以后非常满意，于是拿自己计算出的最佳猜测值和卡马克的神秘数字做比赛，看看谁的数字能够更快更精确的求得平方根。结果是卡马克赢了...谁也不知道卡马克是怎么找到这个数字的。
 
 最后Lomont怒了，采用暴力方法一个数字一个数字试过来，终于找到一个比卡马克数字要好上那么一丁点的数字，虽然实际上这两个数字所产生的结果非常近似，这个暴力得出的数字是0x5f375a86。Crazepony飞控代码中，就是使用的这个值。
 
-> Lomont为此写下一篇论文，"Fast Inverse Square Root"。论文下载地址：http://www.math.purdue.edu/~clomont/Math/Papers/2003/InvSqrt.pdf或者http://www.matrix67.com/data/InvSqrt.pdf。参考<IEEE Standard 754 for Binary Floating-Point Arithmetic><FAST INVERSE SQUARE ROOT>
+> Lomont为此写下一篇论文，"Fast Inverse Square Root"。
 
 大家可以尝试在PC机、51、AVR、430、ARM、上面编译并实验，惊讶一下它的工作效率。 
 
-有则新闻，大意是说Ryszard Sommefeldt很久以前看到这段code，他一看之下惊为天人，想要拜见这位前辈高人，但是一路追寻下去却一直找不到人。在大家追寻的过程中，有人提到一份叫做MIT HACKMEM的文件，这是1970年代的MIT强者们做的一些笔记 (hack memo)，大部份是algorithm，有些 code 是PDP-10 asm写的，另外有少数是C code (有人整理了一份列表)。
+有则新闻，大意是说Ryszard Sommefeldt很久以前看到这段code，他一看之下惊为天人，想要拜见这位前辈高人，但是一路追寻下去却一直找不到人。在大家追寻的过程中，有人提到一份叫做MIT HACKMEM的文件，这是1970年代的MIT强者们做的一些笔记 (hack memo)，大部份是algorithm，有些代码是PDP-10 asm写的，另外有少数是C code (有人整理了一份列表)。
 
 这个函数之所以重要，是因为求平方根倒数这个动作在3D运算（向量运算的部份）里面常常会用到，如果你用最原始的sqrt()然后再倒数的话，速度比上面的这个版本大概慢了四倍吧。当然，在飞控多旋翼的姿态解算中，同样涉及到很多向量运算，需要求平方根倒数，所以我们Crazepony选用了这样一个经典的函数。**数学，算法是软件的根基，无论是对于游戏3D引擎还是无人机多旋翼飞控，都是相通的。Carmack平方根函数就是很好的证明。**
 
