@@ -17,11 +17,12 @@ title: 航模常用术语
 
 * **俯仰，航向，横滚**：pitch，yaw，roll，指三维空间中飞行器的旋转状态。
 
-* **惯性导航模块**：IMU（Inertial Measurement Unit），由陀螺仪传感器和加速度传感器提供三轴运动数据的模块。
-
-* **姿态航向参考系统**：AHRS(Attitude and Heading Reference System)。
-
 * **自由度维数**：DOF(Dimension Of Freedom)，如果只有3轴陀螺仪和3轴加速度计，一共6个自由维度，称之为6DOF。如果再加上磁力计，一共9个自由维度，称之为9DOF。再加上气压计，一共10个自由维度，则为10DOF。Crazepony开源四轴飞行器现在没有加磁力计，所以原则上是7DOF。
+
+* **惯性测量模块**：IMU（Inertial Measurement Unit），提供飞行器在空间姿态的传感器原始数据，一般由陀螺仪传感器/加速度传感器/电子罗盘提供飞行器9DOF数据。
+
+* **姿态航向参考系统**：AHRS(Attitude and Heading Reference System)。航姿参考系统与惯性测量单元IMU的区别在于，航姿参考系统（AHRS）包含了姿态数据解算单元与航向信息，惯性测量单元（IMU）仅仅提供传感器数据，并不具有提供准确可靠的姿态数据的功能。也就是AHRS是将惯性测量单元的数据进行了姿态解算融合，获得了准确的姿态航向信息。
+
 
 * **运动感测追踪**：英文Motion Tracking。
 

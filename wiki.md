@@ -29,8 +29,8 @@ title: Crazepony Wiki
 * [航模电机](wiki/motor-aircraft-model.html)
 * [电机驱动控制](wiki/motor-control-ic.html)
 * [航模桨叶](wiki/propeller.html)
-* [飞行控制器-主控MCU](wiki/main-controller-mcu.html)
-* [飞行控制器——传感器](wiki/main-controller-sensor.html)
+* [飞行控制器—主控MCU](wiki/main-controller-mcu.html)
+* [飞行控制器—惯性测量单元IMU](wiki/main-controller-sensor.html)
 * [航模遥控器](wiki/remote-controller-2-4.html)
 
 
