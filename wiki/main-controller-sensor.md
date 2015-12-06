@@ -54,4 +54,4 @@ Crazepony使用传感器MPU6050，集成了3轴陀螺仪和3轴加速度传感�
 
 在crazepony上，MPU6050/HMC5883/MS5611之间的连接如下图所示。
 
-![](/assets/img/sensors-connect.png)
+![](/assets/img/cp-imu.png)
