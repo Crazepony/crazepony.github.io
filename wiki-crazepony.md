@@ -39,12 +39,12 @@ title: H250 Wiki
 <p>姿态解算是指把陀螺仪、加速度计、罗盘等数据融合在一起，得出飞行器的空中姿态，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
 * [姿态解算简介](wiki/attitude-algorithm.html)
 * [姿态的数学表示方法](wiki/attitude-math.html)
+* [陀螺仪加速度计MPU6050](wiki/mpu6050.html)
+* [四元数](wiki/quaternions.html)
 * [姿态的测量](wiki/attitude-measure.html)
 * [姿态解算流程](wiki/attitude-algorithm-flow-graph.html)
 * [软件姿态解算](wiki/software-algorithm.html)
 * [硬件姿态解算](wiki/hardware-algorithm.html)
-* [四元数](wiki/quaternions.html)
-* [三轴陀螺仪和三轴加速度计MPU6050](wiki/mpu6050.html)
 * [气压计MS5611](wiki/ms5611.html)
 * [四轴PID控制算法](wiki/algorithm-pid.html)
 
