@@ -38,7 +38,6 @@ title: H250 Wiki
 <h2 id="quadcopter-dev">四轴飞行器算法讲解</h2>
 <p>姿态解算是指把陀螺仪、加速度计、罗盘等数据融合在一起，得出飞行器的空中姿态，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
 * [姿态解算简介](wiki/attitude-algorithm.html)
-* [姿态的数学表示方法](wiki/attitude-math.html)
 * [陀螺仪加速度计MPU6050](wiki/mpu6050.html)
 * [四元数](wiki/quaternions.html)
 * [姿态的测量](wiki/attitude-measure.html)
