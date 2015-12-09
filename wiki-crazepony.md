@@ -40,8 +40,6 @@ title: H250 Wiki
 * [姿态解算简介](wiki/attitude-algorithm.html)
 * [陀螺仪加速度计MPU6050](wiki/mpu6050.html)
 * [四元数](wiki/quaternions.html)
-* [姿态的测量](wiki/attitude-measure.html)
-* [姿态解算流程](wiki/attitude-algorithm-flow-graph.html)
 * [软件姿态解算](wiki/software-algorithm.html)
 * [硬件姿态解算](wiki/hardware-algorithm.html)
 * [气压计MS5611](wiki/ms5611.html)
