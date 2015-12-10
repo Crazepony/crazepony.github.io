@@ -5,12 +5,45 @@ title: 软件姿态解算
 
 # {{ page.title }}
 
-> 作者：路洋
-
+> 作者：路洋/nieyong
 
 > 文中有很多word下编辑的公式尚未加入，需要继续完善
 
-使用MPU6050硬件DMP解算姿态是非常简单的，下面介绍由三轴陀螺仪和加速度计的值来使用四元数软件解算姿态的方法。
+## 常见姿态解算算法
+首先亮出现在常见的软件姿态解算算法，这样在阅读相关姿态解算的文章时，不会越整越糊涂。
+
+* 非线性互补滤波算法
+* 卡尔曼滤波算法
+* Mahony互补滤波算法（Crazepony开源四轴飞行器使用这种）
+
+这些姿态解算算法都是使用一些巧妙的方式用加速度计的数据（或者加上电子罗盘），去修正由陀螺仪数据快速解算得到的存在误差的飞行器姿态（即四元数）。最终得到准确的飞行器姿态。要读懂本文，必须先阅读Crazepony开源四轴百科中的[《姿态解算简介》](http://www.crazepony.com/wiki/attitude-algorithm.html)和[《陀螺仪加速度计MPU6050》](http://www.crazepony.com/wiki/mpu6050.html)。
+
+算法主要参考的文章有：
+
+* [四轴飞行器姿态解算方法-Mahony的互补滤波法](http://www.qidic.com/42354.html)
+* [IMU Data Fusing: Complementary, Kalman, and Mahony Filter](http://www.olliw.eu/2013/imu-data-fusing/#chapter3)
+
+## Mahony互补滤波算法
+
+下面将会以Crazepony开源四轴飞行器的代码为实例讲解Mahony互补滤波算法。看看如何通过软件姿态解算，把IMU输出的数据融合为飞行器的控制精准姿态的。
+
+代码位于[IMUSO3.c](https://github.com/Crazepony/crazepony-firmware-none/blob/master/User_Src/IMUSO3.c)文件中，函数如下。
+
+~~~
+//函数名：NonlinearSO3AHRSupdate()
+//描述：姿态解算融合，是Crazepony和核心算法
+//使用的是Mahony互补滤波算法，没有使用Kalman滤波算法
+//改算法是直接参考pixhawk飞控的算法，可以在Github上看到出处
+//https://github.com/hsteinhaus/PX4Firmware/blob/master/src/modules/attitude_estimator_so3/attitude_estimator_so3_main.cpp
+static void NonlinearSO3AHRSupdate(float gx, float gy, float gz, float ax, float ay, float az, float mx, float my, float mz, float twoKp, float twoKi, float dt) 
+{
+    ……
+}
+~~~
+
+
+## 算法-by路洋
+使用MPU6050硬件DMP解算姿态是非常简单的，下面介绍由三轴陀螺仪和加速度计的值来使用软件算法解算姿态的方法。
 
 我们先来看看如何用欧拉角描述一次平面旋转(坐标变换)：
 
