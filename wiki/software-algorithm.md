@@ -25,7 +25,7 @@ title: 软件姿态解算
 
 ## Mahony互补滤波算法
 
-下面将会以Crazepony开源四轴飞行器的代码为实例讲解Mahony互补滤波算法。看看如何通过软件姿态解算，把IMU输出的数据融合为飞行器的控制精准姿态的。
+下面将会以Crazepony开源四轴飞行器的代码为实例讲解Mahony互补滤波算法。看看如何通过软件姿态解算，把IMU输出的数据融合为飞行器精准的姿态。
 
 代码位于[IMUSO3.c](https://github.com/Crazepony/crazepony-firmware-none/blob/master/User_Src/IMUSO3.c)文件中，函数如下。
 
@@ -41,8 +41,116 @@ static void NonlinearSO3AHRSupdate(float gx, float gy, float gz, float ax, float
 }
 ~~~
 
+* 输入参数`gx，gy，gz`分别对应三个轴的角速度，单位是弧度/秒。
+* 输入参数`ax，ay，az`分别对应三个轴的加速度数据，由于加速度的噪声较大，在从MPU6050读取的时候该数据是采用`LPF2pApply_x`低通滤波函数的。
+* 输出参数`mx，my，mz`分别对应三轴的电子罗盘数据，Crazepony四轴暂时没有使用到。
+* 输入参数`twoKp，twoKi`是控制加速度计修正陀螺仪积分姿态的速度，是定义的一个常量。
+* 输入参数`dt`是从上一次解算到本次解算的时间差，也就是角速度积分用的时间项。
 
-## 算法-by路洋
+输入参数`twoKp，twoKi`的宏定义如下：
+
+~~~
+#define so3_comp_params_Kp 1.0f
+#define so3_comp_params_Ki  0.05f
+~~~
+
+下面我们逐行分析Mohony互补滤波姿态解算的代码。
+
+~~~
+if(!((mx == 0.0f) && (my == 0.0f) && (mz == 0.0f))) {
+{
+    ……
+}
+
+if(!((ax == 0.0f) && (ay == 0.0f) && (az == 0.0f))) 	
+{
+    ……
+}
+~~~
+
+当电子罗盘数据有效的时候，需要融合电子罗盘的数据。Crazepony没有使用磁力计，所以这段代码略过。下面进入第二段的加速度数据融合。
+
+~~~
+recipNorm = invSqrt(ax * ax + ay * ay + az * az);
+
+ax *= recipNorm;
+ay *= recipNorm;
+az *= recipNorm;
+~~~
+
+对加速度数据进行归一化，得到单位加速度。
+
+~~~
+halfvx = q1q3 - q0q2;
+halfvy = q0q1 + q2q3;
+halfvz = q0q0 - 0.5f + q3q3;
+~~~
+
+把飞行器上次计算得到的姿态（四元数）换算成“方向余弦矩阵”中的第三列的三个元素。根据余弦矩阵和欧拉角的定义，地理坐标系的重力向量，转到机体坐标系，正好是这三个元素。所以这里的`halfvx、halfvy、halfvz`，其实就是用上一次飞行器机体姿态（四元数）换算出来的在当前的机体坐标系上的重力单位向量。**注意，Crazepony代码中取了其中的一半1/2，下面的误差同理**。
+
+~~~
+halfex += ay * halfvz - az * halfvy;
+halfey += az * halfvx - ax * halfvz;
+halfez += ax * halfvy - ay * halfvx;
+~~~
+
+在机体坐标系上，加速度计测出来的重力向量是`ax、ay、az`。由上次姿态解算的姿态（可以简单认为是陀螺积分）来推算出的重力向量是`halfvx、halfvy、halfvz`。它们之间的误差向量，就是上次姿态解算（可以认为是陀螺仪积分）后的姿态和加速度计测出来的姿态之间的误差。
+
+向量间的误差，可以用向量积(也叫外积、叉乘)来表示，ex、ey、ez就是两个重力向量的叉积。这个叉积向量仍旧是位于机体坐标系上的，而陀螺积分误差也是在机体坐标系，而且叉积的大小与陀螺积分误差成正比，正好拿来纠正陀螺。由于陀螺是对机体直接积分，所以对陀螺的纠正量会直接体现在对机体坐标系的纠正。
+
+所以上面一段代码含义就是获得叉乘误差。
+
+~~~
+gyro_bias[0] += twoKi * halfex * dt;	// integral error scaled by Ki
+gyro_bias[1] += twoKi * halfey * dt;
+gyro_bias[2] += twoKi * halfez * dt;
+
+// apply integral feedback
+gx += gyro_bias[0];
+gy += gyro_bias[1];
+gz += gyro_bias[2];
+~~~
+
+上面一段代码，叉乘误差进行积分。
+
+~~~
+
+// Apply proportional feedback
+gx += twoKp * halfex;
+gy += twoKp * halfey;
+gz += twoKp * halfez;
+~~~
+
+上面一段代码，用叉乘误差来做PI修正陀螺零偏，通过调节twoKp，twoKi两个参数，可以控制加速度计修正陀螺仪积分姿态的速度。
+
+**到此为止，使用加速度计数据对陀螺仪数据的修正已经完成，这就是姿态解算中的深度融合。**
+
+下面就是四元数微分方程，使用修正后的陀螺仪数据对时间积分，得到飞行器的当前姿态（四元数表示）。然后进行四元数的单位化处理。
+
+~~~
+dq0 = 0.5f*(-q1 * gx - q2 * gy - q3 * gz);
+dq1 = 0.5f*(q0 * gx + q2 * gz - q3 * gy);
+dq2 = 0.5f*(q0 * gy - q1 * gz + q3 * gx);
+dq3 = 0.5f*(q0 * gz + q1 * gy - q2 * gx); 
+
+q0 += dt*dq0;
+q1 += dt*dq1;
+q2 += dt*dq2;
+q3 += dt*dq3;
+
+// Normalise quaternion
+recipNorm = invSqrt(q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3);
+q0 *= recipNorm;
+q1 *= recipNorm;
+q2 *= recipNorm;
+q3 *= recipNorm;
+~~~
+
+
+## 欧拉微分方程
+
+> 这部分由路洋提供
+
 使用MPU6050硬件DMP解算姿态是非常简单的，下面介绍由三轴陀螺仪和加速度计的值来使用软件算法解算姿态的方法。
 
 我们先来看看如何用欧拉角描述一次平面旋转(坐标变换)：
@@ -79,6 +187,7 @@ static void NonlinearSO3AHRSupdate(float gx, float gy, float gz, float ax, float
 
 一方面是因为欧拉角微分方程中包含了大量的三角运算，这给实时解算带来了一定的困难。而且当俯仰角为90度时方程式会出现神奇的“GimbalLock”。所以欧拉角方法只适用于水平姿态变化不大的情况，而不适用于全姿态飞行器的姿态确定。
 
+## 四元数求解
 四元数法只求解四个未知量的线性微分方程组，计算量小，易于操作，是比较实用的工程方法。
 
 我们知道在平面(x,y)中的旋转可以用复数来表示，同样的三维中的旋转可以用单位四元数来描述。我们来定义一个四元数：
