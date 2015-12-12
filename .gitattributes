@@ -9,6 +9,7 @@
 *.gif binary
 *.jar binary
 *.so  binary
+*.pdf  binary
 style/fonts/* binary
 style/images/* binary
 
