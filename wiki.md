@@ -19,7 +19,7 @@ title: Crazepony Wiki
 
 <h2 id="copter-term">航模概念扫盲</h2>
 * [航模常用术语](wiki/copter-terminology.html)
-* [三维中pitch/yaw/roll的区别](wiki/pitch-yaw-roll.html)
+* [Pitch/Yaw/Roll的区别](wiki/pitch-yaw-roll.html)
 * [美国手 VS 日本手](wiki/japan-american-rc.html)
 * [四轴飞行器的空气动力原理](wiki/quadcopter-aerodynamic.html)
 * [无头模式 VS 有头模式](wiki/head-free.html)
