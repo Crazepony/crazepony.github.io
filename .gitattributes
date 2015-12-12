@@ -10,6 +10,7 @@
 *.jar binary
 *.so  binary
 *.pdf  binary
+*.odg  binary
 style/fonts/* binary
 style/images/* binary
 
