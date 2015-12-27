@@ -34,9 +34,11 @@ title: Crazepony Wiki
 * [航模遥控器](wiki/remote-controller-2-4.html)
 
 
-<h2 id="other">其他</h2>
+<h2 id="other">本站点介绍</h2>
+<p>Crazepony网站的搭建和建设，也是一个创客创造的过程。我们使用优秀的开源项目和模板，借用开源的工具和平台，一步步搭建起来这个网站，也就是大家现在看到的样子。</p>
 * [源代码的文件编码和文件格式](wiki/source-setting.html)
 * [如何参与站点建设](wiki/wiki-help.html)
+* [本站点搭建的知识点](wiki/website-readme.html)
 * [jekyll的安装和使用](wiki/jekyll-intro.html)
 * [windows下github配置](wiki/windows-git-intro.html)
 * [关于《Crazepony开源四轴飞行器》](wiki/about-book.html)
