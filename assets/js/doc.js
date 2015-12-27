@@ -78,6 +78,13 @@ $(document).ready(function(){
 		$(".sidebar-container").append(html);
 	}
 
+    //Disqus评论点击加载
+    window.disqus_shortname = 'crazepony';
+    $('#disqus_container .comment').on('click',function(){
+        var that = this;
+        $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+    });
+
     // Sidenav affixing
     var $sideBar = $('.bs-docs-sidebar')
 
