@@ -49,8 +49,8 @@ $(document).ready(function(){
         $("#todo").addClass("active");
     }else if(pathname.indexOf("pov") >= 0){
         $("#pov").addClass("active");
-    }else if(pathname.indexOf("race-drone") >= 0){
-        $("#race-drone").addClass("active");
+    }else if(pathname.indexOf("products") >= 0){
+        $("#products").addClass("active");
     }else if(pathname.indexOf("h250") >= 0){
         $("#h250").addClass("active");
     }else if(pathname.indexOf("manual") >= 0){
