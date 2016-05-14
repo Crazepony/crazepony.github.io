@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: 无头模式 VS 有头mohican
+title: 无头模式&有头模式
 ---
 
 # {{ page.title }}
