@@ -47,12 +47,24 @@ title: faq
 
         <h2><i class="fa fa-arrow-right"></i>Crazepony propeller got damaged and what replacements are available?</h2>
         <div class="row">
-            <p>The original propellers of Crazepony MINI quadcopter is 75mm nylon propeller.This is not available on e-platform like Amazon or Ebay.So I advice you to use the propeller of Parrot Minidrone Rolling Spider instead.The <a href="http://www.amazon.com/dp/B00R2PA0OM" target="_blank">propellers</a> of Parrot Rolling Spider are 66mm and work well on Crazepony.You could just replace all the props with Rolling Spider props and no upgrade firmware needed.</p>
+            <p>The stock propellers of Crazepony MINI quadcopter is 75mm nylon propeller.This is available on e-platform like <a href="https://www.amazon.com/dp/B01ASQFP28" target="_blank">Amazon</a>.Also you to use the propeller of Parrot Minidrone Rolling Spider instead.The <a href="http://www.amazon.com/dp/B00R2PA0OM" target="_blank">propellers</a> of Parrot Rolling Spider are 66mm and work well on Crazepony.You could just replace all the props with Rolling Spider props and no upgrade firmware needed.</p>
         </div>
 
         <h2><i class="fa fa-arrow-right"></i>How to flash a modified firmware to the quadcopter or remote control?</h2>
         <div class="row">
-            <p>todo...</p>
+        <p>Using the FlyMcu.exe tool on Windows System.</p>
+            <ul>
+            <li>Connect quad to usb.You need a Micro USB data cable,like the one for Android smartphone.</li>
+            <li><a href="https://drive.google.com/open?id=0B9cAzTdwG1EaT0NLZ2xxY3cxZUk" target="_blank">Download</a> and launch FlyMcu.exe.</li>
+            <li>Click "EnumPort" menu item then select the COM port the quad is attached to(Make sure you have installed the CP210x driver correctlly).</li>
+            <li>Go to STM ISP tab.</li>
+            <li>Click "..." then select the .hex file you want to flash to the quad.</li>
+            <li>In the dropdown on the bottom of the window, select "Reset @RTS High(>+3V),ISP @DTR High</li>
+            <li>Uncheck "Program OptionBytes when ISP" (not mandatory, but safer, we don't need to touch that ...)</li>
+            <li>Click "Start ISP"</li>
+            <li>It should flash the firmware to the quad...</li>
+            </ul>
+            <img src="/assets/img/ispmcu.png" alt="Components" class="img-responsive">
         </div>
 
         <div class="page_disqus" id="disqus_container">
