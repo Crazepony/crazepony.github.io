@@ -64,11 +64,11 @@ Portable Python下载地址[http://portablepython.com/](http://portablepython.co
 
 至此，在windows下的终端cmd中应该存在jekyll命令。切换到源码路径下，使用`jekyll serve`命令就能够开启jekyll的服务，和ubuntu下的使用是一样的。
 
-## jekyll的相关配置
+## Jekyll的相关配置
 
-本站点使用到的jekyll功能或者配置。
+本站点使用到的Jekyll功能或者配置。
 
-* [jekyll配置代码高亮](http://jekyllrb.com/docs/templates/#code-snippet-highlighting)
-* [内嵌gist代码](http://jekyllrb.com/docs/templates/#gist)
+* [Pagination](https://jekyllrb.com/docs/pagination/)，博客首页多个Page的设置。
+* [Templates](https://jekyllrb.com/docs/templates/)，Jekyll使用的语法，使用[Liquid](https://shopify.github.io/liquid/)语法进行解析。其中[jekyll配置代码高亮](http://jekyllrb.com/docs/templates/#code-snippet-highlighting)和[内嵌gist代码](http://jekyllrb.com/docs/templates/#gist)都属于Jekyll语法中的内容。
 
-[Poople](http://getpoole.com/)是一个jekyll模板站点，有很不错适合个人博客的模板提供。Crazepony的博客站点使用的[BeiYuu](http://beiyuu.com/)的模板，最原始就应该是来自Poople中的Hyde模板。
+[Poople](http://getpoole.com/)是一个jekyll主题模板站点，有很不错适合个人博客的模板提供。Crazepony的博客站点使用的[BeiYuu](http://beiyuu.com/)的模板，最原始就应该是来自Poople中的Hyde模板。
