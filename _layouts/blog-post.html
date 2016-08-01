@@ -35,9 +35,16 @@ layout: blog-default
     <div class="sidenav">
         <h2>Blog</h2>
         <ul class="artical-list">
+        {% assign count = 0 %}
         {% for post in site.posts%}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% assign count = count | plus: 1 %}
+
+            {% if count  >= 10 %}
+            {% break %}
+            {% endif %}
         {% endfor %}
+            <li><a href="/blog/blog-archive.html">更多……</a></li>
         </ul>
 
     </div>
