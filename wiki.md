@@ -5,15 +5,15 @@ title: Crazepony Wiki
 
 <div class="jumbotron">
     <p class="lead">这里是Craze团队提供的航模维基百科。</p>
-    <p class="lead">下面的介绍航模基本概念，开源四轴飞行器，多悬翼飞行器基本组成等内容。希望我们的努力能够为新手入门提供帮助和指导。 </p>
+    <p class="lead">下面的介绍航模基本概念，开源飞行控制器，多悬翼飞行器基本组成等内容。希望我们的努力能够为新手入门提供帮助和指导。 </p>
 </div>
 
 <h2 id="quadcopter">四轴飞行器</h2>
-<p>开源硬件，创客是Crazepony成长的土壤。Crazepony也愿意更加积极的参与到创客活动中，给大家带来乐趣。</p>
+<p>开源软件/开源硬件是Crazepony成长的土壤。Crazepony也愿意更加积极的参与到分享中，给大家带来帮助。</p>
 
 * [四轴飞行器历史回顾](wiki/quadcopter-history.html)
-* [开源四轴飞行器](wiki/opensource-quadcopter.html)
-* [四轴飞行器明星产品](wiki/quadcopter-star.html)
+* [开源飞行控制器](wiki/opensource-quadcopter.html)
+* [明星四轴飞行器产品](wiki/quadcopter-star.html)
 * [多旋翼 VS 直升机 VS 固定翼](wiki/heli-quad-fix-copter.html)
 * [大四轴 VS 小四轴](wiki/large-small-quadcopter.html)
 

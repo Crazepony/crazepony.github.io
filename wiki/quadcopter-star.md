@@ -7,6 +7,8 @@ title: 四轴飞行器明星产品
 
 > 作者：nieyong
 
+下面提到的Phantom和AR.Drone都是2010前后出现的产品，并且一直更新换代到现在。当然，在后面几年，尤其是2013年以后，无人机多旋翼飞行器百花齐放，出现了很多新的产品和品牌。
+
 ## Phantom
 
 ![](/assets/img/phantom.jpg)
