@@ -18,6 +18,8 @@ title: Crazepony Wiki
 * [大四轴 VS 小四轴](wiki/large-small-quadcopter.html)
 
 <h2 id="copter-term">航模概念扫盲</h2>
+<p>常用的航模概念或者术语。有些是从模友入门角度，有些是从研发技术角度，大家各取所需吧。</p>
+
 * [航模常用术语](wiki/copter-terminology.html)
 * [Pitch/Yaw/Roll的区别](wiki/pitch-yaw-roll.html)
 * [美国手 VS 日本手](wiki/japan-american-rc.html)
