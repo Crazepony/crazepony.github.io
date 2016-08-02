@@ -34,6 +34,7 @@ title: Crazepony Wiki
 * [飞行控制器—主控MCU](wiki/main-controller-mcu.html)
 * [飞行控制器—惯性测量单元IMU](wiki/main-controller-sensor.html)
 * [航模遥控器](wiki/remote-controller-2-4.html)
+* [航模电池及平衡充](wiki/battery-balance-charger.html)
 
 
 <h2 id="other">本站点介绍</h2>

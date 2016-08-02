@@ -64,6 +64,19 @@ Crazepony使用的是有刷空心杯电机，所以电机的控制属于有刷�
 ![](/assets/img/QR-3650-2.jpg)
 ![](/assets/img/QR-10BL60-Sensored-1.jpg)
 
+## BLHeli
+BLHeli是一个开源的电调硬件及软件项目。BLHeli电调的完善和流行是在2015年，跟随穿越机市场的发展。BLHeli电调是电调发展的里程碑，在10-30A电调领域，打破了原来几个大的电调厂商孤立闭源的格局。现在很多老牌电调品牌都推出了支持BLHeli固件的电调。
+
+> 在BLHeli开源电调以前，有一个叫做Simonk的开源电调，但是当时还不是很成熟。
+
+由于BLHeli的硬件和软件都是开源的，所以市面上出现了很多基于BLHeli的电调。最著名的是FVT Littlebee ESC等，其中Littlebee是其中一个BLHeli固件版本的代号，一般称为小蜜蜂电调。
+
+![](/assets/img/littlebee-esc.jpg)
+
+BLHeli电调可以通过[BLHeliSuite](https://blhelisuite.wordpress.com/)上位机进行固件版本升级，参数修改等，非常方便。下面是该上位机的界面。
+
+![](/assets/img/blheli-setup.jpg)
+
 ## 扩展阅读
 * 《无感无刷直流电机之电调设计全攻略》——笔者最早看到这份文档，来自阿莫论坛。作者是timegate 墨鸢。对四轴飞行器无刷电机/电调入门和深入都非常合适，强烈推荐。在Crazepony的百度盘中提供一份[下载](http://pan.baidu.com/s/1i31fUCl)。
 
