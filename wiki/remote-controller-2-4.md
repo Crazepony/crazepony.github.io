@@ -96,7 +96,7 @@ PPM（脉位调制）信号与S.BUS.、XBUS类似，都是单线传输所有通�
 ![](/assets/img/rm-ctrl-4.png)
 
 ## Deviation开源遥控器
-这是笔者都目前为止知道的唯一一个开源遥控器项目。该项目其实是制作了一个基于华科尔（Walkera）的Devo系列遥控器的开源软件，并且可以通过修改遥控器的射频模块来支持不同的协议。
+这是一个开源遥控器项目。该项目其实是制作了一个基于华科尔（Walkera）的Devo系列遥控器的开源软件，并且可以通过修改遥控器的射频模块来支持不同的协议。
 
 > 该开源遥控项目和Crazepony项目有着非常深的渊源，以后会特别说明。
 
@@ -107,6 +107,19 @@ PPM（脉位调制）信号与S.BUS.、XBUS类似，都是单线传输所有通�
 该固件支持华科尔的DEVO 6/6S/7E/8/8S/10/12/12S/F7*/F12E*系列遥控器。
 
 ![](/assets/img/devo-10.jpg)
+
+## OpenTx开源遥控器
+这是另一个开源遥控器项目。该项目其实是制作了一个基于FrSky Tanaris系列遥控器的开源软件。
+
+![](/assets/img/opentx.png)
+
+项目主页：[http://www.open-tx.org/](http://www.open-tx.org/)
+
+该固件支持FrSky Taranis系列和Turnigy 9XR系列遥控器。
+
+> 现在睿思凯（FrSky）的Taranis遥控器在国内外模友中占有很高的口碑，和该遥控器有开源遥控固件OpenTx的支持是分不开的。
+
+![](/assets/img/frsky-taranis-plus.jpg)
 
 
 ## 遥控曲线问题
