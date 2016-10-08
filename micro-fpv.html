@@ -17,17 +17,29 @@ title: micro fpv indoor drone
     <hr class="half-rule">
 
     <div class="row text-left">
-      <div class="col-sm-12">
-        <p><strong>基本参数</strong></p>
+      <div class="col-sm-6">
+        <p><strong>基本特点</strong></p>
+        <ul class="list-unstyled">
+            <li>轴距90mm，1.6mm碳纤机架，55mm桨叶，共39g（不带电池）</li>
+            <li>F3_EVO_Brush飞控，刷Cleanflight有刷版固件</li>
+            <li>AC800接收机，支持睿斯凯FrSky Taranis X9D/Plus遥控器</li>
+            <li>25mW图传一体摄像头</li>
+            <li>720强劲动力版空心杯电机，带有Pico JST 1.25端子，和飞控插拔相连</li>
+            <li>200mAh电池，3分钟飞行时间</li>
+            <li>充电器1个</li>
+        </ul>
       </div>
-      <div class="col-sm-12">
-        <p class="text-left">轴距90mm，1.6mm碳纤机架，55mm桨叶，共39g（不带电池）</p>
-        <p class="text-left">F3_EVO_Brush飞控，刷Cleanflight有刷版固件</p>
-        <p class="text-left">AC800接收机，支持睿斯凯FrSky Taranis X9D/Plus遥控器</p>
-        <p class="text-left">25mW图传一体摄像头</p>
-        <p class="text-left">720强劲动力版空心杯电机，带有Pico JST 1.25端子，和飞控插拔相连</p>
-        <p class="text-left">200mAh电池，3分钟飞行时间</p>
-        <p class="text-left">充电器1个</p>
+      <div class="col-sm-6">
+        <p><strong>技术参数</strong></p>
+        <ul class="list-unstyled">
+            <li>轴距90mm，1.6mm碳纤机架，55mm桨叶，共39g（不带电池）</li>
+            <li>F3_EVO_Brush飞控，刷Cleanflight有刷版固件</li>
+            <li>AC800接收机，支持睿斯凯FrSky Taranis X9D/Plus遥控器</li>
+            <li>25mW图传一体摄像头</li>
+            <li>720强劲动力版空心杯电机，带有Pico JST 1.25端子，和飞控插拔相连</li>
+            <li>200mAh电池，3分钟飞行时间</li>
+            <li>充电器1个</li>
+        </ul>
       </div>
     </div>
     <hr class="half-rule">
@@ -54,12 +66,102 @@ title: micro fpv indoor drone
     <hr class="half-rule">
 
     <div class="row text-left">
+      <div class="col-sm-8">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th>灯语</th>
+                  <th>含义</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>飞控板上红灯常亮</td>
+                    <td>通电</td>
+                </tr>
+                <tr>
+                    <td>飞控板上蓝灯慢闪</td>
+                    <td>未解锁</td>
+                </tr>
+                <tr>
+                    <td>飞控板上蓝灯常亮</td>
+                    <td>解锁成功</td>
+                </tr>
+                <tr>
+                    <td>接收机红灯快速闪烁</td>
+                    <td>等待对频</td>
+                </tr>
+                <tr>
+                    <td>接收机红灯常亮</td>
+                    <td>连接成功且为SBUS模式</td>
+                </tr>
+                <tr>
+                    <td>接收机红灯常亮且每10秒闪烁一次</td>
+                    <td>连接成功且为PPM模式</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
     </div>
     <hr class="half-rule">
 
     <div class="row text-left">
+      <div class="col-sm-12">
+        <p><strong> 如何对频并启动飞行</strong></p>
+        <p>1.开启遥控器，新建一个接收机配置（如果你想要修改原有的也可以），必须设置Mode为D8，然后关闭遥控器。</p>
+        <img src="assets/img/micro-fpv-frsky-1.png" alt="Components" class="img-responsive img-manual">
+        <p>2.飞机通电，6秒后接收机红灯快闪，等待对频。开启遥控器并进入对频状态（选择遥控器上的Bind状态）。接收机红灯变为常亮代表对频成功。</p>
+        <img src="assets/img/micro-fpv-frsky-2.png" alt="Components" class="img-responsive img-manual">
+        <p>3. 在6秒到30秒之间开启遥控器对频，接收机为SBUS输出模式，接收机红灯常亮； 30秒后开启遥控器对频，则接收机为PPM输出模式，接收机红灯每10秒闪烁一次 ；默认选择SBUS输出。</p>
+        <p>4.每次使用，先开启遥控器，然后再开启飞机，接收机上红灯常亮，则表示对频成功。且遥控器上会有RSSI和电池电压回传。</p>
+        <p>5.SA键向下拨解锁，飞控板蓝灯常亮，解锁成功。即可飞行。</p>
+      </div>
     </div>
     <hr class="half-rule">
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p><strong>如何使用Cleanflight GUI进行故障排除或简单配置</strong></p>
+        CLI页面：
+        set motor_pwm_rate=1000
+        save
+
+        Ports页面：
+        开启UART2的Serial RX
+
+        然后点击右下角的Save and Reboot按钮。
+
+
+        Configuration页面：
+        ESC/Motor Features，开启MOTOR_STOP
+
+        Receiver Mode，选择RX_SERIAL
+        Serial Receiver Provider，选择SBUS
+        然后点击右下角的Save and Reboot按钮。
+
+        Modes页面：
+        ARM，点击Add Range
+        ANGLE，点击Add Range
+        然后点击右下角的Save按钮。
+
+      </div>
+    </div>
+    <hr class="half-rule">
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p><strong> 如何对频并启动飞行</strong></p>
+      </div>
+    </div>
+    <hr class="half-rule">
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p><strong> 如何对频并启动飞行</strong></p>
+      </div>
+    </div>
+    <hr class="half-rule">
+
   </div>
 </div>
 
