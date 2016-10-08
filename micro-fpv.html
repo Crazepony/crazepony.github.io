@@ -14,6 +14,25 @@ title: micro fpv indoor drone
         <p>由创客火科技开发的90mm轴距空心杯有刷穿越机开始测评啦！！！受到Tiny Whoop的启发，我们已经迫不及待想要和大家见面了。我们传承Crazepony MINI优美双曲线轮廓设计，提供最为精致简约的组装，入手及飞并且具有最高性价比。</p>
       </div>
     </div>
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p>如果你还不知道穿越机是怎么玩的，那么看看下面这些视频。</p>
+        <p>http://v.youku.com/v_show/id_XMTYxMDAzMTAzMg</p>
+        <p>http://v.youku.com/v_show/id_XMTY4NDk0NzE5Mg</p>
+        <p>http://v.youku.com/v_show/id_XMTczMTU0MzU2OA</p>
+        <p>你还需要拥有一个FrSky Taranis X9D遥控器，一个FPV显示屏或者眼镜，才能够体验第一视角飞行的乐趣。</p>
+      </div>
+    </div>
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p>需要其它版本接收机的模友，价格请询问客服。提供下面3种额外配置。</p>
+        <p>不含接收机。</p>
+        <p>FS-I6B接收机，支持富斯FS-I6遥控器。</p>
+        <p>R6DS接收机，支持乐迪Radiolink AT9、AT9S遥控器。</p>
+      </div>
+    </div>
     <hr class="half-rule">
 
     <div class="row text-left">
@@ -46,21 +65,52 @@ title: micro fpv indoor drone
 
     <div class="row text-left">
       <div class="col-sm-12">
-        <p>如果你还不知道穿越机是怎么玩的，那么看看下面这些视频。</p>
-        <p>http://v.youku.com/v_show/id_XMTYxMDAzMTAzMg</p>
-        <p>http://v.youku.com/v_show/id_XMTY4NDk0NzE5Mg</p>
-        <p>http://v.youku.com/v_show/id_XMTczMTU0MzU2OA</p>
-        <p>你还需要拥有一个FrSky Taranis X9D遥控器，一个FPV显示屏或者眼镜，才能够体验第一视角飞行的乐趣。</p>
+        <p><strong> 如何对频并启动飞行</strong></p>
+        <p>1.开启遥控器，新建一个接收机配置（如果你想要修改原有的也可以），必须设置Mode为D8，然后关闭遥控器。</p>
+        <p><img src="assets/img/micro-fpv-frsky-1.png" alt="Components" class="img-responsive"></p>
+        <p>2.飞机通电，6秒后接收机红灯快闪，等待对频。开启遥控器并进入对频状态（选择遥控器上的Bind状态）。接收机红灯变为常亮代表对频成功。</p>
+        <p><img src="assets/img/micro-fpv-frsky-2.png" alt="Components" class="img-responsive"></p>
+        <p>3. 在6秒到30秒之间开启遥控器对频，接收机为SBUS输出模式，接收机红灯常亮； 30秒后开启遥控器对频，则接收机为PPM输出模式，接收机红灯每10秒闪烁一次 ；默认选择SBUS输出。</p>
+        <p>4.每次使用，先开启遥控器，然后再开启飞机，接收机上红灯常亮，则表示对频成功。且遥控器上会有RSSI和电池电压回传。</p>
+        <p>5.SA键向下拨解锁，飞控板蓝灯常亮，解锁成功。即可飞行。</p>
       </div>
     </div>
     <hr class="half-rule">
 
     <div class="row text-left">
       <div class="col-sm-12">
-        <p>需要其它版本接收机的模友，价格请询问客服。提供下面3种额外配置。</p>
-        <p>不含接收机。</p>
-        <p>FS-I6B接收机，支持富斯FS-I6遥控器。</p>
-        <p>R6DS接收机，支持乐迪Radiolink AT9、AT9S遥控器。</p>
+        <p><strong>如何使用Cleanflight GUI进行故障排除或简单配置</strong></p>
+        <p>CLI页面：在文本框中输入</p>
+        <pre>set motor_pwm_rate=1000
+save</pre>
+
+        <p>Ports页面：开启UART2的Serial RX，然后点击右下角的Save and Reboot按钮。</p>
+        <img src="assets/img/micro-fpv-gui-1.png" alt="Components" class="img-responsive">
+
+        <p>Configuration页面：ESC/Motor Features，开启MOTOR_STOP</p>
+        <img src="assets/img/micro-fpv-gui-2.png" alt="Components" class="img-responsive">
+
+        <p>Receiver Mode，选择RX_SERIAL；Serial Receiver Provider，选择SBUS。然后点击右下角的Save and Reboot按钮。</p>
+        <img src="assets/img/micro-fpv-gui-3.png" alt="Components" class="img-responsive">
+        <img src="assets/img/micro-fpv-gui-4.png" alt="Components" class="img-responsive">
+
+        <p>Modes页面： ARM，点击Add Range；ANGLE，点击Add Range。然后点击右下角的Save按钮。</p>
+        <img src="assets/img/micro-fpv-gui-5.png" alt="Components" class="img-responsive">
+
+      </div>
+    </div>
+    <hr class="half-rule">
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p><strong> 如何对频并启动飞行</strong></p>
+      </div>
+    </div>
+    <hr class="half-rule">
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p><strong> 如何对频并启动飞行</strong></p>
       </div>
     </div>
     <hr class="half-rule">
@@ -105,62 +155,6 @@ title: micro fpv indoor drone
     </div>
     <hr class="half-rule">
 
-    <div class="row text-left">
-      <div class="col-sm-12">
-        <p><strong> 如何对频并启动飞行</strong></p>
-        <p>1.开启遥控器，新建一个接收机配置（如果你想要修改原有的也可以），必须设置Mode为D8，然后关闭遥控器。</p>
-        <img src="assets/img/micro-fpv-frsky-1.png" alt="Components" class="img-responsive img-manual">
-        <p>2.飞机通电，6秒后接收机红灯快闪，等待对频。开启遥控器并进入对频状态（选择遥控器上的Bind状态）。接收机红灯变为常亮代表对频成功。</p>
-        <img src="assets/img/micro-fpv-frsky-2.png" alt="Components" class="img-responsive img-manual">
-        <p>3. 在6秒到30秒之间开启遥控器对频，接收机为SBUS输出模式，接收机红灯常亮； 30秒后开启遥控器对频，则接收机为PPM输出模式，接收机红灯每10秒闪烁一次 ；默认选择SBUS输出。</p>
-        <p>4.每次使用，先开启遥控器，然后再开启飞机，接收机上红灯常亮，则表示对频成功。且遥控器上会有RSSI和电池电压回传。</p>
-        <p>5.SA键向下拨解锁，飞控板蓝灯常亮，解锁成功。即可飞行。</p>
-      </div>
-    </div>
-    <hr class="half-rule">
-
-    <div class="row text-left">
-      <div class="col-sm-12">
-        <p><strong>如何使用Cleanflight GUI进行故障排除或简单配置</strong></p>
-        CLI页面：
-        set motor_pwm_rate=1000
-        save
-
-        Ports页面：
-        开启UART2的Serial RX
-
-        然后点击右下角的Save and Reboot按钮。
-
-
-        Configuration页面：
-        ESC/Motor Features，开启MOTOR_STOP
-
-        Receiver Mode，选择RX_SERIAL
-        Serial Receiver Provider，选择SBUS
-        然后点击右下角的Save and Reboot按钮。
-
-        Modes页面：
-        ARM，点击Add Range
-        ANGLE，点击Add Range
-        然后点击右下角的Save按钮。
-
-      </div>
-    </div>
-    <hr class="half-rule">
-
-    <div class="row text-left">
-      <div class="col-sm-12">
-        <p><strong> 如何对频并启动飞行</strong></p>
-      </div>
-    </div>
-    <hr class="half-rule">
-
-    <div class="row text-left">
-      <div class="col-sm-12">
-        <p><strong> 如何对频并启动飞行</strong></p>
-      </div>
-    </div>
-    <hr class="half-rule">
 
   </div>
 </div>
