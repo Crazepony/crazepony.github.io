@@ -89,6 +89,20 @@ title: micro fpv indoor drone
     <div class="row text-left">
       <div class="col-sm-12">
         <h3>Binding & Flying Procedure</h3>
+        <p>a.Turn on transmitter, create new mode setup(modified original setup created before also available ), the Mode must be D8, turn off after setup.</p>
+        <p><img src="/assets/img/micro-fpv-frsky-1.png" alt="Components" class="img-responsive"></p>
+        <p>b. Power on quadcopter, red LED flashing rapodly on receiver after 6 seconds, the receiver is ready for binding. Then turn on the transmitter, enter the binding mode, the Red LED will be solid, means binded successfully with default mode SBUS.</p>
+        <blockquote>
+        <p>Turn on the transmitter between 6 to 30 second to binded with SBUS mode; Turn on the transmitter after 30 seconds to binded with PPM mode. Flight controller default SBUS mode.</p>
+        </blockquote>
+        <p><img src="/assets/img/micro-fpv-frsky-2.png" alt="Components" class="img-responsive"></p>
+        <p>c. Each flight, turn on the transmitter firstly, then power on the quadcopter, the receiver Red LED solid, means binded, with RSSI and voltage return.</p>
+        <p><img src="/assets/img/micro-fpv-frsky-3.png" alt="Components" class="img-responsive"></p>
+        <p>d. Switch SA key(middle position ), the Blue LED light on the receiver, means quadcopter unlocked and ready to fly.</p>
+        <blockquote>
+        <p>Crazepony 90mm BNF was set SA(CH5) to ARM/DISARM the motor before shipping, you can also customize it</p>
+        </blockquote>
+        <p><img src="/assets/img/micro-fpv-frsky-4.png" alt="Components" class="img-responsive"></p>
       </div>
     </div>
     <hr class="half-rule">
@@ -109,12 +123,19 @@ title: micro fpv indoor drone
         <p>You need to bind the receiver with your transmitter the first time.When using later,you MUST power on you transmitter before power on the receiver.</p>
         <p><strong>Q:</strong>I want more information about the brush flight controller.</p>
         <p>The FC is designed by Makerfire team.It is based on SPRacing F3_EVO_Brush FC,full Cleanflight/Betaflight compatibility on a STM32 F303 style processor.The size is 26mm x 26mm, fully compatible with the Blade Inductrix quad frame and mounting pattern.</p>
+        <p><strong>Q:</strong>Hello, has the item already comes with engines, control board and the camera of fpv?</p>
+        <p>Yes, it comes with 4*720 coreless motors, F3 brushed flight control board and 40CH AIO camera of FPV.</p>
+        <p><strong>Q:</strong>Does it have race band?</p>
+        <p>Yes, this BNF kit contain AIO camera and work with 40CH, which includes 8CH race band.</p>
+        <p><strong>Q:</strong>Does it include motor plug ends jst 1.25mm 2 pin micro?</p>
+        <p>Yes, motor plug ends jst 1.25 2 pin micro with 7mm*20mm dimension.</p>
+        <p><strong>Q:</strong>Is this a complete rtf quad and does it include a battery?</p>
+        <p>This is not complete RTF drone. You need a transmitter to bind to it. FrSky Taranis X9D is recommended. A 200mAh battery is included, with a JST connector for Blade Inductrix TINY WHOOP drone racing.</p>
       </div>
     </div>
     <hr class="half-rule">
 
-    <div class="row text-left">
-      <div class="col-sm-12">
+    <div class="row text-left"> <div class="col-sm-12">
         <h3>Cleanflight GUI Set Up</h3>
         <p>CLI页面：在文本框中输入</p>
         <pre>set motor_pwm_rate=1000
@@ -153,42 +174,47 @@ save</pre>
 
 -->
     <div class="row text-left">
-      <div class="col-sm-8">
+      <div class="col-sm-12">
       <h3>LED Flight Indicator</h3>
+      </div>
+      <div class="col-sm-8">
             <table class="table table-bordered table-hover">
               <thead>
                 <tr>
-                  <th>灯语</th>
-                  <th>含义</th>
+                  <th>Indicator</th>
+                  <th>Normal</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                    <td>飞控板上红灯常亮</td>
-                    <td>通电</td>
+                    <td>Red LED solid(FC)</td>
+                    <td>Power on</td>
                 </tr>
                 <tr>
-                    <td>飞控板上蓝灯慢闪</td>
-                    <td>未解锁</td>
+                    <td>Blue LED flashing(FC)</td>
+                    <td>NOT armed yet</td>
                 </tr>
                 <tr>
-                    <td>飞控板上蓝灯常亮</td>
-                    <td>解锁成功</td>
+                    <td>Blue LED solid(FC)</td>
+                    <td>Motor armed</td>
                 </tr>
                 <tr>
-                    <td>接收机红灯快速闪烁</td>
-                    <td>等待对频</td>
+                    <td>Red LED flashing(Rx)</td>
+                    <td>Binding status</td>
                 </tr>
                 <tr>
-                    <td>接收机红灯常亮</td>
-                    <td>连接成功且为SBUS模式</td>
+                    <td>Red LED solid(Rx)</td>
+                    <td>Connected with Tx successfully with SBUS output</td>
                 </tr>
                 <tr>
-                    <td>接收机红灯常亮且每10秒闪烁一次</td>
-                    <td>连接成功且为PPM模式</td>
+                    <td>Red LED solid(Rx) and flash 10 seconds</td>
+                    <td>Connected with Tx successfully with PPM output</td>
                 </tr>
               </tbody>
             </table>
+      </div>
+      <div class="col-sm-4">
+            <img src="/assets/img/micro-fpv-led-indicator-en.png" alt="Components" class="img-responsive">
       </div>
     </div>
     <hr class="half-rule">
