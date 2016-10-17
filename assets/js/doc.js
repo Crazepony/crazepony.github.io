@@ -49,6 +49,8 @@ $(document).ready(function(){
         $("#todo").addClass("active");
     }else if(pathname.indexOf("pov") >= 0){
         $("#pov").addClass("active");
+    }else if(pathname.indexOf("micro") >= 0){
+        $("#micro").addClass("active");
     }else if(pathname.indexOf("products") >= 0){
         $("#products").addClass("active");
     }else if(pathname.indexOf("h250") >= 0){
