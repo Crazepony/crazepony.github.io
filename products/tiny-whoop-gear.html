@@ -281,6 +281,9 @@ title: tiny whoop gear
             <li>Weight:3.3g</li>
         </ul>
 
+        <h3 class="text-left">Support FC Firmwares</h3>
+        <p><img src="/assets/img/cleanflight-logo.png" alt="Components" class="img-responsive"><img src="/assets/img/betaflight-logo.jpg" alt="Components" class="img-responsive"></p>
+
         <p class="text-left"><a class="btn btn-large btn-danger" href="https://www.amazon.com/dp/B01LYFO63V" target="_blank">Buy on Amazon</a></p>
       </div>
     </div>
@@ -327,7 +330,8 @@ title: tiny whoop gear
         <h3>Frequently Asked Questions</h3>
         <p>Due to the overwhelming response from the customers, we have put together this FAQ to answer the most commonly asked questions.This section will grow as more and more members of the customers give us valuable feeedback and suggestions on how to improve the tune.</p>
         <p><strong>Q:</strong>Can it handle 2S batteries?</p>
-        <p>Yes,it support 2s lipo battery,whichcould give you even more fierce racing experience than 1s.</p>
+        <p>Yes,it supports 2s lipo battery,which could give you even more fierce racing experience than 1s.Bridge these two pins to support 2s battery as show below.</p>
+        <p><img src="/assets/img/f3-brushed-1s-2s.jpg" alt="Components" class="img-responsive"></p>
         <p><strong>Q:</strong>Can it handle 8.5mm high-speed motors?</p>
         <p>Yes, the board can run 8.5mm motors.</p>
         <p><strong>Q:</strong>What Flight Modes does it have?</p>
@@ -336,6 +340,17 @@ title: tiny whoop gear
         <p>The board uses the JST 1.25 2 pin style plug</p>
         <p><strong>Q:</strong>Does it have Altitude Hold?</p>
         <p>No, we are focused on making this board the lightest and most agile that it  can be, and are excluding extra features such as altitude hold for the time being.</p>
+        <p><strong>Q:</strong>Any experience loading Betaflight onto it?</p>
+        <p>You could follower this <a href="https://github.com/Crazepony/others/blob/master/How%20to%20Flash%20Firmware%20for%20F3%20EVO%20Flight%20Controller.pdf" target="_blank">user manual</a> to flash Beraflight firmware to the fc.This is the stardand process to flash F3 EVO fc.The followring image shows the Newest BF firmware we tested.</p>
+        <p><img src="/assets/img/f3-brushed-betaflight-3.png" alt="Components" class="img-responsive"></p>
+        <p>After the Betaflight firmware is flashed successfully,you need a little bit setup.</p>
+        <p>If the version of Betaflight you have is 3.0 or above,change ESC/Motor protocol to BRUSHED on the Configuration Tab.</p>
+        <p><img src="/assets/img/f3-brushed-betaflight-1.png" alt="Components" class="img-responsive"></p>
+        <p>If the version of Betaflight you have is 2.9.1,set ESC/Motor protocol to PWM on the Configuration Tab</p>
+        <p><img src="/assets/img/f3-brushed-betaflight-2.png" alt="Components" class="img-responsive"></p>
+        <p>For all these firmwares,you need to go to CLI and type this in</p>
+        <pre>set motor_pwm_rate=4000
+save</pre>
       </div>
     </div>
 
