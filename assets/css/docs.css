@@ -1642,6 +1642,10 @@ ul, ol{
   border-bottom: 1px solid #e5e5e5;
 }
 
+.products-list .row {
+padding-top: 10px;
+}
+
 /* image hover effect */
 .hovereffect {
 width:100%;
@@ -1674,18 +1678,29 @@ transition:all .4s linear;
 .hovereffect h2 {
 color:#fff;
 text-align:center;
-position:relative;
+position:absolute;
+top:auto;
+left:0px;
+right:0px;
+bottom:0px;
 font-size:17px;
+padding-top:10px;
 padding-bottom:10px;
+margin-bottom:0px;
 background:rgba(0,0,0,0.6);
--webkit-transform: translateY(135px);
--ms-transform: translateY(135px);
-transform: translateY(135px);
 -webkit-transition: all 0.4s ease-in-out;
 transition: all 0.4s ease-in-out;
 }
 
-.hovereffect a.info {
+.hovereffect a.first {
+margin:50px 0 0;
+}
+
+.hovereffect a.second {
+margin:10px 0 0;
+}
+
+.hovereffect a.info,.hovereffect a.buy {
 text-decoration:none;
 display:inline-block;
 color:#fff;
@@ -1695,15 +1710,14 @@ opacity:0;
 filter:alpha(opacity=0);
 -webkit-transition:all .2s ease-in-out;
 transition:all .2s ease-in-out;
-margin:50px 0 0;
 padding:7px 14px;
 }
 
 .hovereffect .overlay:hover {
-background-color:rgba(0,0,0,0.5);
+background-color:rgba(0,0,0,0.3);
 }
 
-.hovereffect a.info:hover {
+.hovereffect a.info:hover,.hovereffect a.buy:hover {
 box-shadow:0 0 5px #fff;
 }
 
@@ -1718,7 +1732,7 @@ opacity:1;
 filter:alpha(opacity=100);
 }
 
-.hovereffect:hover a.info {
+.hovereffect:hover a.info,.hovereffect:hover a.buy {
 opacity:1;
 filter:alpha(opacity=100);
 -ms-transform:translatey(0);
@@ -1726,7 +1740,7 @@ filter:alpha(opacity=100);
 transform:translatey(0);
 }
 
-.hovereffect:hover a.info {
+.hovereffect:hover a.info,.hovereffect:hover a.buy {
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
 }
