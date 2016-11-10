@@ -59,6 +59,8 @@ $(document).ready(function(){
         $("#manual").addClass("active");
     }else if(pathname.indexOf("faq") >= 0){
         $("#faq").addClass("active");
+    }else if(pathname.indexOf("dealers") >= 0){
+        $("#dealers").addClass("active");
     }else if(pathname.indexOf("download") >= 0){
         $("#download").addClass("active");
     }else if(pathname.indexOf("index") >= 0){
