@@ -1655,6 +1655,7 @@ overflow:hidden;
 position:relative;
 text-align:center;
 cursor:default;
+border:1px solid #e5e5e5;
 }
 
 .hovereffect .overlay {
