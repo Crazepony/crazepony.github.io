@@ -12,43 +12,44 @@ title: F3 EVO Brushed Flight Controll
 
     <div class="row">
       <div class="col-sm-4">
-        <a href="/assets/img/f3-brushed-1.jpg" title="Makerfire F3 Brushed FC" class="fancybox" rel="group">
-            <img src="/assets/img/f3-brushed-1.jpg" alt="Makerfire F3 Brushed FC" class="img-responsive">
-        </a>
+      <p>
+        <img src="/assets/img/f3-brushed-10.jpg" alt="Makerfire F3 Brushed DSM FC" class="img-responsive">
+        <img src="/assets/img/f3-brushed-1.jpg" alt="Makerfire F3 Brushed FC" class="img-responsive">
+      </p>
       </div>
 
 
       <div class="col-sm-8">
-        <p class="text-left">Makerfire F3 Brushed flight controller based on SPRACING F3 EVO FC,which is used for Micro FPV Frame Indoor drone,like Tiny Whoop/Blade Inductrix quad.</p>
+        <p class="text-left">Makerfire F3 Brushed flight controller is based on SPRACING F3 EVO FC,which is used for micro FPV indoor drone,like Tiny Whoop/Blade Inductrix quad.</p>
 
         <h3 class="text-left">Feature</h3>
         <ul class="text-left">
-            <li>Fully programmable through Cleanflight / Betalfight using the onboard USB port,Tune all the parameters, PID's, and rates to your perfect settings</li>
+            <li>Fully programmable through Betalfight/Cleanflight,using the onboard USB port,Tune all the parameters, PID's, and rates to your perfect settings</li>
+            <li><strong>F3 Brushed Version:</strong></li>
             <li>Support 1S (4.2V) and 2S (8.4V) lipo battery,with 2s lipo you could get even more fierce racing experience than 1s</li>
-            <li>This board is designed to work with current Tiny Whoop/Inductrix setups.</li>
             <li>Support 4 PWM output,support 7 x 20mm, 8 x 20mm,10 x 20mm coreless motors</li>
             <li>Support for PPM, SBUS, DSM receiver, support battery voltage monitor and buzzer function.</li>
-            <li>Large current NMOS transistors enable the board to sustain up to 10A operating current per channel. Each channel is equipped with a freewheeling diode(?)</li>
-            <li>High discharge battery connector wire for more power and performance.</li>
-            <li>Support Pico JST 1.25 2 pin style for motor micro JST plugs.</li>
+            <li>Large current NMOS transistors enable the board to sustain up to 10A operating current per channel</li>
+            <li><strong>F3 Brushed DSM Version:</strong></li>
+            <li>Designed to work with current Tiny Whoop/Inductrix setups</li>
+            <li>Built in Spectrum DSMX native receiver</li>
         </ul>
 
         <h3 class="text-left">Specifications</h3>
         <ul class="text-left">
             <li>CPU: STM32F303CCT6</li>
             <li>Six-Axis: MPU6500</li>
-            <li>Size: 26mm x 26mm</li>
-            <li>Weight:3.3g</li>
+            <li>Size: 26mm x 26mm,fully compatible with the Inductrix quad frame and mounting pattern</li>
+            <li>Weight:3.3g(F3 Brushed Version) OR 3.5g(F3 Brushed DSM Version)</li>
         </ul>
 
         <h3 class="text-left">Support FC Firmwares</h3>
         <p><img src="/assets/img/cleanflight-logo.png" alt="Components" class="img-responsive"><img src="/assets/img/betaflight-logo.jpg" alt="Components" class="img-responsive"></p>
 
-        <p class="text-left"><a class="btn btn-large btn-danger" href="https://www.amazon.com/dp/B01LYFO63V" target="_blank">Buy on Amazon</a></p>
       </div>
     </div>
     
-    <!--- 第二行图片  -->
+    <!--- 
     <div class="row">
       <div class="col-sm-3">
     <a href="/assets/img/f3-brushed-2.jpg" title="" class="fancybox" rel="group">
@@ -71,12 +72,22 @@ title: F3 EVO Brushed Flight Controll
     </a>
       </div>
     </div>
-    
+    -->
+
+    <hr class="half-rule">
     <div class="row text-left">
-      <div class="col-sm-12">
-      <h3>Tips</h3>
-        <p><i class="fa fa-tags"></i>&nbsp;Before applying power, pay attention to the battery voltage selection. The default shipping is 1S (4.2V); 2S first need to disconnect the short contacts 1S, 2S and then connect two pads short. Prohibit the same three pads shorted together.
-        <p><i class="fa fa-tags"></i>&nbsp;Receiver configuration</p>
+      <div class="col-sm-6">
+        <h3>F3 Brushed DSM Version</h3>
+        <p><i class="fa fa-tags"></i>&nbsp;This board is designed to work with current Tiny Whoop/Inductrix setups, just replace the current board with our new board and experience the hobby level of flight control.</p>
+        <p><i class="fa fa-tags"></i>&nbsp;Compatible with <strong>ALL</strong> Spektrum radios(e.g. DX6,DX6i,DX7,DX8) or Spektrum compatible transmitter module(e.g. Turnigy 9X with OrangeRx module).</p>
+        <p><i class="fa fa-tags"></i>&nbsp;The flight controller board comes pre-flashed with BetaFlight.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <h3>F3 Brushed Version</h3>
+        <p><i class="fa fa-tags"></i>&nbsp;This board is <strong>NOT</strong> designed to work with current Tiny Whoop/Inductrix setups.The large current MOS can't drive 6*15mm motor perfect.7*20mm or 8*20mm motors are recommended for this board.</p>
+        <p><i class="fa fa-tags"></i>&nbsp;Pay attention to the battery voltage selection before applying power.The default shipping is 1S (4.2V);For 2S battery,first need to disconnect the short contacts 1S, and then connect two 2S pads short.</p>
+        <p><i class="fa fa-tags"></i>&nbsp;Receiver configuration:</p>
         <ul>
             <li>PPM and SBUS receiver welded to the UART2 GND, + 5V, RX2 above, SBUS signal CF in the software configuration</li>
             <li>DSM DSM receiver soldered directly to the interface 3.3V, GND, RX3, CF the software configuration UART3. </li>
@@ -84,16 +95,45 @@ title: F3 EVO Brushed Flight Controll
       </div>
     </div>
 
+    <div class="row text-left">
+      <div class="col-sm-6">
+        <p><img src="/assets/img/f3-brushed-11.jpg" alt="" class="img-responsive"></p>
+      </div>
+      <div class="col-sm-6">
+        <p><img src="/assets/img/f3-brushed-5.jpg" alt="" class="img-responsive"></p>
+      </div>
+    </div>
+
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <p class="text-left">
+            <a class="btn btn-large btn-danger" href="https://www.amazon.com/dp/B01LYFO63V" target="_blank">Buy on Amazon(F3 Brushed Version)</a>
+            <a class="btn btn-large btn-danger" href="https://www.amazon.com/dp/B01M72IXMU" target="_blank">Buy on Amazon(F3 Brushed DSM Version)</a>
+        </p>
+      </div>
+    </div>
+
+    <hr class="half-rule">
 
     <div class="row text-left">
       <div class="col-sm-12">
         <h3>Frequently Asked Questions</h3>
         <p>Due to the overwhelming response from the customers, we have put together this FAQ to answer the most commonly asked questions.This section will grow as more and more members of the customers give us valuable feeedback and suggestions on how to improve the tune.</p>
+        <p><strong><i class="fa fa-tags"></i>&nbsp;F3 Brushed Version</strong></p>
         <p><strong>Q:</strong>Can it handle 2S batteries?</p>
         <p>Yes,it supports 2s lipo battery,which could give you even more fierce racing experience than 1s.Bridge these two pins to support 2s battery as show below.</p>
         <p><img src="/assets/img/f3-brushed-1s-2s.jpg" alt="Components" class="img-responsive"></p>
         <p><strong>Q:</strong>Can it handle 8.5mm high-speed motors?</p>
         <p>Yes, the board can run 8.5mm motors.</p>
+        <p><strong><i class="fa fa-tags"></i>&nbsp;F3 Brushed DSM Version</strong></p>
+        <p><strong>Q:</strong>What radio control protocols are used by the board?</p>
+        <p>The DSMX compatible version uses PPM 7 Channel that is compatible will all DSMX and DSM2 Spectrum radios.</p>
+        <p>Any radio that can take the Orange Rx version module, such as the Turnigy 9X, is compatible with the DSMX version of the board.</p>
+        <p><strong>Q:</strong>Can it handle 8.5mm high-speed motors?</p>
+        <p>Yes, the board can run 8.5mm motors, but our recommendation is to use the 6mm size motors.</p>
+        <p><strong>Q:</strong>Can it handle 2S batteries?</p>
+        <p>No, it is designed to handle only 1S safely. Using higher cell batteries can damage the board.</p>
+        <p><strong><i class="fa fa-tags"></i>&nbsp;General</strong></p>
         <p><strong>Q:</strong>What Flight Modes does it have?</p>
         <p>The board runs the popular Cleanflight/Betaflight firmware that is fully customizable and includes several different modes: Auto-Level, Horizon (auto-leveling mode with ability to flip), and full manual (rate). You can also enable AirMode and be able to control the quad at any speed and attitude</p>
         <p><strong>Q:</strong>What is the size of the motor micro JST plugs?</p>
