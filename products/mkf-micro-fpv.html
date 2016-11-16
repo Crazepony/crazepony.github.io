@@ -16,19 +16,19 @@ title: makerfire micro fpv indoor drone
         <h3>Features</h3>
         <ul>
             <li>64mm motor spacing, four carefully-tuned electric ducted fans</li>
-            <li>Makerfire F3 EVO Brushed flight controller native with DSM receiver, fully programmable through Cleanflight/Betaflight </li>
-            <li>Compatible with Spektrum DX8, DX9, DX18 transmitter . etc</li>
-            <li>5.8G AIO 25mW camera, give you 10° camera angle </li>
-            <li>Special sauce edition motors, 17500Kv, 65,000 RPM@3.7v,up to 1.34A load current at 4.2V (direct drive) </li>
+            <li>F3 EVO Brushed flight controller fully programmable through Betaflight(Cleanflight option) </li>
+            <li>Built in native Spektrum DSM receiver,compatible with ALL Spektrum transmitter,like DX6/DX8/DX9/DX18 etc</li>
+            <li>5.8G AIO 25mW camera, with 10° tilt camera mount</li>
+            <li>Special sauce edition motors, 17500KV, 65000 RPM@3.7v,up to 1.34A load current at 4.2V (direct drive)</li>
             <li>35C 200mAh 1S battery, 3 min 40 seconds flight time</li>
         </ul>
         <h3>Specifications</h3>
         <ul>
             <li>Wheelbase: 64mm</li>
             <li>Weight: 22g (without battery)</li>
-            <li>Flight Controller: Makerfire F3 Brushed FC with DSM receiver</li>
-            <li>Motor: 6x15mm Coreless Brush Motor</li>
-            <li>Receiver: DSMX/DSM2 compatible native receiver</li>
+            <li>Flight Controller: F3 EVO Brushed FC with Native DSM receiver</li>
+            <li>Motor: 17500KV 6x15mm Coreless Brush Motor</li>
+            <li>Receiver: Spektrum DSM compatible native receiver</li>
             <li>Camera and 5.8G Tx: AIO 520TVL 1/4 Inch Camera 25mW 40CH</li>
             <li>Batterry: 3.7V 200mAh Lipo battery with Pico JST connector</li>
             <li>Flight time: 3 min 40 seconds </li>
@@ -41,7 +41,8 @@ title: makerfire micro fpv indoor drone
 
     <div class="row text-left">
       <div class="col-sm-12">
-        <p>The current board <strong>ONLY surport DSM2 protocol with 8 channel or above,like Spectrum DX8/DX9/DX18 etc</strong>.The next version we will update the RX module to support all the Spectrum radio transmitter,like DX6/DX6i.</p>
+        <p><s>The current board <strong>ONLY surport DSM2 protocol with 8 channel or above,like Spectrum DX8/DX9/DX18 etc</strong>.The next version we will update the RX module to support all the Spectrum radio transmitter,like DX6/DX6i.</s></p>
+        <p>The Newest version is compatible will <strong>ALL</strong> Spektrum radios(e.g. DX6,DX6i,DX7,DX8) or Spektrum compatible transmitter module(e.g. Turnigy 9X with OrangeRx module).Go to the <a href="/products/f3-brushed-fc.html" target="_blank">F3 bushed FC page</a> to check whether your radio is in the supported list.</p>
         <blockquote>
         <p>This is a high-quality Spektrum DSMX/DSM2 compatible receiver. It is not an official Spektrum receiver. The Spektrum, DSMX and DSM2 brand is a trademark of Horizon Hobbies, USA.</p>
         </blockquote>
@@ -94,11 +95,11 @@ title: makerfire micro fpv indoor drone
     <div class="row text-left">
       <div class="col-sm-12">
         <h3>Binding & Flying Procedure</h3>
-        <p>todo</p>
-        <blockquote>
-        <p>The current board only surport DSM2 protocol with 8 channel or above,like Spectrum DX8/DX9/DX18 etc.The next version we will update the RX module to support all the Spectrum radio transmitter,like DX6/DX6i.</p>
-        <p>This is a high-quality Spektrum DSMX/DSM2 compatible receiver. It is not an official Spektrum receiver. The Spektrum, DSMX and DSM2 brand is a trademark of Horizon Hobbies, USA.</p>
-        </blockquote>
+        <p> To bind the Makerfire Micro FPV Drone to a Spektrum radio:</p>
+        <p>a.Click the bind-button when powering on the Drone,either by connecting the battery or USB power.Then the receiver will enter bind mode,indicated by rapid red LED flashing.</p>
+        <p>b.Now, on the radio, hold the bind-button while powering on the radio (or what it takes to enter bind-mode).</p>
+        <p>c.The red light on the XRACER should stop blinking when the bind is completed.</p>
+        <p>d.<strong>Only need to bind the radio ONCE.</strong>Next time the receiver will bind to the last radio auto.</p>
       </div>
     </div>
     <hr class="half-rule">
@@ -122,7 +123,8 @@ title: makerfire micro fpv indoor drone
     <hr class="half-rule">
 
     <div class="row text-left"> <div class="col-sm-12">
-        <h3>Cleanflight GUI Set Up</h3>
+        <h3>Betaflight/Cleanflight GUI Set Up</h3>
+        <p>The main flight controller board comes pre-flashed with BetaFlight and proper settings for the Makerfire FPV Micro Drone already set up but you still need to configure the receiver settings. Also if you upgrade the firmware or reset settings, you will lose the receiver settings and need to set them up again.</p>
         <p>CLI Tab:Go to CLI and type this in.</p>
         <pre>set motor_pwm_rate=4000
 save</pre>
