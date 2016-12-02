@@ -44,7 +44,7 @@ title: makerfire micro fpv indoor drone
         <p><s>The current board <strong>ONLY surport DSM2 protocol with 8 channel or above,like Spectrum DX8/DX9/DX18 etc</strong>.The next version we will update the RX module to support all the Spectrum radio transmitter,like DX6/DX6i.</s></p>
         <p>The Newest version is compatible with <strong>ALL</strong> Spektrum radios(e.g. DX6,DX6i,DX7,DX8) or Spektrum compatible transmitter module(e.g. Turnigy 9X with OrangeRx module).Go to the <a href="/products/f3-brushed-fc.html" target="_blank">F3 bushed FC page</a> to check whether your radio is in the supported list.</p>
         <blockquote>
-        <p>This is a high-quality Spektrum DSMX/DSM2 compatible receiver. It is not an official Spektrum receiver. The Spektrum, DSMX and DSM2 brand is a trademark of Horizon Hobbies, USA.</p>
+        <p>This is a Spektrum DSMX/DSM2 compatible receiver. It is not an official Spektrum receiver. The Spektrum, DSMX and DSM2 brand is a trademark of Horizon Hobbies, USA.</p>
         </blockquote>
       </div>
     </div>
@@ -111,13 +111,49 @@ title: makerfire micro fpv indoor drone
       <div class="col-sm-12">
         <h3>Binding & Flying Procedure</h3>
         <p> To bind the Makerfire Micro FPV Drone to a Spektrum radio:</p>
-        <p>a.Click the bind-button when powering on the Drone,either by connecting the battery or USB power.Then the receiver will enter bind mode,indicated by rapid red LED flashing.</p>
+        <p>a.Click the bind-button meanwhile powering on the drone, either by connecting the battery or USB power. Then the receiver will enter bind mode, indicated by rapid blue receiver  LED flashing.</p>
+        <p><img src="/assets/img/dsmx-bind-button.jpg" alt="" class="img-responsive"></p>
         <p>b.Now, on the radio, hold the bind-button while powering on the radio (or what it takes to enter bind-mode).</p>
         <p>c.The red light on the XRACER should stop blinking when the bind is completed.</p>
-        <p>d.<strong>Only need to bind the radio ONCE.</strong>Next time the receiver will bind to the last radio auto.</p>
+        <p><img src="/assets/img/dsmx-bind-demo.jpg" alt="" class="img-responsive"></p>
+        <p>d.<strong>Only need to bind the radio ONCE.</strong>Next time the receiver will bind to the last radio automatically.</p>
+        <blockquote>
+        <p>If you have problems binding change the TX to DSM2/22ms mode. Normally what you set on the TX is the desired mode and the TX+RX negotiate their capabilities and select a mutually compatible mode. The receiver in this quad seems unable to do that reliably.</p>
+        <p>If you still have problems binding take the TX and walk to the other side of the room. This is a solution that Spektrum themselves recommend for some TX+RX firmware combinations. This seems to be the case between my DX8 and this quad.</p>
+        </blockquote>
       </div>
     </div>
     <hr class="half-rule">
+
+
+    <div class="row text-left"> <div class="col-sm-12">
+        <h3>Betaflight/Cleanflight GUI Set Up</h3>
+        <p>The flight controller board comes pre-flashed with BetaFlight and proper settings for the Makerfire FPV Micro Drone already set up but you still need to configure the receiver settings. Also if you upgrade the firmware or reset settings, you will lose the receiver settings and need to set them up again.</p>
+
+        <p>CLI Tab:</p>
+        <p>Go to CLI and type this in.</p>
+        <pre>set motor_pwm_rate=10000
+save</pre>
+
+        <p>Configuration Tab:</p>
+        <p>ESC/Motor Features,ESC/Motor protocol,click and select <strong>BRUSHED</strong>,switch on MOTOR_STOP(optional).</p>
+        <img src="/assets/img/micro-fpv-gui-11.png" alt="Components" class="img-responsive">
+
+        <p>Receiver Mode, choose RX_PPM;Serial Receiver Provider, choose SPEKTRUM1024.And click the Save and Reboot button in the lower right corner.</p>
+        <blockquote>
+        <p>The receiver is NOT serial.It outputs PPM signal.</p>
+        <p>The receiver does not follow the Spektrum channel mapping. Instead it outputs AERT1234.</p>
+        </blockquote>
+        <img src="/assets/img/micro-fpv-gui-12.png" alt="Components" class="img-responsive">
+
+        <p>Modes Tab(Optional):</p>
+        <p>ARM，click Add Range.ANGLE，click Add Range.And click the Save button in the lower right corner.</p>
+        <img src="/assets/img/micro-fpv-gui-5.png" alt="Components" class="img-responsive">
+
+      </div>
+    </div>
+    <hr class="half-rule">
+
 
     <div class="row text-left">
       <div class="col-sm-12">
@@ -133,29 +169,6 @@ title: makerfire micro fpv indoor drone
         <p>Makerfire F3 brushed flight controller with Native DSM receiver, support DSM2 protocol with 8 channel or above for this current version, compatible with Spektrum DX8, DX9, DX10, DX18, DX20 transmitter, would be upgrade for supporting all Spektrum radio transmitter, like DX6/DX6i.</p>
         <p><strong>Q:</strong>What Flight Modes does it have?</p>
         <p>The board runs the popular Cleanflight/Betaflight firmware that is fully customizable and includes several different modes: Auto-Level, Horizon (auto-leveling mode with ability to flip), and full manual (rate). You can also enable AirMode and be able to control the quad at any speed and attitude!</p>
-      </div>
-    </div>
-    <hr class="half-rule">
-
-    <div class="row text-left"> <div class="col-sm-12">
-        <h3>Betaflight/Cleanflight GUI Set Up</h3>
-        <p>The flight controller board comes pre-flashed with BetaFlight and proper settings for the Makerfire FPV Micro Drone already set up but you still need to configure the receiver settings. Also if you upgrade the firmware or reset settings, you will lose the receiver settings and need to set them up again.</p>
-        <p>CLI Tab:Go to CLI and type this in.</p>
-        <pre>set motor_pwm_rate=4000
-save</pre>
-
-        <p>Ports Tab:Switch on Serial RX of UART2.And click the Save and Reboot button in the lower right corner.</p>
-        <img src="/assets/img/micro-fpv-gui-1.png" alt="Components" class="img-responsive">
-
-        <p>Configuration Tab:ESC/Motor Features, Switch on MOTOR_STOP(optional).</p>
-        <img src="/assets/img/micro-fpv-gui-2.png" alt="Components" class="img-responsive">
-
-        <p>Receiver Mode, choose RX_PPM;Serial Receiver Provider, choose SPEKTRUM1024.And click the Save and Reboot button in the lower right corner.</p>
-        <img src="/assets/img/micro-fpv-gui-3.png" alt="Components" class="img-responsive">
-
-        <p>Modes Tab:ARM，click Add Range.ANGLE，click Add Range.And click the Save button in the lower right corner.</p>
-        <img src="/assets/img/micro-fpv-gui-5.png" alt="Components" class="img-responsive">
-
       </div>
     </div>
     <hr class="half-rule">
