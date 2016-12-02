@@ -121,6 +121,10 @@ title: makerfire micro fpv indoor drone
         <p>If you have problems binding change the TX to DSM2/22ms mode. Normally what you set on the TX is the desired mode and the TX+RX negotiate their capabilities and select a mutually compatible mode. The receiver in this quad seems unable to do that reliably.</p>
         <p>If you still have problems binding take the TX and walk to the other side of the room. This is a solution that Spektrum themselves recommend for some TX+RX firmware combinations. This seems to be the case between my DX8 and this quad.</p>
         </blockquote>
+
+        <blockquote>
+        <p>If you get the version with external FrSky RX,click <a href="#frsky-rx">HERE</a> for help.</p>
+        </blockquote>
       </div>
     </div>
     <hr class="half-rule">
@@ -169,6 +173,34 @@ save</pre>
         <p>Makerfire F3 brushed flight controller with Native DSM receiver, support DSM2 protocol with 8 channel or above for this current version, compatible with Spektrum DX8, DX9, DX10, DX18, DX20 transmitter, would be upgrade for supporting all Spektrum radio transmitter, like DX6/DX6i.</p>
         <p><strong>Q:</strong>What Flight Modes does it have?</p>
         <p>The board runs the popular Cleanflight/Betaflight firmware that is fully customizable and includes several different modes: Auto-Level, Horizon (auto-leveling mode with ability to flip), and full manual (rate). You can also enable AirMode and be able to control the quad at any speed and attitude!</p>
+      </div>
+    </div>
+    <hr class="half-rule">
+
+    <div class="row text-left" id="frsky-rx">
+      <div class="col-sm-12">
+        <h3>Binding & Betaflight Setup Procedure with External FrSky RX</h3>
+        <p>a.Turn on transmitter, create new mode and enter setup, the Mode must be D8.</p>
+        <p><img src="/assets/img/micro-fpv-frsky-1.png" alt="Components" class="img-responsive"></p>
+        <p>b. Power on the quadcopter by connecting the battery,red LED at the tail of the drone will flash rapidly on receiver after 6 seconds, the receiver is in ready for binding mode.Then turn on the transmitter, enter the binding mode, the red LED will turn solid, this means it has binded successfully with the default mode in SBUS.</p>
+        <blockquote>
+        <p>Connecting the USB cable will not power on the FrSky RX,so you <strong>MUST</strong> connect the battery when binding.</p>
+        </blockquote>
+        <blockquote>
+        <p>Turn on the transmitter for 6 to 30 second to be binded in SBUS mode; Turn on the transmitter after 30 seconds to be binded in PPM mode. The flight controller will default SBUS mode.</p>
+        </blockquote>
+        <p><img src="/assets/img/micro-fpv-frsky-2.png" alt="Components" class="img-responsive"></p>
+        <p>c.For each flight, turn on the transmitter firstly, then power on the quadcopter, if the receiver has a solid red LED,this means it is binded correctly,with RSSI and voltage telemetry.</p>
+        <p><img src="/assets/img/micro-fpv-frsky-3.png" alt="Components" class="img-responsive"></p>
+        <p>With FrSky RX,there are several different configurations to DSMX RX with Betaflight GUI .</p>
+        <blockquote>
+        <p>The FrSky receiver is serial.It outputs SBUS signal.</p>
+        </blockquote>
+
+        <p>Ports Tab:Switch on Serial RX of UART2.And click the Save and Reboot button in the lower right corner.</p>
+        <img src="/assets/img/micro-fpv-gui-1.png" alt="Components" class="img-responsive">
+        <p>Configuration Tab:Receiver Mode, choose RX_SERIAL; Serial Receiver Provider, choose SBUS.And click the Save and Reboot button in the lower right corner.</p>
+        <img src="/assets/img/micro-fpv-gui-3.png" alt="Components" class="img-responsive">
       </div>
     </div>
     <hr class="half-rule">
