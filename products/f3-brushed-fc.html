@@ -117,6 +117,55 @@ title: F3 EVO Brushed Flight Controll
 
     <div class="row text-left">
       <div class="col-sm-12">
+        <h3>Flashing Firmware</h3>
+        <p>If you wish to flash a different firmware or update Betaflight to the newest version, please follow these steps. </p>
+
+        <p>1.Click the Firmware Flasher tab</p>
+        <p>2.Select “SPRACINGF3EVO” as the board, and pick the version of Betaflight you wish to flash (latest is 3.0.1).</p>
+        <p><img src="/assets/img/bf-flash-1.png" alt="" class="img-responsive"></p>
+        <blockquote>
+        <p>Do not use “SPRACINGF3” or other targets. If no firmware is currently available do NOT attempt to flash. Flashing the wrong firmware can cause the FC to be permanently damaged.</p>
+        </blockquote>
+        <p>3.Click “Load firmware [Online]” and wait for firmware to download and read release notes before flashing.</p>
+        <p>Now there are two situations.If you have lost communication with the board and no reboot sequence(also called bootloader) exit,you should do as following.</p>
+        <p>a).Enable “No reboot sequence”,enable “Full chip erase”.</p>
+        <p><img src="/assets/img/bf-flash-2.png" alt="" class="img-responsive"></p>
+        <p>b).Jumper the BOOT pins and power on the board by connecting USB cable.Then remove the BOOT jumper.</p>
+        <p>c).Now DFU will appear in the list of ports and flashing via DFU will available.Click “Flash Firmware”.After flashing the virtual COM port will appear as “COMxx”.</p>
+        <p><img src="/assets/img/bf-flash-3.png" alt="" class="img-responsive"></p>
+        <p>If reboot sequence(also called bootloader) exit and work well,you could flash the firmware without jumper the BOOT pins.This is the the state when the stock firmware works well and you want to upgrade to the latest version.Do as following.</p>
+        <p>a).Disable “No reboot sequence”.</p>
+        <p><img src="/assets/img/bf-flash-4.png" alt="" class="img-responsive"></p>
+        <p>b).Power on the board by connecting USB cable.You could find the virtual COM port will appear on the up right corner.</p>
+        <p>c).Click “Flash Firmware”.First,the board will reboot into DFU mode.Then wait the ST DFU DRIVER Automatic installation.It’s successfully installed when you see the DFU port on the up right corner.Now flashing via DFU will proceed.After flashing the virtual COM port will re-appear.</p>
+
+        <p><strong>Q:</strong>Unable to flash firmware via DFU.</p>
+        <p>A: Likely the correct DFU drivers are not installed. Put the board in BOOTLOADER mode (jump boot pins, connect USB cable). Then update DFU drivers. </p>
+
+        <p>Here is how to update DFU drivers:</p>
+        <p>Chrome may have problems automatically installed DFU driver for ST devices in DFU Mode on Windows.The solution is to replace the ST driver with a libusb driver. </p>
+        <p>Download and launch <a href="http://zadig.akeo.ie" target="_blank">Zadig</a></p>
+
+        <p>a).Options -> List All Devices</p>
+        <p>b).Select STM32 Bootloader from the drop down.</p>
+        <p>c).Choose WinUSB as the replacement.</p>
+        <p>d).Click “Replace Driver”. Some times the Replace progress will be slow or no response, you can close it and do it again.</p>
+        <p>e).Restart Chrome (make sure it is completely closed, logout and login if unsure)</p>
+        <p>f).Now the DFU device should be seen by Configurator</p>
+        <p><img src="/assets/img/bf-flash-5.png" alt="" class="img-responsive"></p>
+
+        <p>Also you could see USB Flashing section of <a href="https://github.com/cleanflight/cleanflight/blob/master/docs/USB%20Flashing.md" target="_blank">Betaflight/Cleanflight manual</a> for details.</p>
+
+        <p><strong>Q:</strong>The COM port does not show up.</p>
+        <p>A: Ensure latest USB STM VCP (Virtual Com Port) drivers are installed.</p>
+      </div>
+    </div>
+
+
+    <hr class="half-rule">
+
+    <div class="row text-left">
+      <div class="col-sm-12">
         <h3>Frequently Asked Questions</h3>
         <p>Due to the overwhelming response from the customers, we have put together this FAQ to answer the most commonly asked questions.This section will grow as more and more members of the customers give us valuable feeedback and suggestions on how to improve the tune.</p>
         <p><strong><i class="fa fa-tags"></i>&nbsp;F3 Brushed Version</strong></p>
