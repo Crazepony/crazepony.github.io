@@ -113,11 +113,11 @@ title: F3 EVO Brushed Flight Controll
       </div>
     </div>
 
-    <hr class="half-rule">
+    <hr id="flash-firmware" class="half-rule">
 
     <div class="row text-left">
       <div class="col-sm-12">
-        <h3>Flashing Firmware</h3>
+        <h3>Flash Firmware</h3>
         <p>If you wish to flash a different firmware or update Betaflight to the newest version, please follow these steps. </p>
 
         <p>1.Click the Firmware Flasher tab</p>
@@ -140,11 +140,12 @@ title: F3 EVO Brushed Flight Controll
         <p>c).Click “Flash Firmware”.First,the board will reboot into DFU mode.Then wait the ST DFU DRIVER Automatic installation.It’s successfully installed when you see the DFU port on the up right corner.Now flashing via DFU will proceed.After flashing the virtual COM port will re-appear.</p>
 
         <p><strong>Q:</strong>Unable to flash firmware via DFU.</p>
-        <p>A: Likely the correct DFU drivers are not installed. Put the board in BOOTLOADER mode (jump boot pins, connect USB cable). Then update DFU drivers. </p>
+        <p>Likely the correct DFU drivers are not installed. Put the board in BOOTLOADER mode (jump boot pins, connect USB cable). Then update DFU drivers.Here is the step:</p>
 
-        <p>Here is how to update DFU drivers:</p>
+        <blockquote>
         <p>Chrome may have problems automatically installed DFU driver for ST devices in DFU Mode on Windows.The solution is to replace the ST driver with a libusb driver. </p>
         <p>Download and launch <a href="http://zadig.akeo.ie" target="_blank">Zadig</a></p>
+        </blockquote>
 
         <p>a).Options -> List All Devices</p>
         <p>b).Select STM32 Bootloader from the drop down.</p>
@@ -157,7 +158,7 @@ title: F3 EVO Brushed Flight Controll
         <p>Also you could see USB Flashing section of <a href="https://github.com/cleanflight/cleanflight/blob/master/docs/USB%20Flashing.md" target="_blank">Betaflight/Cleanflight manual</a> for details.</p>
 
         <p><strong>Q:</strong>The COM port does not show up.</p>
-        <p>A: Ensure latest USB STM VCP (Virtual Com Port) drivers are installed.</p>
+        <p>Ensure latest USB STM VCP (Virtual Com Port) drivers are installed.</p>
       </div>
     </div>
 
