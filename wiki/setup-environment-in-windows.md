@@ -29,24 +29,28 @@ arm-2013.11-24-arm-none-eabi的[下载地址](http://url.cn/Q47CUQ)
 ## 使用Keil5
 若Keil4通过以上配置，编译工程的时候提示找不到gcc或认不出来编译文件的名字，那么请安装Keil5。Keil5的安装文件是Keil4的几倍，很多组件与模板都需要分开来安装，安装稍微比较麻烦。
 
-* 下载并安装：
-* 下载并安装：
-* 下载并安装：
-* 下载并安装：
-* 下载[破解程序](http://url.cn/R2Pxw1)
-打开keil5-->FILE-->Lisence Managerment 用破解程序生成序列号并输入到keil5里。破解成功。
+* 下载并安装：[mdk第五版和破解文件](http://pan.baidu.com/s/1nvx45E5)
+
+  1、先安装mdk510.exe，安装结束后，打开keil5-->FILE-->Lisence Managerment，复制里面的CID。
+
+  2、打开keygen.exe，选择好ARM，把CID放上去生成LID，再复制LID到Lisence Managerment里，破解成功。
+
+* 打开Keil5时会提示安装一些包，选择STM32F1XX的包进行安装，过程会比较慢。
+
 * 下载：http://url.cn/O3oSQL 解压并替换keil5根目录开始的C:\Keil_v5\ARM\Segger压缩包里的两个文件，以进行jlink调试：
+
 * 配置gcc如同Keil的方法。
+
 * 注意jlink的驱动：win7 x64与win7/winxp x86可能不一样（TODO提供链接下载）
 
 ## 使用原生态的make编译
 使用原生态的make编译也很方便，并且也可以通过keil来下载并调试
 
 * 安装arm-none-eabi工具链
-修改工具链根目录下的cs-make.exe为make.exe，cs-rm.exe为rm.exe
+  修改工具链根目录下的cs-make.exe为make.exe，cs-rm.exe为rm.exe
 * 安装python2.7并把其加入到环境变量
 * 下载MyGit，并得到Git的windows版工具
 * 下载crazyflie的默认python-client代码，与此版本代码在同一级目录
 * 打开MyGit，cd到项目代码目录并：
-`make`
+  `make`
 
