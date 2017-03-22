@@ -29,10 +29,10 @@ arm-2013.11-24-arm-none-eabi的[下载地址](http://url.cn/Q47CUQ)
 ## 使用Keil5
 若Keil4通过以上配置，编译工程的时候提示找不到gcc或认不出来编译文件的名字，那么请安装Keil5。Keil5的安装文件是Keil4的几倍，很多组件与模板都需要分开来安装，安装稍微比较麻烦。
 
-* 下载并安装：[mdk510.exe](http://url.cn/RpNDSG)
-* 下载并安装：[mdkcm510.exe](http://url.cn/OnByyf)
-* 下载并安装：[Keil.ARMCortex_D...0.0.1.pack Cortex相关模板文件](http://url.cn/OzaCAP)
-* 下载并安装：[Keil.STM32F1xx_D...1.0.4.pack STM32F1xx相关模板](http://url.cn/PHqblw)
+* 下载并安装：
+* 下载并安装：
+* 下载并安装：
+* 下载并安装：
 * 下载[破解程序](http://url.cn/R2Pxw1)
 打开keil5-->FILE-->Lisence Managerment 用破解程序生成序列号并输入到keil5里。破解成功。
 * 下载：http://url.cn/O3oSQL 解压并替换keil5根目录开始的C:\Keil_v5\ARM\Segger压缩包里的两个文件，以进行jlink调试：
