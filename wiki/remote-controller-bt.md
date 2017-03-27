@@ -29,6 +29,9 @@ Crazepony支持传统蓝牙2.1和蓝牙4.0 BLE两种模式。我们使用了济�
 
 ![](/assets/img/hm-11.jpg)
 
+Crazepony_5.3以上的蓝牙使用的是BM-S02A透传模块，由[深圳市信驰达科技有限公司](https://szrfstar.cn.china.cn)研发生产。
+![](/assets/img/BT-BM-S02A.jpg)
+
 使用该模块进行Crazepony开发的时候，最应该注意的就是带宽问题。BLE技术本身的带宽就比较小，大数据量可能会导致模块死机。下面有我们在开发中遇到的实际案例。
 
 更多关于[BLE技术笔记](http://nieyong.github.io/wiki_ble/)。
@@ -38,12 +41,16 @@ Crazepony支持传统蓝牙2.1和蓝牙4.0 BLE两种模式。我们使用了济�
 **需要手机系统Android 4.3及以上才能够支持BLE。**
 
 BLE是无法在手机系统的蓝牙设置中搜寻到的，必须配备BLE相关APP。我们提供了支持BLE的Android APP Crazepony_5.2_ble.apk[下载](http://pan.baidu.com/s/1qW9kZtq)。
+新的APP版本[Crazepony_5.3.apk]()。
 
 ![](/assets/img/ble-app-1.jpg)
 
 蓝牙4.0 BLE连接时，无需配对，无需PIN码。
 
 ![](/assets/img/ble-app-2.jpg)
+
+新的Crazepony5.3的APP界面
+![](/assets/img/ble-app-3.jpg)
 
 iphone手机的APP我们即将推出。
 
