@@ -49,7 +49,7 @@ BLE是无法在手机系统的蓝牙设置中搜寻到的，必须配备BLE相�
 
 ![](/assets/img/ble-app-2.jpg)
 
-新的Crazepony5.3的APP界面
+新的Crazepony5.3的[APP](http://pan.baidu.com/s/1c2mrWx6?qq-pf-to=pcqq.c2c)界面
 ![](/assets/img/ble-app-3.jpg)
 
 iphone手机的APP我们即将推出。
