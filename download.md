@@ -57,7 +57,7 @@ title: 下载中心
 
 iPhone手机APP很快就可以发布。
 
-<a href="http://pan.baidu.com/s/1o82SBMi " class="btn btn-lg btn-outline" role="button" target="_blank" >APP源程序（最新 V5.3）</a>
+<a href="http://pan.baidu.com/s/1pLx0Rdp" class="btn btn-lg btn-outline" role="button" target="_blank" >APP源程序（最新 V5.3）</a>
 <a href="http://pan.baidu.com/s/1q5bEu" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机安装程序（5.0版本以前）</a>
 <a href="http://pan.baidu.com/s/1pJsMyqJ" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（5.0版本以前，APK文件）</a>
 <a href="https://github.com/Crazepony/crazepony-host-client" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机源码（5.0版本以前）</a>
