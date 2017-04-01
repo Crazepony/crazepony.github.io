@@ -37,7 +37,7 @@ arm-2013.11-24-arm-none-eabi的[下载地址](http://url.cn/Q47CUQ)
 
 * 打开Keil5时会提示安装一些包，选择STM32F1XX的包进行安装，过程会比较慢。
 
-* 下载：http://url.cn/O3oSQL 解压并替换keil5根目录开始的C:\Keil_v5\ARM\Segger压缩包里的两个文件，以进行jlink调试：
+* 下载：http://pan.baidu.com/s/1o7Y04Gi 解压并替换keil5根目录开始的C:\Keil_v5\ARM\Segger压缩包里的两个文件，以进行jlink调试：
 
 * 配置gcc如同Keil的方法。
 
