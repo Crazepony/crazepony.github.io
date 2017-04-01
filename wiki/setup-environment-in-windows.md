@@ -11,7 +11,7 @@ title: Windows下开发环境搭建
 目前采用Keil+gcc+jlink是最好的编译与调试方法。Keil内部有自己的编译工具链，但是Keil自带的编译器不支持目前代码的许多语法，所以建议使用gcc工具链。等代码稳定未来可以直接移植到Keil自带的编译器上。
 
 ## 安装arm-none-eabi gcc工具链
-arm-2013.11-24-arm-none-eabi的[下载地址](http://url.cn/Q47CUQ)
+<!-- arm-2013.11-24-arm-none-eabi的[下载地址](http://url.cn/Q47CUQ) -->
 
 * 为了后面配置的方便，在其中的"Next"菜单中选择 “添加参数到环境变量” (菜单提示的是英文)
 * 路径请注意中间不要有空格。比如我的根路径是：D:\MentorGraphics\Sourcery_CodeBench_Lite_for_ARM_EABI
