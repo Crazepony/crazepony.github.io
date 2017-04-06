@@ -19,8 +19,8 @@ title: 下载中心
 现在使用的飞控代码命名为crazepony-firmware-none，名字中的none表示**没有**使用实时操作系统RTOS，是裸机代码，代码更加简单明了，适合初学者使用。
 
 <a href="https://github.com/Crazepony" class="btn btn-lg btn-outline" role="button" target="_blank" >Github查看</a>
-<a href="https://github.com/Crazepony/crazepony-firmware-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >飞控源码下载</a>
-<a href="https://github.com/Crazepony/crazepony-remote-none/releases" class="btn btn-lg btn-outline" role="button" target="_blank" >遥控器源码下载</a>
+<a href="https://github.com/Crazepony/crazepony-firmware-none/archive/master.zip" class="btn btn-lg btn-outline" role="button" target="_blank" >飞控源码下载</a>
+<a href="https://github.com/Crazepony/crazepony-remote-none/archive/master.zip" class="btn btn-lg btn-outline" role="button" target="_blank" >遥控器源码下载</a>
 <a href="http://pan.baidu.com/s/1bnm7jOF" class="btn btn-lg btn-outline" role="button" target="_blank" >烧写固件下载</a>
 
 ## 原理图&芯片资料
