@@ -43,6 +43,7 @@ title: H250 Wiki
 * [硬件姿态解算](wiki/hardware-algorithm.html)
 * [软件姿态解算](wiki/software-algorithm.html)
 * [气压计MS5611](wiki/ms5611.html)
+* [气压计FBM320](wiki/fbm320.html)
 * [四轴PID控制算法](wiki/algorithm-pid.html)
 
 <h2 id="crazyflie">Crazyflie</h2>
