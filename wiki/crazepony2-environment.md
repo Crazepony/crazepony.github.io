@@ -24,20 +24,18 @@ Ubuntu（友帮拓、优般图、乌班图）是一个以桌面应用为主的�
 ## 二、搭建开发环境
 * 方法一、安装破解VMware之后打开VMware。我们提供了一个搭好环境的Ubuntu虚拟机[镜像文件下载地址](http://pan.baidu.com/s/1cMol5s)
 下载解压后，打开虚拟机，选择后缀为 .ovf的文件，存储路径选择一个大点的盘（20G以上空闲），导入可能会出现错误，点重试就好了。导入需要10min左右，坐等。。。
-![](/assets/img/C2-environment-1.png)
+	![](/assets/img/C2-environment-1.png)
 
 * 方法二、安装破解VMware之后打开VMware，ctrl+n新建虚拟机（没有截图的都按默认下一步）
-![](/assets/img/C2-environment-2.png)
-![](/assets/img/C2-environment-3.png)
-![](/assets/img/C2-environment-4.png)
+	![](/assets/img/C2-environment-2.png)
+	![](/assets/img/C2-environment-3.png)
+	![](/assets/img/C2-environment-4.png)
 位置选择一个空间大点的盘
-
-![](/assets/img/C2-environment-5.png)
-![](/assets/img/C2-environment-6.png)
+	![](/assets/img/C2-environment-5.png)
+	![](/assets/img/C2-environment-6.png)
 一定要桥接网络！
-
-![](/assets/img/C2-environment-7.png)
-![](/assets/img/C2-environment-8.png) 
+	![](/assets/img/C2-environment-7.png)
+	![](/assets/img/C2-environment-8.png) 
 同样选择一个大点的盘
 
 ## 三、编译代码
@@ -49,7 +47,7 @@ Ubuntu（友帮拓、优般图、乌班图）是一个以桌面应用为主的�
 		git clone https://github.com/makerfire-offical/Crazepony2.git	
 	下载完成后移动到Crazepony2文件夹：
 		cd  Crazepony2
-	![](/assets/img/C2-environment-9.png)
+		![](/assets/img/C2-environment-9.png)
 	3.下载交叉编译链工具：
 		sudo apt install gcc-arm-none-eabi
 	4.编译代码 ：
@@ -60,13 +58,13 @@ Ubuntu（友帮拓、优般图、乌班图）是一个以桌面应用为主的�
 
 ## 四、烧录代码到飞控
 1、下载[cleanflight地面站](https://github.com/cleanflight/cleanflight-configurator)，下载zip文件后解压，记住解压后的文件夹目录（此文件要一直保留），安装Google chrome浏览器（自己百度），打开Google chrome浏览器的扩展程序。
-![](/assets/img/C2-environment-11.png)
+	![](/assets/img/C2-environment-11.png)
 勾选开发者模式，加载已解压的扩展程序，选中1步骤解压的那个文件夹，点确定
-![](/assets/img/C2-environment-12.png)
-![](/assets/img/C2-environment-13.png)
-![](/assets/img/C2-environment-14.png)
+	![](/assets/img/C2-environment-12.png)
+	![](/assets/img/C2-environment-13.png)
+	![](/assets/img/C2-environment-14.png)
 启动后界面如下，确保设置跟红色圈圈里面一致，点击Load Firmware，选择前面编译好HEX
 文件，再点Flash Firmware,等待烧录完成。
-![](/assets/img/C2-environment-15.png)
+	![](/assets/img/C2-environment-15.png)
 烧录完成后点击connect，就可以看飞控的姿态信息了，愉快玩耍把，骚年们！
-![](/assets/img/C2-environment-16.png)
+	![](/assets/img/C2-environment-16.png)
