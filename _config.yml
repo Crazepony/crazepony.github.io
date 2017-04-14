@@ -1,5 +1,6 @@
 ﻿name: CrazePony四轴飞行器
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
 encoding: utf-8
 
