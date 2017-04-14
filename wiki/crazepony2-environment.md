@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: CrazeponyⅡ开发环境搭建
+title: Crazepony2开发环境搭建
 ---
 
 # {{ page.title }}

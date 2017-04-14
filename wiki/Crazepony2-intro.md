@@ -1,12 +1,12 @@
 ---
 layout: wiki
-title: CrazeponyⅡ开发指南
+title: Crazepony2开发指南
 ---
-<h2 id="rd">CrazeponyⅠ</h2>
-* [CrazeponyⅠ开发](wiki/Crazepony1-intro.html)
+<h2 id="rd">Crazepony1</h2>
+* [Crazepony1开发](wiki/Crazepony1-intro.html)
 
-<h2 id="rd">CrazeponyⅡ</h2>
-* [CrazeponyⅡ开发](wiki/Crazepony2-intro.html)
+<h2 id="rd">Crazepony2</h2>
+* [Crazepony2开发](wiki/Crazepony2-intro.html)
 
 # {{ page.title }}
 

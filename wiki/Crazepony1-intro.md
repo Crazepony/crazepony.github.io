@@ -1,6 +1,6 @@
 ---
 layout: wiki
-title: CrazeponyⅠ开发指南
+title: Crazepony1开发指南
 ---
 
 # {{ page.title }}
