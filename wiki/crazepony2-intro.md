@@ -8,7 +8,7 @@ title: Crazepony2介绍
 > 作者： 
 
 <h2 id="rd">开发指南——硬件部分</h2>
-* [原理图设计](/wiki/crazepony2-design.html)
+* [原理图设计](/wiki/crazepony2-hw-design.html)
 * [经验总结](/wiki/crazepony2-hw-development.html)
 * [硬件框架](/wiki/crazepony2-hw-process.html)
 
