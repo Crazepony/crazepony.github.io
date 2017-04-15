@@ -1,4 +1,4 @@
----
+﻿---
 layout: wiki
 title: Crazepony2开发环境搭建
 ---
@@ -22,10 +22,10 @@ Ubuntu（友帮拓、优般图、乌班图）是一个以桌面应用为主的�
 + Ubuntu16.04LTS系统[镜像下载地址](http://pan.baidu.com/s/1i5FnYOP)
 
 ## 二、搭建开发环境
-* 方法一、安装破解VMware之后打开VMware。我们提供了一个搭好环境的Ubuntu虚拟机[镜像文件下载地址](http://pan.baidu.com/s/1cMol5s)
-下载解压后，打开虚拟机，选择后缀为 .ovf的文件，存储路径选择一个大点的盘（20G以上空闲），导入可能会出现错误，点重试就好了。导入需要10min左右，坐等。。。
+* 方法一、安装破解VMware之后打开VMware。我们提供了一个搭好环境的Ubuntu虚拟机[镜像文件下载地址](http://pan.baidu.com/s/1cMol5s)下载解压后，打开虚拟机，选择后缀为 .ovf的文件，存储路径选择一个大点的盘（20G以上空闲），导入可能会出现错误，点重试就好了。导入需要10min左右，坐等。。。
+~~~
 	![](/assets/img/C2-environment-1.png)
-
+~~~
 * 方法二、安装破解VMware之后打开VMware，ctrl+n新建虚拟机（没有截图的都按默认下一步）
 	![](/assets/img/C2-environment-2.png)
 	![](/assets/img/C2-environment-3.png)
@@ -42,18 +42,30 @@ Ubuntu（友帮拓、优般图、乌班图）是一个以桌面应用为主的�
 * 下载源代码：Ubuntu系统开机后，按ctrl+alt+t会出来一个命令行终端，我们把代码放在github上托管，注：密码皆为“123456”。
 
 	1.下载git工具：
+	~~~
 		sudo apt install git
+	~~~
 	2.下载源代码：
+	~~~
 		git clone https://github.com/makerfire-offical/Crazepony2.git	
+	~~~
 	下载完成后移动到Crazepony2文件夹：
+	~~~
 		cd  Crazepony2
+	~~~
 		![](/assets/img/C2-environment-9.png)
 	3.下载交叉编译链工具：
+	~~~
 		sudo apt install gcc-arm-none-eabi
+	~~~
 	4.编译代码 ：
+	~~~
 		make SPRACINGF3		
+	~~~
 	编译需要一分钟左右，坐等。。。
+	~~~
 	![](/assets/img/C2-environment-10.png)
+	~~~
 + 这就是编译完成了，hex文件在Crazepony2/obj里面。
 
 ## 四、烧录代码到飞控

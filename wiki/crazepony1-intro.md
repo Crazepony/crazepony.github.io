@@ -1,93 +1,61 @@
 ﻿---
 layout: wiki
-title: 气压计FBM320
+title: Crazepony1介绍
 ---
 
 # {{page.title}}
 
 > 作者： 
 
-Crazepony5.3以上使用的气压计FBM320。
-FBM320气压传感器是一种新的高分辨率气压传感器，采用 SiP(System in Package)封装技术，将采 MEMS工艺的气压传感器芯片与采用 CMOS 工艺的信号调理芯片整合到同一个封装内，且提供标I2C 及 SPI 数字通信串口，可以跟主芯片进行通信。本身包含气压校准与温度补偿，可减少误差。
+* [入手试飞教程](wiki/user-guide.html)
+* [组装维修教程](wiki/assemble-guide.html)
 
-![](/assets/img/FBM320-1.jpg)
+<h2 id="rd">开发指南</h2>
+* [windows下开发环境搭建—裸机版本](wiki/setup-environment-in-windows-none.html)
+* [windows下开发环境搭建—FreeRTOS版本](wiki/setup-environment-in-windows.html)
+* [linux下开发环境搭建](wiki/setup-environment-in-linux.html)
+* [J-Link使用及常见问题](wiki/jlink-debug.html)
+* [Crazepony Android客户端](wiki/crazepony-android-client.html)
+* [USB固件烧写](wiki/flash-firmware.html)
+* [Crazepony上位机使用](wiki/param-assistant-manual.html)
 
-##FBM320的I2C操作命令
-* FBM320的I2C地址
+<h2 id="exp">开发经验总结</h2>
+* [自主悬停&高度融合](wiki/auto-hold.html)
+* [动力效率和续航时间](wiki/crazepony-props.html)
+* [飞行器平衡调试](wiki/crazepony-debug.html)
+* [天线设计及遥控距离](wiki/crazepony-antenna.html)
+* [摄像头和图传](wiki/crazepony-camera.html)
+* [手机APP蓝牙遥控](wiki/remote-controller-bt.html)
 
-FBM320的地址前6位固定，为“110110”，第7位比较特殊，由芯片上的"CSB"引脚决定，浮空或拉高时，代表使用的是I2C，此时第7位为1；当拉低时，为选择SPI通信，此时第7位为0,所以I2C地址是0X1101101(0X6D)。
+<h2>Crazepony原理讲解</h2>
+* [Crazepony器件选型总览及说明](wiki/ic-readme.html)
+* [Crazepony硬件原理讲解](wiki/hardware-base.html)
+* [Crazepony软件框架讲解（5.0及以前）](wiki/software-base.html)
+* [Crazepony软件框架讲解](wiki/softmain.html)
+* [Crazepony软件开发经验总结](wiki/software-experience.html)
+* [Crazepony通信协议](wiki/crazepony-communication.html)
 
-  注：Crazepony中地址会写入8位中的前7位，实际上写的是0X0110110，所以需要把地址左移一位，可以是0X11011010(0XDA)或者0X11011011(0XDB)，最后一位都会被忽略。
+<h2 id="quadcopter-dev">四轴飞行器算法讲解</h2>
+<p>姿态解算是指把陀螺仪、加速度计、罗盘等数据融合在一起，得出飞行器的空中姿态，也叫做姿态融合。姿态解算的过程，涉及到传感器数据读取与滤波，四元数与旋转，姿态解算框架，长期融合/快速融合。</p>
+* [姿态解算简介](wiki/attitude-algorithm.html)
+* [陀螺仪加速度计MPU6050](wiki/mpu6050.html)
+* [四元数](wiki/quaternions.html)
+* [硬件姿态解算](wiki/hardware-algorithm.html)
+* [软件姿态解算](wiki/software-algorithm.html)
+* [气压计MS5611](wiki/ms5611.html)
+* [气压计FBM320](wiki/fbm320.html)
+* [四轴PID控制算法](wiki/algorithm-pid.html)
 
-![](/assets/img/FBM320-2.jpg)
+<h2 id="crazyflie">Crazyflie</h2>
+<p>Crazyflie使用了实时嵌入式操作系统FreeRTOS。相比于uCOS，FreeRTOS是完全开源免费的，而uCOS在商业上的应用是要收费的。作为一个轻量级的操作系统，功能包括：任务管理、时间管理、信号量、消息队列、内存管理、记录功能等，可基本满足较小系统的需要。下面介绍FreeRTOS的基本框架，在STM32上的移植等。</p>
+* [FreeRTOS简介](wiki/freertos-intro.html)
+* [介绍几个常用的宏的作用](wiki/macro-controls.html)
+* [固件系统流程框架](wiki/system-flow-graph.html)
+* [通信协议](wiki/comm-protocol.html)
 
-下面以I2C连接模式讲解，符合Crazepony硬件上的连接。对FBM320芯片操作，只有6个命令。
-
-* 复位芯片
-
-  复位FBM320芯片，往FBM320的I2C地址写入0XB6即可。注：每次启动芯片需等待15ms，让芯片准备完毕。
-~~~
-  IICwriteOneByte( FBM320Address, 0xB6);      // Reset Device
-~~~
-* who am I
-
-  判断芯片本身是否为FBM320，可以往地址读取0X6B寄存器, 如果返回0X42则说明正确，否则为读取方式错了或者芯片出现了故障。
-
-  ~~~
-  I2C_ReadOneByte(FBM320Address, 0x6B）;	//return 0x42
-  ~~~
-
-
-* 获取校准参数
-
-  FBM320出厂时，每个芯片在各个数据都会有各自的偏差，这些偏差记录在了芯片的寄存器里，需要读取对后面的温度与气压进行校正运算。
-
-  一共有10个参数，20个寄存器地址（每个参数为16位，1个寄存器地址读出的数据为8位）
-
-  例，读寄存器R0：
-
-  ~~~
-  uint16_t R0 = (I2C_ReadOneByte(FBM320Address, 0XAA) << 8) | I2C_ReadOneByte(FBM320Address, 0XAB);
-  ~~~
-
-  同理，读取其它参数：
-
-  ~~~
-  uint16_t R1 = (I2C_ReadOneByte(FBM320Address, 0XAC) << 8) | I2C_ReadOneByte(FBM320Address, 0XAD);
-  .
-  .
-  .
-  uint16_t R9 = (I2C_ReadOneByte(FBM320Address, 0XD0) << 8) | I2C_ReadOneByte(FBM320Address, 0XF1);
-  ~~~
-
-* 温度转化
-
-  往寄存器地址0XF4写入0X2E即可。
-
-  注：转化时间需要2.2ms以上
-
-  ~~~
-  IICwriteByte(FBM320Address, 0XF4, 0X2E);
-  ~~~
-
-
-* 气压转化
-
-  往寄存器地址0XF4写入0XF4即可。
-  注：转化时间需要9.8ms以上
-  ~~~
-  IICwriteByte(FBM320Address, 0XF4, 0XF4);
-  ~~~
-
-
-* 获取转化后的数据
-
-  数据为24位，保存在地址为0XF6、0XF7、0XF8的寄存器里。
-
-  例如获取转化温度：
-
-  ~~~
-  IICwriteByte(FBM320Address, 0XF4, 0X2E);	//开始转化温度
-  delay_us(2200);								//等待转化完成
-  int32_t getUT = ((uint32_t)I2C_ReadOneByte(FBM320Address, 0xF6) << 16) | ((uint16_t)I2C_ReadOneByte(FBM320Address, 0xF7) << 8) | I2C_ReadOneByte(FBM320Address, 0xF8);										//得到温度
-  ~~~
+<h2 id="other">其他</h2>
+* [Crazepony的板形轮廓及沉金工艺](wiki/crazepony-construct.html)
+* [散件组装教程--5.0版本](wiki/assemble-guide-5-0.html)
+* [入手试飞教程--5.0版本](wiki/user-guide-5-0.html)
+* [散件组装教程--4.1版本](wiki/assemble-guide-4-1.html)
+* [入手试飞教程--4.1版本](wiki/user-guide-4-1.html)
