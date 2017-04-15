@@ -8,7 +8,7 @@ title: Crazepony2开发环境搭建
 > 作者：wudong
 
 ## 一、说在前面
-+ C02飞控代码源自cleanflight，开发环境是在linux下，所以我们使用的是linux系统。但是大多数小伙伴电脑都是windows系统，那怎么办呢？不要慌，我们安装一个虚拟机，再在虚拟机上装一个linux系统就O啦，或者有能力的同学也可以尝试装双系统哦（双系统教程可以自行百度，but，请备份重要文件，系统崩了不要找我）。
++ CCrazepony2飞控代码源自cleanflight，开发环境是在linux下，所以我们使用的是linux系统。但是大多数小伙伴电脑都是windows系统，那怎么办呢？不要慌，我们安装一个虚拟机，再在虚拟机上装一个linux系统就O啦，或者有能力的同学也可以尝试装双系统哦（双系统教程可以自行百度，but，请备份重要文件，系统崩了不要找我）。
 
 + VMware Workstation（中文名“威睿工作站”）是一款功能强大的桌面虚拟计算机软件，提供用户可在单一的桌面上同时运行不同的操作系统，和进行开发、测试 、部署新的应用程序的最佳解决方案---《百度百科》
 
@@ -81,18 +81,22 @@ title: Crazepony2开发环境搭建
 
 ## 四、烧录代码到飞控
 1.下载[cleanflight地面站](https://github.com/cleanflight/cleanflight-configurator)，下载zip文件后解压，记住解压后的文件夹目录（此文件要一直保留），安装Google chrome浏览器（自己百度），打开Google chrome浏览器的扩展程序。
+
   ![](/assets/img/C2-environment-11.png)
 
 2.勾选开发者模式，加载已解压的扩展程序，选中1步骤解压的那个文件夹，点确定
+
   ![](/assets/img/C2-environment-12.png)
   
   ![](/assets/img/C2-environment-13.png)
   
   ![](/assets/img/C2-environment-14.png)
 
-3.启动后界面如下，确保设置跟红色圈圈里面一致，点击Load Firmware，选择前面编译好HEX文件，再点Flash Firmware,等待烧录完成。
+3.启动后界面如下，确保设置跟红色圈圈里面一致，点击Load Firmware，选择前面编译好HEX文件，再点Flash Firmware，等待烧录完成。
+
   ![](/assets/img/C2-environment-15.png)
 
 4.烧录完成后点击connect，就可以看飞控的姿态信息了，愉快玩耍把，骚年们！
+
   ![](/assets/img/C2-environment-16.png)
 ​	
