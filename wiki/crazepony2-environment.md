@@ -1,4 +1,4 @@
-﻿---
+---
 layout: wiki
 title: Crazepony2开发环境搭建
 ---
