@@ -1,6 +1,6 @@
-﻿---
+---
 layout: wiki
-title: H250 Wiki
+title: Crazepony Wiki
 ---
 
 <div class="jumbotron">
@@ -9,7 +9,7 @@ title: H250 Wiki
 
 <h2 id="rd">crazepony1</h2>
 * [Crazepony1指南](wiki/crazepony1-intro.html)
-<h2 id="rd">crazepony2</h2>
+  <h2 id="rd">crazepony2</h2>
 * [Crazepony2指南](wiki/crazepony2-intro.html)
 
 <!--
@@ -65,4 +65,4 @@ title: H250 Wiki
 * [入手试飞教程--5.0版本](wiki/user-guide-5-0.html)
 * [散件组装教程--4.1版本](wiki/assemble-guide-4-1.html)
 * [入手试飞教程--4.1版本](wiki/user-guide-4-1.html)
--->
+  -->

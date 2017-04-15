@@ -1,4 +1,4 @@
-﻿---
+---
 layout: wiki
 title: Crazepony1介绍
 ---
