@@ -8,10 +8,10 @@ title: Crazepony Wiki
 </div>
 
 <h2 id="rd">crazepony1</h2>
-* [Crazepony1指南](wiki/crazepony1-intro.html)
++ [Crazepony1指南](wiki/crazepony1-intro.html)
 
  <h2 id="rd">crazepony2</h2>
-* [Crazepony2指南](wiki/crazepony2-intro.html)
++ [Crazepony2指南](wiki/crazepony2-intro.html)
 
 <!--
 * [入手试飞教程](wiki/user-guide.html)
