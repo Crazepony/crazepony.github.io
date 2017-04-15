@@ -9,7 +9,8 @@ title: Crazepony Wiki
 
 <h2 id="rd">crazepony1</h2>
 * [Crazepony1指南](wiki/crazepony1-intro.html)
-  <h2 id="rd">crazepony2</h2>
+
+ <h2 id="rd">crazepony2</h2>
 * [Crazepony2指南](wiki/crazepony2-intro.html)
 
 <!--
