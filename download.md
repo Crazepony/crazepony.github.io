@@ -57,6 +57,12 @@ title: 下载中心
 
 iPhone手机APP很快就可以发布。
 
+## Crazepony2的安卓版本二维码，扫描下载
+![](/assets/img/android-RQcode.png)
+
+## Crazepony2的苹果版本二维码，扫描下载
+![](/assets/img/ios-RQcode.png)
+
 <!-- <a href="http://pan.baidu.com/s/1pLx0Rdp" class="btn btn-lg btn-outline" role="button" target="_blank" >APP源程序（最新 V5.3）</a> -->
 <a href="http://pan.baidu.com/s/1q5bEu" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机安装程序（5.0版本以前）</a>
 <a href="http://pan.baidu.com/s/1pJsMyqJ" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（5.0版本以前，APK文件）</a>
