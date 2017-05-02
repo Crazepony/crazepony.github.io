@@ -41,7 +41,7 @@ title: 下载中心
 
 ## 上位机和Android客户端
 <a href="http://pan.baidu.com/s/1gdf9bKf" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机</a>
-<a href="http://pan.baidu.com/s/1c2mrWx6?qq-pf-to=pcqq.c2c" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序 更新至V5.3（蓝牙4.0 BLE）</a>
+<a href="http://pan.baidu.com/s/1qYucKxA" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序 更新至V5.3（蓝牙4.0 BLE）</a>
 <a href="http://pan.baidu.com/s/1eQfBgye" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（蓝牙2.1）</a>
 
 
