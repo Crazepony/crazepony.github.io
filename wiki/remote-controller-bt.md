@@ -41,7 +41,6 @@ Crazepony_5.3以上的蓝牙使用的是BM-S02A透传模块，由[深圳市信�
 **需要手机系统Android 4.3及以上才能够支持BLE。**
 
 BLE是无法在手机系统的蓝牙设置中搜寻到的，必须配备BLE相关APP。我们提供了支持BLE的Android APP Crazepony_5.2_ble.apk[下载](http://pan.baidu.com/s/1qW9kZtq)。
-新的APP版本[Crazepony_5.3.apk]()。
 
 ![](/assets/img/ble-app-1.jpg)
 
