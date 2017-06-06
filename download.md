@@ -68,3 +68,5 @@ iPhone手机APP很快就可以发布。
 <a href="http://pan.baidu.com/s/1pJsMyqJ" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（5.0版本以前，APK文件）</a>
 <a href="https://github.com/Crazepony/crazepony-host-client" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机源码（5.0版本以前）</a>
 <a href="https://github.com/Crazepony/crazepony-android-client-none" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP源码（5.0版本以前）</a>
+<a href="http://pan.baidu.com/s/1mhZTVG" class="btn btn-lg btn-outline" role="button" target="_blank">飞控源码（5.3）</a>
+<a href="http://pan.baidu.com/s/1pLsKGHX" class="btn btn-lg btn-outline" role="button" target="_blank">飞机原理图（5.3）</a>
