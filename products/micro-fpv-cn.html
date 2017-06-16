@@ -97,19 +97,19 @@ title: Armor 90迷你室内无刷竞速穿越机
 		<p>默认配置如下：</p>
 		<ul>
 			<p>1、Frsky版本及DSM2版本接收机默认接在UART2端口，在Port打开UART 2 Serial RX；Flysky A8S接收机使用PPM信号，此处不需要打开串口；</p>
-			<img src="/assets/img/Armor90-1.jpg" alt="" class="img-responsive">
+			<img src="/assets/img/Armor90_1.jpg" alt="" class="img-responsive">
 			<p>2、在Betaflight中XM接收机、DSM2接收机Receivermode开启Serial_based receiver,Serial receiver provider XM接收机选择SBUS，DSM2信号选择SPEKTRUM1024/2048,Flysky版本接收机Receivermode开启PPM RX input；其他PNP版本根据所配置的接收机类型正确配置即可。 ESC Features默认开启Dshot300，电机解锁成功后怠速运转；</p>
-			<img src="/assets/img/Armor90-2.jpg" alt="" class="img-responsive">
+			<img src="/assets/img/Armor90_2.jpg" alt="" class="img-responsive">
 		</ul>
 		<ul>
 			<p>PID tuning界面为默认的设置，PID参数、rate、油门曲线等自行调整，整个界面为Betaflight默认的参数值；</p>
-			<img src="/assets/img/Armor90-3.jpg" alt="" class="img-responsive">
+			<img src="/assets/img/Armor90_3.jpg" alt="" class="img-responsive">
 			<p>Receiver界面,由于ARMOR 90均为不配置遥控器套餐，完成遥控器对频操作后请务必在此界面检查遥控的通道是否对应正确，各通道的中位点值是否在1500；</p>
-			<img src="/assets/img/Armor90-4.jpg" alt="" class="img-responsive">
+			<img src="/assets/img/Armor90_4.jpg" alt="" class="img-responsive">
 			<p>Modes界面,Mode界面保留Betaflight默认的解锁手势，默认为自稳操控模式。按需调整。</p>
-			<img src="/assets/img/Armor90-5.jpg" alt="" class="img-responsive">
+			<img src="/assets/img/Armor90_5.jpg" alt="" class="img-responsive">
 			<p>OSD配置,OSD配置保留电池电压显示、水平姿态线、垂直姿态线、飞行时间、开机运行时间及飞行模式。用户可按需关闭/打开需要显示的信息，显示信息的位置和显示的字体同样可以自定义调整。Armor 90增加OSD还要一个很方便的功能，用户户外飞行可以使用遥控器通过OSD进行调参。</p>
-			<img src="/assets/img/Armor90-6.jpg" alt="" class="img-responsive">
+			<img src="/assets/img/Armor90_6.jpg" alt="" class="img-responsive">
 		</ul>
       </div>
     </div>
@@ -121,31 +121,31 @@ title: Armor 90迷你室内无刷竞速穿越机
 				<h3>Frsky XM对频指引</h3>
 				<ul>
 					<p>1、以Frsky X9D为例。开启遥控器，新建一个接收机配置（如果你想要修改原有的也可以），必须设置Mode为D16，然后关闭遥控器。</p>
-					<img src="/assets/img/Armor90-7.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_7.jpg" alt="" class="img-responsive">
 					<p>2、按下ARMOR 90 XM接收机对频按键同时给飞机通电，进入对频模式后接收机绿色灯和红色灯全部点亮（未成功按下按键接收机绿灯是熄灭状态，红灯闪烁）等待对频。</p>
-					<img src="/assets/img/Armor90-8.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_8.jpg" alt="" class="img-responsive">
 					<p>3、开启遥控器并进入对频状态（选择遥控器上的Bind状态）。接收机绿灯常亮红灯闪烁对频成功。此时需要先关闭遥控器对频模式，再关闭接收机电源。</p>
-					<img src="/assets/img/Armor90-9.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_9.jpg" alt="" class="img-responsive">
 					<p>4、重新为接收机通电，接收机绿灯常亮则对频成功。完成对频请在Betaflight/Receiver界面检查遥控器通道对应情况。</p>
-					<img src="/assets/img/Armor90-10.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_10.jpg" alt="" class="img-responsive">
 				</ul>
 				<h3>Spektrum DSM2对频指引（以SPEKTRUM DX6i为例）</h3>	
 				<ul>
 					<p>1、按下ARMOR 90 DSM2接收机对频按键同时给飞机通电，进入对频模式后接收机橙色状态灯进入快闪状态，等待对频。</p>
-					<img src="/assets/img/Armor90-11.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_11.jpg" alt="" class="img-responsive">
 					<p>2、开启遥控器并进入对频状态（选择遥控器上的Bind状态）。接收机由快闪状态切换到慢闪，直到最后常亮对频成功。</p>
 					<img src="/assets/img/Armor90-12.jpg" alt="" class="img-responsive">
 					<p>3、重新为接收机通电，接收机绿灯常亮则对频成功。完成对频请在Betaflight/Receiver界面检查遥控器通道对应情况。</p>
-					<img src="/assets/img/Armor90-13.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_13.jpg" alt="" class="img-responsive">
 				</ul>
 				<h3>FlyskyA8S对频指引（以Flysky-I6为例）</h3>
 				<ul>
 					<p>1、按下ARMOR 90 A8S接收机对频按键同时给飞机通电，进入对频模式后接收机橙色状态灯进入快闪状态，等待对频。按下对对码键同时开启开启遥控器。接收机由快闪状态切换常亮对频成功。</p>
-					<img src="/assets/img/Armor90-14.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_14.jpg" alt="" class="img-responsive">
 					<p>2、遥控器工作模式设定AFHDS 2A，Receiver输出打开PPM信号。</p>
-					<img src="/assets/img/Armor90-15.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_15.jpg" alt="" class="img-responsive">
 					<p>3、重新为接收机通电，接收机绿灯常亮则对频成功。完成对频请在Betaflight/Receiver界面检查遥控器通道对应情况。</p>
-					<img src="/assets/img/Armor90-16.jpg" alt="" class="img-responsive">
+					<img src="/assets/img/Armor90_16.jpg" alt="" class="img-responsive">
 				</ul>
 		</div>
     </div>
