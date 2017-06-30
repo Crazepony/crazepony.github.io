@@ -41,9 +41,9 @@ title: 下载中心
 
 ## 上位机和Android客户端
 <a href="http://pan.baidu.com/s/1gdf9bKf" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机</a>
-<a href="http://pan.baidu.com/s/1qYucKxA" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序 更新至V5.3（蓝牙4.0 BLE）</a>
+<a href="http://pan.baidu.com/s/1c10ZAww" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序 更新至V5.3（蓝牙4.0 BLE）</a>
 <a href="http://pan.baidu.com/s/1eQfBgye" class="btn btn-lg btn-outline" role="button" target="_blank" >Android APP安装程序（蓝牙2.1）</a>
-
+<a href="http://pan.baidu.com/s/1qYucKxA" class="btn btn-lg btn-outline" role="button" target="_blank" >Crazepony2 android APP安装程序 V1.0 (wifi)</a>
 
 上位机使用C#写成，现在已经加入了飞行姿态模拟，姿态数据显示，PWM输出显示等功能。现在**默认固件已经关闭PC上位机数据（配合BLE低带宽模块）**，截图如下所示。
 
