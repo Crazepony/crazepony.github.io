@@ -1472,7 +1472,8 @@ table tr:first-child td {
     color: #333;
     text-shadow: 2px 2px 2px #E6E6E6;
     clear: both;
-    font-family: "微软雅黑",Helvetica,"Arial Black",Impact;
+    /*font-family: "微软雅黑",Helvetica,"Arial Black",Impact;*/
+	font-family: "宋体";
     border-bottom: 1px solid #CCCCCC;
     margin-bottom: 8px;
     padding-bottom: 4px;
