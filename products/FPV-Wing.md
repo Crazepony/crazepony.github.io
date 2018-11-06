@@ -3,16 +3,15 @@ layout: crazepony
 title: Crazepony RC Planes for Adults, ZOHD Dart Sweepforward Wing 635mm Wingspan FPV EPP Racing Wing RC Drone Airplane PNP
 ---
 
-          
-		     
-			 
-# Crazepony RC Planes for Adults
-# ZOHD Dart Sweepforward Wing 635mm Wingspan FPV EPP Racing Wing RC Drone Airplane PNP
+#   
+#  <center>Crazepony RC Planes for Adults</center>
+#  <center>ZOHD Dart Sweepforward Wing</center>
+#  <center>635mm Wingspan FPV EPP Racing Wing RC Drone Airplane PNP</center>
 > UPC: 190033867159 
 
-  ![](/assets/img/FPV-WING-1.jpg)
-  ![](/assets/img/FPV-WING-2.jpg)
-  ![](/assets/img/FPV-WING-3.jpg)
+  <img src="/assets/img/FPV-WING-1.jpg" width="1000" hegiht="500" align=center />
+  <img src="/assets/img/FPV-WING-2.jpg" width="500" hegiht="500" align=left />
+  <img src="/assets/img/FPV-WING-3.jpg" width="500" hegiht="500" align=right />
 
 ## RC Planes for Adults
 + Classical and practical “S” high efficiency airfoil, create powerful elevating force,Flying speed up 15km/h - 80km/h
@@ -25,6 +24,6 @@ title: Crazepony RC Planes for Adults, ZOHD Dart Sweepforward Wing 635mm Wingspa
 
 ## Strong and Durable
 + Lightweight but durable EPP molded wing and fuselage, enhanced by built in carbon fiber spars, durable and super crash resistance,with plastic cover to protect the fuselage bottom from landing scratch,with bump for “CG” mark under the main wing
-
+	
 ## Warranty
 + 30 days money back or 12-Month Warranty and 24 hours friendly customer service!
