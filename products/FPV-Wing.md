@@ -9,9 +9,10 @@ title: Crazepony RC Planes for Adults, ZOHD Dart Sweepforward Wing 635mm Wingspa
 #  <center>635mm Wingspan FPV EPP Racing Wing RC Drone Airplane PNP</center>
 > UPC: 190033867159 
 
-  <img src="/assets/img/FPV-WING-1.jpg" width="1000" hegiht="500" align=center />
-  <img src="/assets/img/FPV-WING-2.jpg" width="500" hegiht="500" align=left />
-  <img src="/assets/img/FPV-WING-3.jpg" width="500" hegiht="500" align=right />
+![](/assets/img/FPV-WING-1.jpg){:height="1000px" width="500px" align=center}
+![](/assets/img/FPV-WING-2.jpg){:height="500px" width="500px" align=left}
+![](/assets/img/FPV-WING-3.jpg){:height="500px" width="500px" align=right}
+
 
 ## RC Planes for Adults
 + Classical and practical “S” high efficiency airfoil, create powerful elevating force,Flying speed up 15km/h - 80km/h
