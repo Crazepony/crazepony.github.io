@@ -9,8 +9,8 @@ title: RunCam Eagle 2 Pro FPV Camera
 #  <center>Switchable for Racing Drone Multicopter Orange by Crazepony</center>
 > UPC: 190033896296 
 
-![](/assets/img/run-Cam-1.jpg){:height="750px" width="750px" align=left}
-![](/assets/img/run-Cam-2.jpg){:height="750px" width="750px" align=right}
+![](/assets/img/run-Cam-1.png){:height="750px" width="750px" align=left}
+![](/assets/img/run-Cam-2.png){:height="750px" width="750px" align=right}
 
 
 ## Function upgrade
