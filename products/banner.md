@@ -4,9 +4,9 @@ title: B07H66HR1V
 ---
 
 #   
-#  <center>4pcs 1104 5500KV FPV Brushless Motor</center>
-#  <center>and 16pcs 2345 Propellers Compatible with 2-3S LiPo</center>
-#  <center>XT1104-5500V Motor for FPV Racing Frame Drone Quadcopter</center>
+#  <center>4pcs 1104 5500KV FPV Brushless Motor Bonus</center>
+#  <center>16pcs 4-blade Propellers(2035 or 2045 Random) Compatible with 2-3S LiPo</center>
+#  <center>XT1104-5500V Motor for FPV Racing Frame Drone Quadcopter </center>
 > UPC: 673400137166
 
 ![](/assets/img/banner-2.png){:height="500px" width="500px" align=left}
