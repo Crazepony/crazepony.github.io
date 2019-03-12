@@ -54,7 +54,7 @@ title: 下载中心
 
 ## linux编译工具链
 
-<a href="https://github.com/makerfire-offical/Crazepony2/archive/master.zip" class="btn btn-lg btn-outline" role="button" target="_blank" >gcc-arm-none-eabi</a>
+<a href="https://pan.baidu.com/s/1K0DfuOa_vZkBOMFTGNynQQ" class="btn btn-lg btn-outline" role="button" target="_blank" >gcc-arm-none-eabi,提取码：12zn</a>
 
 ## Android
 
