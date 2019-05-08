@@ -4,7 +4,7 @@ title: B07F6WRPTB
 ---
 
 #   
-#  <center>450mAh 1S HV 3.8V 80C LiPo Battery</center>
+#  <center>2pcs GN3 450mAh 1S HV 3.8V LiPo Battery 80C JST-PH 2.0 PowerWhoop mCPX Connector for EMAX Tinyhawk Brushless Micro Racing Drone Inductrix FPV Plus Kingkong Tiny 7 Beta75S Micro FPV Racing Drone etc</center>
 
 > UPC: 190033938385
 
