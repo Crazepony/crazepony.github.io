@@ -80,7 +80,7 @@ title: Crazepony2开发环境搭建
 + 这就是编译完成了，hex文件在Crazepony2/obj里面。
 
 ## 四、烧录代码到飞控
-1.下载[cleanflight地面站](https://github.com/cleanflight/cleanflight-configurator)，下载zip文件后解压，记住解压后的文件夹目录（此文件要一直保留），安装Google chrome浏览器（自己百度），打开Google chrome浏览器的扩展程序。
+1.下载[cleanflight地面站](https://github.com/cleanflight/cleanflight-configurator/releases/download/CLFL_v1.2.4/cleanflight-configurator-1.2.4.zip)，下载zip文件后解压，记住解压后的文件夹目录（此文件要一直保留），安装Google chrome浏览器（自己百度），打开Google chrome浏览器的扩展程序。
 
   ![](/assets/img/C2-environment-11.png)
 
