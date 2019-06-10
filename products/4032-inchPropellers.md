@@ -8,7 +8,7 @@ title: B07RCD7X61
 
 > UPC: 673400172143
 
-
+![](/assets/img/inchPropellers-4032-1.jpg){:height="750px" width="750px" align=left}
 
 ## Specification:
 
