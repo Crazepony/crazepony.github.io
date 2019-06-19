@@ -17,7 +17,7 @@ title:  B07HL3N4PW
 ## Specification:
 
 ### Brand name:
-+ Crazepony
++ Foxeer
 
 ### Model:
 + Foxeer Falkor Mini
