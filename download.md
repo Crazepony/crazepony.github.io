@@ -9,7 +9,7 @@ title: 下载中心
 ## 原理图&芯片资料
 
 <a href="https://pan.baidu.com/s/13_9dhNius57A6Ur8jf9RaQ" class="btn btn-lg btn-outline" role="button" target="_blank" >原理图（飞控+遥控器）,提取码：yjp9</a>
-<a href="http://pan.baidu.com/s/1i31fUCl" class="btn btn-lg btn-outline" role="button" target="_blank" >芯片资料</a>
+<a href="https://pan.baidu.com/s/1d3qv2ftu6l_qbwaFxDu2wA" class="btn btn-lg btn-outline" role="button" target="_blank" >芯片资料,提取码：3sw7</a>
 
 ## 源代码
 
