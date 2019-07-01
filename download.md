@@ -37,7 +37,7 @@ title: 下载中心
 * 注：要使用上位机需要修改飞机程序，开启飞控程序main.c中的CommPCUploadHandle()函数，重编译烧录即可（使用上位机时，飞机飞行不稳定）
 
 
-<a href="http://pan.baidu.com/s/1gdf9bKf" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机</a>
+<a href="https://pan.baidu.com/s/1qtKOPVnadJWLYAP5Tqnetw" class="btn btn-lg btn-outline" role="button" target="_blank" >PC上位机;提取码：ijkm</a>
 
 
 # Crazepony2
