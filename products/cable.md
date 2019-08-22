@@ -1,5 +1,5 @@
 ---
-layout: cable
+layout: crazepony
 title:  B00N8C49OA
 ---
 
