@@ -65,17 +65,17 @@ title: Crazepony2 Development environment setup
 ## 4、Soldring code to flight control
 1.cleanflight ground station ([Download](https://github.com/cleanflight/cleanflight-configurator/releases/download/CLFL_v1.2.4/cleanflight-configurator-1.2.4.zip))，download the zip file and extract it, remember Unzip the folder directory (this file should be kept all the time), install Google Chrome browser,open the extension of Google Chrome browser.
 
-  ![](/assets/img/C2-environment-11.png)
+  ![](/assets/img/C2-environment-17.png)
+  
+  ![](/assets/img/C2-environment-18.png)
+	
+  ![](/assets/img/C2-environment-19.png)
 
 2.Check the developer mode, load the unzipped extension, select the folder to be decompressed in 1 step, click confirm.
-
-  ![](/assets/img/C2-environment-12.png)
   
-  ![](/assets/img/C2-environment-13.png)
-  
-  ![](/assets/img/C2-environment-14.png)
+  chrome input chrome://apps/ to open cleanflight-configurator
 
-3. After the startup interface is as follows, make sure the settings are consistent with the red circle, click Load Firmware, select the HEX file compiled that before we made it , then click Flash Firmware, and wait for the burning to complete.
+3.After the startup interface is as follows, make sure the settings are consistent with the red circle, click Load Firmware, select the HEX file compiled that before we made it , then click Flash Firmware, and wait for the burning to complete.
 
   ![](/assets/img/C2-environment-15.png)
 
