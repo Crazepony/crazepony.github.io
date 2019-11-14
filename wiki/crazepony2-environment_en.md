@@ -3,6 +3,7 @@ layout: crazepony
 title: Crazepony2 Development environment setup
 ---
 
+#   
 # {{ page.title }}
 
 > author：wudong
@@ -12,7 +13,7 @@ title: Crazepony2 Development environment setup
 
 + VMware Work station is a powerful desktop virtual computer software that allows users to run different operating systems simultaneously on a single desktop, and to develop, test, and deploy new applications
 
-+ VMware-workstation 12 ([download](http://pan.baidu.com/s/1jIiHVBC)This) software needs to crack the key after installation：AA3E0-0VDE1-0893Z-KGZ59-QGAVF
++ VMware-workstation 12 ([download](http://pan.baidu.com/s/1jIiHVBC)) This software needs to crack the key after installation：AA3E0-0VDE1-0893Z-KGZ59-QGAVF
 
 + Linux is a free-to-use and freely distributed Unix-like operating system. It is a multi-user, multi-tasking, multi-threaded and multi-CPU based operating system based on POSIX and UNIX. It runs major UNIX utilities, applications and network protocols. It supports both 32-bit and 64-bit hardware.
 
