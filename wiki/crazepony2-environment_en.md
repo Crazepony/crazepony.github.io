@@ -24,7 +24,6 @@ title: Crazepony2 Development environment setup
 ## 2、Setting up the development environment
 * Open VMware after installing VMware. We provide a Ubuntu virtual machine with a good environment[download](http://pan.baidu.com/s/1cMol5s)download and unzip, open the virtual machine, select the file with the suffix .ovf, storage path Select a large disk (free than 20G), the import maybe something wrong, just click try again. It takes about 10 minutes to import.
 
-  ![](/assets/img/C2-environment-1.png)
 
 * install VMware after cracking VMware, ‘CTRL+N’ create a new virtual machine !
 
