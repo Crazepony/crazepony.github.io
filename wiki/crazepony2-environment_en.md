@@ -29,7 +29,7 @@ title: Crazepony2 Development environment setup
 
 
 
-## 3、compiled code
+## 3、Compiled code
 * Download source code:After Ubuntu system boot, press ‘’ctrl + alt + T’’ will come out a command line terminal, we put the code on github hosting,
  Note: the password is "123456".
 
