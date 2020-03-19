@@ -8,8 +8,8 @@ title: B06XPF9G2B
 
 > UPC: B06XPF9G2B
 	
-![](/assets/img/XT60_1.jpg){:height="750px" width="750px" align=left}
-![](/assets/img/XT60_2.jpg){:height="750px" width="750px" align=right}
+![](/assets/img/XT60-1.jpg){:height="750px" width="750px" align=left}
+![](/assets/img/XT60-2.jpg){:height="750px" width="750px" align=right}
 
 ### DOWNLOAD MANUAL:http://www.mateksys.com/downloads/PDB-XT60_Manual_EN.pdf
 
