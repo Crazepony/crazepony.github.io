@@ -58,7 +58,7 @@ title: 下载中心
 
 ## Android
 
-<a href="https://pan.baidu.com/s/1bk_UK5mabjnpaqeo4h0WJQ" class="btn btn-lg btn-outline" role="button" target="_blank" >android(wifi),提取码：ige0</a>
+<a href="https://mkf-resource.oss-cn-shenzhen.aliyuncs.com/client/Crazepony_1.1.2_2020-10-29.apk" class="btn btn-lg btn-outline" role="button" target="_blank" >android(wifi)</a>
 
 ## 苹果版本二维码，扫描下载
 ![](/assets/img/ios-RQcode.png)
